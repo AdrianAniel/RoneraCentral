@@ -10,6 +10,7 @@ module com.adriananiel.roneracentral {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
 
     opens com.adriananiel.roneracentral to javafx.fxml;
     exports com.adriananiel.roneracentral;
