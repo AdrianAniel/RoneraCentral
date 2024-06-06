@@ -17,7 +17,9 @@ public class SignInController implements Initializable {
     public Button btnSignIn;
     @FXML
     private Hyperlink ForgetPassword;
+    @FXML
     public Hyperlink SignUp;
+    @FXML
     public AnchorPane VentanaSignIn;
 
     @FXML
@@ -33,8 +35,6 @@ public class SignInController implements Initializable {
     public void eventSignUp() throws IOException {
         AnchorPane ventanaSignUpFXML = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
         VentanaSignIn.getChildren().setAll(ventanaSignUpFXML);
-
-
 
     }
 

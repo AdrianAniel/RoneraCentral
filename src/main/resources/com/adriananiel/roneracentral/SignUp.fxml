@@ -45,12 +45,12 @@
       </Label>
    </VBox>
    <Pane focusTraversable="true" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0">
-      <TextField layoutX="46.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
+      <TextField fx:id="textUsername" layoutX="46.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="45.0" layoutY="255.0" prefHeight="56.0" prefWidth="300.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
+      <PasswordField fx:id="textPassword" layoutX="45.0" layoutY="255.0" prefHeight="56.0" prefWidth="300.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
          <font>
             <Font size="16.0" />
          </font>
@@ -67,18 +67,18 @@
             <Font name="Ebrima" size="14.0" />
          </font>
       </Label>
-      <Hyperlink fx:id="BtnSignUp" layoutX="238.0" layoutY="514.0" onMouseClicked="#eventBtnSignIn" text="Sign In" textAlignment="CENTER" textFill="#1a273c">
+      <Hyperlink fx:id="BtnSignUp" layoutX="238.0" layoutY="514.0" onMouseClicked="#eventBtnSignIn" style="-fx-border-color: transparent;" text="Sign In" textAlignment="CENTER" textFill="#1a273c">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Hyperlink>
-      <TextField layoutX="45.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="300.0" promptText="Gmail" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
+      <TextField fx:id="textNumber" layoutX="45.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="300.0" promptText="Number" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
       <Label layoutX="45.0" layoutY="210.0" prefHeight="18.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" wrapText="true" />
-      <PasswordField layoutX="45.0" layoutY="339.0" prefHeight="56.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
+      <PasswordField fx:id="textConfirmPassword" layoutX="45.0" layoutY="339.0" prefHeight="56.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
          <font>
             <Font size="16.0" />
          </font>
