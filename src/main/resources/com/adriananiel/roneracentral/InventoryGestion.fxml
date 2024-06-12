@@ -1,15 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
-
+<?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane layoutX="100.0" layoutY="83.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #1a273c;" />
-      <Pane layoutX="416.0" layoutY="83.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #1a273c;" />
-      <Pane layoutX="727.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #1a273c;" />
-      <Pane layoutX="100.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #1a273c;" />
-      <Pane layoutX="727.0" layoutY="83.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #1a273c;" />
-      <Pane layoutX="416.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #1a273c;" />
+      <Pane layoutX="100.0" layoutY="83.0" prefHeight="180.0" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@image/Cubay.png" />
+               </image></ImageView>
+            <Label layoutX="57.0" layoutY="149.0" text="Cubay" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="416.0" layoutY="83.0" prefHeight="180.0" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@image/HavanaClub.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="38.0" layoutY="149.0" text="Havana Club" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="727.0" layoutY="293.0" prefHeight="180.0" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@image/SaoCan.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="52.0" layoutY="149.0" text="Sao Can" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="100.0" layoutY="293.0" prefHeight="180.0" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="43.0" layoutY="149.0" text="Legendaro" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@image/RonLegendaro.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="727.0" layoutY="83.0" prefHeight="180.0" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@image/Kawama.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="49.0" layoutY="149.0" text="Kawama" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="416.0" layoutY="293.0" prefHeight="180.0" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@image/SantiagoDeCuba.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="149.0" text="Santiago de Cuba" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
    </children>
 </Pane>
