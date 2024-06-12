@@ -1,6 +1,5 @@
 package com.adriananiel.roneracentral;
 
-import com.adriananiel.roneracentral.Clases.DB;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,9 +18,7 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-        DB usersDB = new DB("users_db.ser");
-        usersDB.startDB();
+    public static void main(String[] args) {
         launch();
     }
 }
