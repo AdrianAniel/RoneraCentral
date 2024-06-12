@@ -64,11 +64,10 @@ public class SignUpController {
                     crea_ubicacion.mkdirs();
 
                     Formatter crea = new Formatter(ubicacion + archivo);
-                    crea.format("%s\r\n%s\r\n%s\r\n%s",
+                    crea.format("%s\r\n%s\r\n%s",
                             "Username="+textUsername.getText(),
                             "Number="+textNumber.getText(),
-                            "Password="+textPassword.getText(),
-                            "ConfirmPassword="+textConfirmPassword.getText());
+                            "Password="+textPassword.getText());
                     crea.close();
                     System.out.println("Archivo creado");
                 }
@@ -92,6 +91,3 @@ public class SignUpController {
         VentanaSignUp.getChildren().setAll(ventanaSignInFXML);
     }
 }
-
-
-
