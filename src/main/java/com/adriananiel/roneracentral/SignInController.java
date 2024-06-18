@@ -29,8 +29,6 @@ public class SignInController implements Initializable {
     @FXML
     public Pane LoginMessenger;
 
-    LoginSystem loginSystem = new LoginSystem();
-
     private void ajustarTamanoVentana() {
         // Obtener el Stage asociado a la escena de la vista actual
         Stage stage = (Stage) VentanaSignIn.getScene().getWindow();
@@ -40,21 +38,19 @@ public class SignInController implements Initializable {
         stage.setHeight(755);
     }
 
-    public void iniciarCesion(){
-        String usernameToCheck = textUsername.getText();
-        String passwordToCheck = textPassword.getText();
+    public void iniciarCesion() throws IOException {
+        String username = textUsername.getText();
+        String password = textPassword.getText();
 
-        try {
-            if (loginSystem.checkCredentials(usernameToCheck, passwordToCheck)) {
-                ajustarTamanoVentana();
-                AnchorPane ventanaAppFXML = FXMLLoader.load(getClass().getResource("App.fxml"));
-                VentanaSignIn.getChildren().setAll(ventanaAppFXML);
-            } else {
-                Pane LoginMessengerFXML = FXMLLoader.load(getClass().getResource("LoginMessenger.fxml"));
-                LoginMessenger.getChildren().setAll(LoginMessengerFXML);
-            }
-        } catch (IOException e) {
-            System.err.println("Error al verificar el inicio de sesión: " + e.getMessage());
+        if (Login.iniciarSesion(username, password)) {
+            System.out.println("Acceso concedido.");
+            ajustarTamanoVentana();
+            AnchorPane ventanaAppFXML = FXMLLoader.load(getClass().getResource("App.fxml"));
+            VentanaSignIn.getChildren().setAll(ventanaAppFXML);
+        } else {
+            System.out.println("No se pudo iniciar session");
+            Pane UserPassIcorrectFXML = FXMLLoader.load(getClass().getResource("LoginMessenger.fxml"));
+            LoginMessenger.getChildren().setAll(UserPassIcorrectFXML);
         }
     }
 

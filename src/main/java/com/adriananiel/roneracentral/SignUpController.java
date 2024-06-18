@@ -27,18 +27,20 @@ public class SignUpController {
     @FXML
     public Pane PanePasswordInvalid;
 
-    LoginSystem loginSystem = new LoginSystem();
+    //LoginSystem loginSystem = new LoginSystem();
 
     public void Registrar() throws IOException {
         String username = textUsername.getText();
         String password = textPassword.getText();
+        String email = textGmail.getText();
         String confirmPassword = textConfirmPassword.getText();
 
-        // Verificando si las contraseñas son iguales
+        // Verificando si las contraseñas son iguales y entonces registra el usuario
         if (password.equals(confirmPassword)) {
             System.out.println("Contraseñas iguales");
+            Registro.registrarUsuario(new Usuario(username, password, email));
+
             try {
-                loginSystem.addUser(username, password);
                 AnchorPane ventanaSignInFXML = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
                 VentanaSignUp.getChildren().setAll(ventanaSignInFXML);
 
