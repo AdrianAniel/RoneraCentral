@@ -15,50 +15,29 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="VentanaSignUp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.SignUpController">
-   <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #1a273c;">
+   <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="373.0" style="-fx-background-color: #ffffff;">
       <minHeight>-Infinity</minHeight>
-      <ImageView fitHeight="276.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="600.0" fitWidth="377.0" pickOnBounds="true" preserveRatio="true">
          <VBox.margin>
-            <Insets bottom="100.0" top="-70.0" />
+            <Insets />
          </VBox.margin>
-         <Image url="@image/signUp.png" />
+         <Image url="@image/Designer%20(2)2.png" />
       </ImageView>
-      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Create your Account" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font name="Ebrima Bold" size="24.0" />
-         </font>
-         <VBox.margin>
-            <Insets bottom="100.0" top="-80.0" />
-         </VBox.margin>
-      </Label>
-      <Label style="-fx-text-fill: a3a3a3;" text="&quot;Personalize your flavor journey. " textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font name="Californian FB Bold" size="14.0" />
-         </font>
-         <VBox.margin>
-            <Insets top="-90.0" />
-         </VBox.margin>
-      </Label>
-      <Label layoutX="112.0" layoutY="397.0" style="-fx-text-fill: a3a3a3;" text="Sign up for our rum factory!&quot;" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font name="Californian FB Bold" size="14.0" />
-         </font>
-      </Label>
    </VBox>
-   <Pane focusTraversable="true" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0">
-      <TextField fx:id="textUsername" layoutX="46.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
+   <Pane focusTraversable="true" layoutX="374.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="426.0" style="-fx-background-color: #ffffff;">
+      <TextField fx:id="textUsername" layoutX="64.0" layoutY="123.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="textPassword" layoutX="45.0" layoutY="255.0" prefHeight="56.0" prefWidth="300.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
+      <PasswordField fx:id="textPassword" layoutX="63.0" layoutY="287.0" prefHeight="56.0" prefWidth="300.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
          <font>
             <Font size="16.0" />
          </font>
       </PasswordField>
-      <Label layoutX="46.0" layoutY="129.0" prefHeight="18.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" wrapText="true" />
-      <Label layoutX="46.0" layoutY="293.0" prefHeight="9.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" />
-      <Button layoutX="45.0" layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eventbtnCreateAccount" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #1a273c; -fx-background-radius: 10px;" text="Create Account" textAlignment="CENTER" textFill="WHITE">
+      <Label layoutX="64.0" layoutY="161.0" prefHeight="18.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" wrapText="true" />
+      <Label layoutX="64.0" layoutY="325.0" prefHeight="9.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" />
+      <Button layoutX="63.0" layoutY="475.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eventbtnCreateAccount" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #1a273c; -fx-background-radius: 10px;" text="Create Account" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Ebrima" size="18.0" />
          </font>
@@ -66,28 +45,43 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label layoutX="103.0" layoutY="517.0" style="-fx-text-fill: #a3a3a3;" styleClass="forgetBtn" text="You have an account?" textFill="#a3a3a3">
+      <Label layoutX="119.0" layoutY="536.0" style="-fx-text-fill: #a3a3a3;" styleClass="forgetBtn" text="You have an account?" textFill="#a3a3a3">
          <font>
             <Font name="Ebrima" size="14.0" />
          </font>
       </Label>
-      <Hyperlink fx:id="BtnSignUp" layoutX="238.0" layoutY="514.0" onMouseClicked="#eventBtnSignIn" style="-fx-border-color: transparent;" text="Sign In" textAlignment="CENTER" textFill="#1a273c">
+      <Hyperlink fx:id="BtnSignUp" layoutX="254.0" layoutY="533.0" onMouseClicked="#eventBtnSignIn" style="-fx-border-color: transparent;" text="Sign In" textAlignment="CENTER" textFill="#1a273c">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Hyperlink>
-      <TextField fx:id="textGmail" layoutX="45.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="300.0" promptText="Gmail" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
+      <TextField fx:id="textGmail" layoutX="63.0" layoutY="204.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="300.0" promptText="Gmail" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <Label layoutX="45.0" layoutY="210.0" prefHeight="18.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" wrapText="true" />
-      <PasswordField fx:id="textConfirmPassword" layoutX="45.0" layoutY="339.0" prefHeight="56.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
+      <Label layoutX="63.0" layoutY="242.0" prefHeight="18.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" wrapText="true" />
+      <PasswordField fx:id="textConfirmPassword" layoutX="63.0" layoutY="371.0" prefHeight="56.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 10px;">
          <font>
             <Font size="16.0" />
          </font>
       </PasswordField>
-      <Label layoutX="46.0" layoutY="377.0" prefHeight="9.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" />
-      <Pane fx:id="PanePasswordInvalid" layoutX="45.0" layoutY="399.0" prefHeight="31.0" prefWidth="300.0" />
+      <Label layoutX="64.0" layoutY="409.0" prefHeight="9.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="                                                                                          " textFill="#162133" underline="true" />
+      <Pane fx:id="PanePasswordInvalid" layoutX="63.0" layoutY="431.0" prefHeight="31.0" prefWidth="300.0" />
+      <Label layoutX="139.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Create your Account" textAlignment="CENTER" textFill="#1a273c">
+         <font>
+            <Font name="Ebrima Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="93.0" style="-fx-text-fill: a3a3a3;" text="Sign up for our rum factory!&quot;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="109.0" fitWidth="121.0" layoutX="30.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/icons8-usuario-96.png" />
+         </image>
+      </ImageView>
    </Pane>
 </AnchorPane>

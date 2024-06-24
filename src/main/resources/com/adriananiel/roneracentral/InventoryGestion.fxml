@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -8,13 +10,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="982.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.InventoryGestionController">
    <children>
-      <ScrollPane hbarPolicy="NEVER" hmax="0.0" prefHeight="533.0" prefWidth="982.0" style="-fx-border-color: #f6f6f6;">
+      <ScrollPane hbarPolicy="NEVER" hmax="0.0" layoutX="355.0" prefHeight="543.0" prefWidth="925.0" style="-fx-border-color: transparent; -fx-background-color: transparent;">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="663.0" prefWidth="983.0" style="-fx-background-color: #f6f6f6;">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="589.0" prefWidth="989.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
                <children>
-                  <Pane layoutX="402.0" layoutY="299.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+                  <Pane layoutX="363.0" layoutY="312.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
                            <image>
@@ -27,8 +29,11 @@
                            </font>
                         </Label>
                      </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Pane>
-                  <Pane layoutX="96.0" layoutY="299.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+                  <Pane layoutX="57.0" layoutY="312.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
                            <image>
@@ -41,8 +46,11 @@
                            </font>
                         </Label>
                      </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Pane>
-                  <Pane layoutX="713.0" layoutY="299.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+                  <Pane layoutX="674.0" layoutY="312.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
                            <image>
@@ -55,8 +63,11 @@
                            </font>
                         </Label>
                      </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Pane>
-                  <Pane layoutX="96.0" layoutY="48.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+                  <Pane fx:id="Legendaro" layoutX="57.0" layoutY="61.0" onMouseClicked="#eventLegendaro" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
                      <children>
                         <Label layoutX="58.0" layoutY="159.0" text="Legendaro" textAlignment="CENTER" textFill="WHITE">
                            <font>
@@ -69,8 +80,11 @@
                            </image>
                         </ImageView>
                      </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Pane>
-                  <Pane layoutX="713.0" layoutY="48.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+                  <Pane layoutX="674.0" layoutY="61.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
                            <image>
@@ -83,8 +97,11 @@
                            </font>
                         </Label>
                      </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Pane>
-                  <Pane layoutX="402.0" layoutY="48.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
+                  <Pane layoutX="363.0" layoutY="61.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
                            <image>
@@ -97,10 +114,42 @@
                            </font>
                         </Label>
                      </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Pane>
                </children>
             </AnchorPane>
         </content>
       </ScrollPane>
+      <Pane layoutX="300.0" layoutY="542.0" prefHeight="50.0" prefWidth="989.0">
+         <children>
+            <Button layoutX="347.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="61.0" style="-fx-background-color: #1a273c; -fx-background-radius: 5px;" text="Add" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="582.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="61.0" style="-fx-background-color: #1a273c; -fx-background-radius: 5px;" text="Delete" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="468.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="61.0" style="-fx-background-color: #1a273c; -fx-background-radius: 5px;" text="Edit" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="PaneInfo" layoutX="75.0" layoutY="122.0" prefHeight="300.0" prefWidth="250.0" />
    </children>
 </Pane>

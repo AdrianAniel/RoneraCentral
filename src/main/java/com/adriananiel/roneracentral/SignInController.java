@@ -35,7 +35,7 @@ public class SignInController implements Initializable {
 
         // Establecer el tamaño de la ventana
         stage.setWidth(1295);
-        stage.setHeight(755);
+        stage.setHeight(760);
     }
 
     public void iniciarCesion() throws IOException {

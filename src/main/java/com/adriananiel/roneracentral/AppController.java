@@ -2,37 +2,42 @@ package com.adriananiel.roneracentral;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
-
 import java.io.IOException;
 
 public class AppController {
 
     @FXML
-    private Pane BtnInventario;
+    private Hyperlink BtnInventario;
 
     @FXML
-    private Pane PaneInventario;
+    private Pane PaneCambia;
 
     @FXML
-    private Pane PaneButtons;
+    private Pane PaneBusqueda;
 
     @FXML
-    private Pane LabelMenu;
+    private Pane PaneInfo;
+
+
+    @FXML
+    void eventBtnHome(MouseEvent event) throws IOException {
+        Pane ventanaHomeFXML = FXMLLoader.load(getClass().getResource("PaneHome.fxml"));
+        PaneCambia.getChildren().setAll(ventanaHomeFXML);
+        
+        int ventanaBusquedaFXML = 0;
+        PaneBusqueda.getChildren().remove(ventanaBusquedaFXML);
+    }
 
 
     @FXML
     void eventBtnInventario(MouseEvent event) throws IOException {
         Pane ventanaInventarioFXML = FXMLLoader.load(getClass().getResource("InventoryGestion.fxml"));
-        PaneInventario.getChildren().setAll(ventanaInventarioFXML);
+        PaneCambia.getChildren().setAll(ventanaInventarioFXML);
 
-        Pane ventanaButtonsFXML = FXMLLoader.load(getClass().getResource("Buttons.fxml"));
-        PaneButtons.getChildren().setAll(ventanaButtonsFXML);
-
-        Pane paneLabelMenu = FXMLLoader.load(getClass().getResource("InventoryManagementLabel.fxml"));
-        LabelMenu.getChildren().setAll(paneLabelMenu);
-
+        Pane ventanaBusquedaFXML = FXMLLoader.load(getClass().getResource("BtnBusqueda.fxml"));
+        PaneBusqueda.getChildren().setAll(ventanaBusquedaFXML);
     }
-
 }

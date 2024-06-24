@@ -1,92 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.geometry.Rectangle2D?>
-<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.AppController">
    <children>
-      <VBox prefHeight="720.0" prefWidth="300.0" style="-fx-background-color: #1a273c;">
+      <Pane fx:id="LabelMenu" layoutX="-2.0" onMouseClicked="#eventBtnInventario" prefHeight="140.0" prefWidth="1280.0" style="-fx-background-color: #f6f6f6;">
          <children>
-            <Pane fx:id="BtnInventario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#eventBtnInventario" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #f6f6f6; -fx-background-radius: 20px;">
-               <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 0.4; -fx-scale-y: 0.4;">
-                     <image>
-                        <Image url="@image/icons8-trolley-100.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D />
-                     </viewport>
-                  </ImageView>
-               </children>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets left="45.0" top="160.0" />
-               </VBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Pane>
-            <Pane layoutX="50.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #f6f6f6; -fx-background-radius: 20px;">
-               <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 0.4; -fx-scale-y: 0.4;">
-                     <image>
-                        <Image url="@image/icons8-process-improvement-100.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D />
-                     </viewport>
-                  </ImageView>
-               </children>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets left="45.0" top="20.0" />
-               </VBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Pane>
-            <Pane layoutX="50.0" layoutY="265.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #f6f6f6; -fx-background-radius: 20px;">
-               <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 0.4; -fx-scale-y: 0.4;">
-                     <image>
-                        <Image url="@image/icons8-good-quality-100.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D />
-                     </viewport>
-                  </ImageView>
-               </children>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets left="45.0" top="20.0" />
-               </VBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Pane>
-         </children>
-      </VBox>
-      <Pane fx:id="LabelMenu" layoutX="303.0" onMouseClicked="#eventBtnInventario" prefHeight="140.0" prefWidth="975.0" style="-fx-background-color: #f6f6f6;" />
-      <Pane fx:id="PaneInventario" layoutX="300.0" layoutY="140.0" prefHeight="533.0" prefWidth="982.0" style="-fx-background-color: #f6f6f6;">
-         <children>
-            <ImageView fitHeight="533.0" fitWidth="834.0" layoutX="-3.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true" x="210.0">
+            <Hyperlink fx:id="BtnHome" alignment="CENTER" layoutX="507.0" layoutY="53.0" onMouseClicked="#eventBtnHome" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="HOME" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="BtnInventario" alignment="CENTER" layoutX="640.0" layoutY="53.0" onMouseClicked="#eventBtnInventario" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INVENTORY" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink alignment="CENTER" layoutX="808.0" layoutY="53.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="PROCESS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink alignment="CENTER" layoutX="1093.0" layoutY="53.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="ACCOUNT" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink alignment="CENTER" layoutX="947.0" layoutY="53.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="QUALITY" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="118.0" fitWidth="115.0" layoutX="62.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
                <image>
-                  <Image url="@image/Designer.png" />
+                  <Image url="@image/Designer%20(2)3.png" />
                </image>
             </ImageView>
+            <Pane fx:id="PaneBusqueda" layoutX="230.0" layoutY="45.0" prefHeight="60.0" prefWidth="200.0" />
          </children></Pane>
-      <Pane fx:id="PaneButtons" layoutX="300.0" layoutY="673.0" onMouseClicked="#eventBtnInventario" prefHeight="47.0" prefWidth="982.0" style="-fx-background-color: #f6f6f6;" />
+      <Pane fx:id="PaneCambia" layoutX="-2.0" layoutY="130.0" prefHeight="590.0" prefWidth="1280.0" style="-fx-background-color: #f6f6f6;" />
    </children>
 </AnchorPane>
