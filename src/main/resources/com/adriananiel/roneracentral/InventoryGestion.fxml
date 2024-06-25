@@ -1,155 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.InventoryGestionController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.InventoryGestionController">
    <children>
-      <ScrollPane hbarPolicy="NEVER" hmax="0.0" layoutX="355.0" prefHeight="543.0" prefWidth="925.0" style="-fx-border-color: transparent; -fx-background-color: transparent;">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="589.0" prefWidth="989.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
-               <children>
-                  <Pane layoutX="363.0" layoutY="312.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
-                           <image>
-                              <Image url="@image/Cubay.png" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="72.0" layoutY="159.0" text="Cubay" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font name="Cambria Bold" size="13.0" />
-                           </font>
-                        </Label>
-                     </children>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Pane>
-                  <Pane layoutX="57.0" layoutY="312.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
-                           <image>
-                              <Image url="@image/HavanaClub.png" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="53.0" layoutY="159.0" text="Havana Club" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font name="Cambria Bold" size="13.0" />
-                           </font>
-                        </Label>
-                     </children>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Pane>
-                  <Pane layoutX="674.0" layoutY="312.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
-                           <image>
-                              <Image url="@image/SaoCan.png" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="67.0" layoutY="159.0" text="Sao Can" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font name="Cambria Bold" size="13.0" />
-                           </font>
-                        </Label>
-                     </children>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Pane>
-                  <Pane fx:id="Legendaro" layoutX="57.0" layoutY="61.0" onMouseClicked="#eventLegendaro" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
-                     <children>
-                        <Label layoutX="58.0" layoutY="159.0" text="Legendaro" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font name="Cambria Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
-                           <image>
-                              <Image url="@image/RonLegendaro.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Pane>
-                  <Pane layoutX="674.0" layoutY="61.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
-                           <image>
-                              <Image url="@image/Kawama.png" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="64.0" layoutY="159.0" text="Kawama" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font name="Cambria Bold" size="13.0" />
-                           </font>
-                        </Label>
-                     </children>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Pane>
-                  <Pane layoutX="363.0" layoutY="61.0" prefHeight="200.0" prefWidth="180.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20px;">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
-                           <image>
-                              <Image url="@image/SantiagoDeCuba.png" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="39.0" layoutY="159.0" text="Santiago de Cuba" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font name="Cambria Bold" size="13.0" />
-                           </font>
-                        </Label>
-                     </children>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Pane>
-               </children>
-            </AnchorPane>
-        </content>
-      </ScrollPane>
-      <Pane layoutX="300.0" layoutY="542.0" prefHeight="50.0" prefWidth="989.0">
+      <Pane prefHeight="590.0" prefWidth="654.0">
          <children>
-            <Button layoutX="347.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="61.0" style="-fx-background-color: #1a273c; -fx-background-radius: 5px;" text="Add" textFill="WHITE">
+            <Pane layoutX="454.0" layoutY="76.0" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: #000000; -fx-border-radius: 10;">
+               <children>
+                  <Label layoutX="54.0" layoutY="71.0" text="1X1">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="50.0" text="IMAGEN">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imagenPuesta" fitHeight="152.0" fitWidth="152.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Label layoutX="67.0" layoutY="42.0" text="NOMBRE DEL RON">
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="151.0" text="CANTIDAD EN EL ALMACÉN">
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="257.0" text="FECHA DE VENCIMIENTO">
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="67.0" layoutY="72.0" prefHeight="53.0" prefWidth="290.0" promptText="NOMBRE" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label ellipsisString="" layoutX="67.0" layoutY="107.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
+            <TextField layoutX="67.0" layoutY="181.0" prefHeight="53.0" prefWidth="290.0" promptText="CANTIDAD" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label ellipsisString="" layoutX="67.0" layoutY="216.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
+            <TextField layoutX="67.0" layoutY="287.0" prefHeight="53.0" prefWidth="290.0" promptText="VENCIMIENTO" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label ellipsisString="" layoutX="67.0" layoutY="322.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
+            <Label layoutX="446.0" layoutY="42.0" text="AGREGAR FOTO">
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="489.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#eventExaminar" style="-fx-background-color: #000000; -fx-background-radius: 7;" text="EXAMINAR" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="14.0" />
+               </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-               <font>
-                  <Font name="Cambria Bold" size="14.0" />
-               </font>
             </Button>
-            <Button layoutX="582.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="61.0" style="-fx-background-color: #1a273c; -fx-background-radius: 5px;" text="Delete" textFill="WHITE">
+            <Button layoutX="58.0" layoutY="442.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #000000; -fx-background-radius: 10; -fx-text-fill: #ffffff;" text="AÑADIR">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="193.0" layoutY="442.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #000000; -fx-background-radius: 10; -fx-text-fill: #ffffff;" text="ACTUALIZAR">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="330.0" layoutY="442.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #000000; -fx-background-radius: 10; -fx-text-fill: #ffffff;" text="LIMPIAR">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="467.0" layoutY="442.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #000000; -fx-background-radius: 10; -fx-text-fill: #ffffff;" text="ELIMINAR">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-               <font>
-                  <Font name="Cambria Bold" size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="468.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="61.0" style="-fx-background-color: #1a273c; -fx-background-radius: 5px;" text="Edit" textFill="WHITE">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <font>
-                  <Font name="Cambria Bold" size="14.0" />
-               </font>
             </Button>
          </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
       </Pane>
-      <Pane fx:id="PaneInfo" layoutX="75.0" layoutY="122.0" prefHeight="300.0" prefWidth="250.0" />
+      <Pane layoutX="653.0" prefHeight="590.0" prefWidth="628.0">
+         <children>
+            <TableView layoutX="88.0" layoutY="44.0" prefHeight="502.0" prefWidth="452.0" style="-fx-background-color: #F1F6F9;">
+              <columns>
+                <TableColumn prefWidth="150.0" style="-fx-background-color: #F1F6F9;" text="NOMBRE" />
+                <TableColumn prefWidth="150.0" style="-fx-background-color: #F1F6F9;" text="CANTIDAD" />
+                  <TableColumn prefWidth="150.0" style="-fx-background-color: #F1F6F9;" text="VENCIMIENTO" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <TextField layoutX="238.0" layoutY="1.0" promptText="BUSCAR" style="-fx-border-radius: 7; -fx-background-radius: 7; -fx-background-color: transparent; -fx-border-color: #d3d3d3;" />
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="361.0" layoutY="2.0" opacity="0.19" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Lupa.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></Pane>
    </children>
 </Pane>

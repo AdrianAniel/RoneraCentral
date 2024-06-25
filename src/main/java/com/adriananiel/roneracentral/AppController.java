@@ -6,6 +6,7 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class AppController {
 
@@ -26,9 +27,6 @@ public class AppController {
     void eventBtnHome(MouseEvent event) throws IOException {
         Pane ventanaHomeFXML = FXMLLoader.load(getClass().getResource("PaneHome.fxml"));
         PaneCambia.getChildren().setAll(ventanaHomeFXML);
-        
-        int ventanaBusquedaFXML = 0;
-        PaneBusqueda.getChildren().remove(ventanaBusquedaFXML);
     }
 
 
@@ -36,8 +34,5 @@ public class AppController {
     void eventBtnInventario(MouseEvent event) throws IOException {
         Pane ventanaInventarioFXML = FXMLLoader.load(getClass().getResource("InventoryGestion.fxml"));
         PaneCambia.getChildren().setAll(ventanaInventarioFXML);
-
-        Pane ventanaBusquedaFXML = FXMLLoader.load(getClass().getResource("BtnBusqueda.fxml"));
-        PaneBusqueda.getChildren().setAll(ventanaBusquedaFXML);
     }
 }

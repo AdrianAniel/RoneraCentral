@@ -11,6 +11,7 @@ module com.adriananiel.roneracentral {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.desktop;
+    requires javafx.swing;
 
     opens com.adriananiel.roneracentral to javafx.fxml;
     exports com.adriananiel.roneracentral;
