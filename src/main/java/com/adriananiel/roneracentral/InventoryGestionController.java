@@ -4,6 +4,9 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
@@ -13,7 +16,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
 import javax.imageio.ImageIO;
 
-public class InventoryGestionController {
+public class InventoryGestionController implements Initializable {
 
     @FXML
     private Pane PaneInfo;
@@ -34,14 +37,19 @@ public class InventoryGestionController {
         if (selectedFile!= null) {
             System.out.println("Archivo seleccionado: " + selectedFile.getAbsolutePath());
             // Aquí puedes procesar el archivo seleccionado
+            try {
+                // Cargar la imagen utilizando ImageIO
+                BufferedImage bufferedImage = ImageIO.read(selectedFile);
+                WritableImage image = SwingFXUtils.toFXImage(bufferedImage, null);
+                imagenPuesta.setImage(image);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        try {
-            // Cargar la imagen utilizando ImageIO
-            BufferedImage bufferedImage = ImageIO.read(selectedFile);
-            WritableImage image = SwingFXUtils.toFXImage(bufferedImage, null);
-            imagenPuesta.setImage(image);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }
