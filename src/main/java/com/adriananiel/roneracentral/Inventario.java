@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Inventario {
     private List<Ron> listaRones = new ArrayList<>();
-    private final String archivo = "inventario_rones.txt";
+    private final String archivo = "BaseDatos/inventario_rones.txt";
 
     public void agregarRon(Ron ron) {
         listaRones.add(ron);
@@ -67,5 +67,9 @@ public class Inventario {
         } catch (IOException e) {
             System.out.println("Error al cargar el inventario desde el archivo: " + e.getMessage());
         }
+    }
+
+    public List<Ron> getListaRones() {
+        return listaRones;
     }
 }
