@@ -45,7 +45,7 @@ public class Inventario {
     private void guardarRones() {
         try (PrintWriter writer = new PrintWriter(new FileWriter(archivo))) {
             for (Ron ron : listaRones) {
-                writer.println(ron.getNombre() + "," + ron.getCantidadEnAlmacen() + "," + ron.getFechaVencimiento());
+                writer.println(ron.getNombre() + "," + ron.getCantidadEnAlmacen() + "," + ron.getFechaVencimiento() + "," + ron.getDireccionImagen());
             }
         } catch (IOException e) {
             System.out.println("Error al guardar el inventario: " + e.getMessage());
@@ -61,7 +61,9 @@ public class Inventario {
                 String nombre = partes[0].trim();
                 int cantidad = Integer.parseInt(partes[1].trim());
                 String fecha = partes[2].trim();
-                Ron ron = new Ron(nombre , cantidad, fecha);
+                String direccionImagen = partes.length > 3? partes[3].trim() : "";
+                Ron ron = new Ron(nombre , cantidad, fecha, direccionImagen);
+                ron.setDireccionImagen(direccionImagen);
                 listaRones.add(ron);
             }
         } catch (IOException e) {

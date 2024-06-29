@@ -6,12 +6,14 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class AppController {
 
     @FXML
     private Hyperlink BtnInventario;
+
+    @FXML
+    private Hyperlink BtnCuenta;
 
     @FXML
     private Pane PaneCambia;
@@ -22,6 +24,12 @@ public class AppController {
     @FXML
     private Pane PaneInfo;
 
+    @FXML
+    void eventBtnCuenta(MouseEvent event) throws IOException {
+        Pane ventanaGestionarCuentaFXML = FXMLLoader.load(getClass().getResource("GestionarCuenta.fxml"));
+        PaneCambia.getChildren().setAll(ventanaGestionarCuentaFXML);
+
+    }
 
     @FXML
     void eventBtnHome(MouseEvent event) throws IOException {

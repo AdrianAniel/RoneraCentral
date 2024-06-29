@@ -8,7 +8,7 @@ public class Login {
             ArrayList<Usuario> usuarios = Registro.getUsuarios();
             for (Usuario usuario : usuarios) {
                 System.out.println("Comprobando usuario: " + usuario.getUsername()); // Debugging
-                if (usuario.getUsername().equalsIgnoreCase(username) && usuario.getPassword().equals(password)) {
+                if (usuario.getUsername().equals(username) && usuario.getPassword().equals(password)) {
                     System.out.println("Inicio de sesión exitoso.");
                     return true;
                 }

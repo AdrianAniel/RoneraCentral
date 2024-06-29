@@ -1,14 +1,16 @@
 package com.adriananiel.roneracentral;
 
 public class Ron {
-    public String nombre;
-    public int cantidadEnAlmacen;
-    public String fechaVencimiento;
+    private String nombre;
+    private int cantidadEnAlmacen;
+    private String fechaVencimiento;
+    private String direccionImagen;
 
-    public Ron(String nombre, int cantidadEnAlmacen, String fechaVencimiento) {
+    public Ron(String nombre, int cantidadEnAlmacen, String fechaVencimiento, String direccionImagen) {
         this.nombre = nombre;
         this.cantidadEnAlmacen = cantidadEnAlmacen;
         this.fechaVencimiento = fechaVencimiento;
+        this.direccionImagen = direccionImagen;
     }
 
     // Getters y Setters
@@ -34,5 +36,13 @@ public class Ron {
 
     public void setFechaVencimiento(String fechaVencimiento) {
         this.fechaVencimiento = fechaVencimiento;
+    }
+
+    public String getDireccionImagen() {
+        return direccionImagen;
+    }
+
+    public void setDireccionImagen(String direccionImagen) {
+        this.direccionImagen = direccionImagen;
     }
 }

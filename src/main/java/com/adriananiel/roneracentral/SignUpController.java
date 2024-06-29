@@ -7,7 +7,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-
+import javafx.scene.control.Button;
 import java.io.IOException;
 
 public class SignUpController {
@@ -26,8 +26,8 @@ public class SignUpController {
     public PasswordField textConfirmPassword;
     @FXML
     public Pane PanePasswordInvalid;
-
-    //LoginSystem loginSystem = new LoginSystem();
+    @FXML
+    private Button btnSignUp;
 
     public void Registrar() throws IOException {
         String username = textUsername.getText();
