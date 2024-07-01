@@ -36,9 +36,11 @@ public class SignInController implements Initializable {
         // Establecer el tamaño de la ventana
         stage.setWidth(1295);
         stage.setHeight(760);
+        stage.centerOnScreen();
     }
 
     public void iniciarCesion() throws IOException {
+        Registro.cargarUsuariosDesdeArchivo();
         String username = textUsername.getText();
         String password = textPassword.getText();
 
@@ -71,6 +73,7 @@ public class SignInController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        Registro.cargarUsuariosDesdeArchivo();
 
     }
 }

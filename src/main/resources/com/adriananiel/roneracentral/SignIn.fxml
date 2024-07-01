@@ -14,8 +14,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="VentanaSignIn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.SignInController">
-   <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="576.0" style="-fx-background-color: #ffffff;">
+<AnchorPane fx:id="VentanaSignIn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #F1F6F9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.SignInController">
+   <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="576.0" style="-fx-background-color: #F1F6F9;">
       <minHeight>-Infinity</minHeight>
       <ImageView fitHeight="600.0" fitWidth="386.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.2">
          <Image url="@image/Designer23.png" />
@@ -24,7 +24,7 @@
          </VBox.margin>
       </ImageView>
    </VBox>
-   <Pane focusTraversable="true" layoutX="586.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+   <Pane focusTraversable="true" layoutX="586.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #F1F6F9;">
       <ImageView fitHeight="162.0" fitWidth="100.0" layoutX="100.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" x="30.0" y="50.0">
          <Image url="@image/icons8-login-96.png" />
       </ImageView>

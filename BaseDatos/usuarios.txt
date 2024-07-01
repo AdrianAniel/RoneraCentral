@@ -1,4 +1,3 @@
-Adrian,123,adrianalpizarperez45@gmail.com
-Robert,robert1234,robert@gmail.com
-Humberto,432,humberto@gmail.com
-
+Adrian,123,adrian@gmail.com,D:\Wallpapers\wp5231556-4k-gaming-wallpapers.jpg
+Aime,321,aime@gmail.com,D:\Wallpapers\752090.png
+Prueba,123,prueba@gmail.com,null

@@ -15,6 +15,7 @@ public class Main extends Application {
         primaryStage.setTitle("Ronera Central");
         primaryStage.setResizable(false);
         primaryStage.setScene(new Scene(root, 1000, 600));
+        primaryStage.centerOnScreen();
         primaryStage.show();
     }
 

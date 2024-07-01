@@ -1,53 +1,83 @@
 package com.adriananiel.roneracentral;
 
+import java.io.*;
 import java.util.ArrayList;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 
 public class Registro {
-    private static ArrayList<Usuario> usuarios = new ArrayList<>();
+    private static List<Usuario> listaUsuarios = new ArrayList<>();
+    private static final String archivo = "BaseDatos/usuarios.txt";
 
-    public static void registrarUsuario(Usuario nuevoUsuario) throws IOException {
-        usuarios.add(nuevoUsuario);
-        guardarUsuarios(); // Ahora actualizará el archivo sin borrar el contenido existente
+    public static void agregarUsuario(Usuario usuario) {
+        listaUsuarios.add(usuario);
+        guardarUsuarios();
     }
 
-    private static void guardarUsuarios() throws IOException {
-        List<String> contenidoActual = Files.readAllLines(Paths.get("BaseDatos/usuarios.txt"));
-        contenidoActual.add(usuarioToString(usuarios)); // Agrega el nuevo usuario al final del archivo
-        Files.write(Paths.get("BaseDatos/usuarios.txt"), contenidoActual); // Sobrescribe el archivo con el contenido actualizado
-    }
-
-    private static String usuarioToString(ArrayList<Usuario> usuarios) {
-        StringBuilder sb = new StringBuilder();
-        for (Usuario usuario : usuarios) {
-            sb.append(usuario.getUsername()).append(",").append(usuario.getPassword()).append(",").append(usuario.getEmail()).append("\n");
-        }
-        return sb.toString();
-    }
-
-    public static ArrayList<Usuario> getUsuarios() {
-        try {
-            ArrayList<Usuario> tempUsuarios = new ArrayList<>();
-            List<String> lines = Files.readAllLines(Paths.get("BaseDatos/usuarios.txt"));
-            for (String line : lines) {
-                String[] parts = line.split(",");
-                if (parts.length == 3) { // Asegúrate de que cada línea tiene las tres partes esperadas
-                    String username = parts[0];
-                    String password = parts[1];
-                    String email = parts[2];
-                    tempUsuarios.add(new Usuario(username, password, email));
-                }
+    public static Usuario buscarUsuarioPorNombre(String nombre) {
+        for (Usuario usuario : listaUsuarios) {
+            if (usuario.getUsername().equalsIgnoreCase(nombre)) {
+                return usuario;
             }
-            usuarios = tempUsuarios; // Actualiza la lista de usuarios
-            System.out.println("Contenido leído del archivo usuarios.txt:");
-            lines.forEach(System.out::println); // Imprime el contenido del archivo
-            return usuarios;
+        }
+        return null;
+    }
+
+    public static boolean actualizarUsuario(String usernameActual, String nuevoUsername, String nuevaPassword, String nuevoEmail, String nuevaImagenDireccion) {
+        int index = listaUsuarios.indexOf(buscarUsuarioPorNombre(usernameActual));
+        if (index!= -1) {
+            Usuario usuarioActualizado = new Usuario(nuevoUsername, nuevaPassword, nuevoEmail, nuevaImagenDireccion);
+            listaUsuarios.set(index, usuarioActualizado);
+            guardarUsuarios();
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean eliminarUsuario(String nombre) {
+        int index = listaUsuarios.indexOf(buscarUsuarioPorNombre(nombre));
+        if (index!= -1) {
+            listaUsuarios.remove(index);
+            guardarUsuarios();
+            return true;
+        }
+        return false;
+    }
+
+    private static void guardarUsuarios() {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(archivo))) {
+            for (Usuario usuario : listaUsuarios) {
+                writer.println(usuario.getUsername() + "," + usuario.getPassword() + "," + usuario.getEmail() + "," + usuario.getImagenDireccion());
+            }
         } catch (IOException e) {
-            System.err.println("Error al leer el archivo usuarios.txt: " + e.getMessage());
-            return null;
+            System.out.println("Error al guardar los usuarios: " + e.getMessage());
+        }
+    }
+
+    public static List<Usuario> buscarUsuariosPorCredenciales(String username, String password) {
+        List<Usuario> usuariosCoincidentes = new ArrayList<>();
+        for (Usuario usuario : listaUsuarios) {
+            if (usuario.getUsername().equals(username) && usuario.getPassword().equals(password)) {
+                usuariosCoincidentes.add(usuario);
+            }
+        }
+        return usuariosCoincidentes;
+    }
+
+    public static void cargarUsuariosDesdeArchivo() {
+        listaUsuarios.clear();
+        try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
+            String linea;
+            while ((linea = reader.readLine())!= null) {
+                String[] partes = linea.trim().split(",");
+                String username = partes[0].trim();
+                String password = partes[1].trim();
+                String email = partes[2].trim();
+                String imagenDireccion = partes.length > 3? partes[3].trim() : "";
+                Usuario usuario = new Usuario(username, password, email, imagenDireccion);
+                listaUsuarios.add(usuario);
+            }
+        } catch (IOException e) {
+            System.out.println("Error al cargar los usuarios desde el archivo: " + e.getMessage());
         }
     }
 }
