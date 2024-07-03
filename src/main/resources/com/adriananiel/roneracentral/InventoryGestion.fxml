@@ -124,8 +124,8 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
-            <TextField layoutX="238.0" layoutY="1.0" promptText="BUSCAR" style="-fx-border-radius: 7; -fx-background-radius: 7; -fx-background-color: transparent; -fx-border-color: #d3d3d3; -fx-font-family: Arial; -fx-font-size: 12px;" />
-            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="361.0" layoutY="2.0" opacity="0.19" pickOnBounds="true" preserveRatio="true">
+            <TextField fx:id="BarraBusqueda" layoutX="238.0" layoutY="1.0" promptText="BUSCAR" style="-fx-border-radius: 7; -fx-background-radius: 7; -fx-background-color: transparent; -fx-border-color: #d3d3d3; -fx-font-family: Arial; -fx-font-size: 12px;" />
+            <ImageView fx:id="BtnBuscar" fitHeight="26.0" fitWidth="24.0" layoutX="361.0" layoutY="2.0" onMouseClicked="#eventBuscar" opacity="0.19" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@image/Lupa.png" />
                </image>

@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
@@ -66,6 +67,12 @@ public class InventoryGestionController implements Initializable {
     @FXML
     private TableColumn<Ron, String> FotoView;
 
+    @FXML
+    private TextField BarraBusqueda;
+
+    @FXML
+    private ImageView BtnBuscar;
+
     public void limpiarCampos(){
         NombreField.clear();
         CantidadField.clear();
@@ -86,6 +93,33 @@ public class InventoryGestionController implements Initializable {
         VencimientoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getFechaVencimiento()));
         FotoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getDireccionImagen()));
     }
+
+    public void buscar() {
+        // Asegúrate de que los datos se carguen desde el archivo antes de realizar la búsqueda
+        inventario.cargarRonesDesdeArchivo();
+
+        // Obtiene el texto de búsqueda del campo de texto
+        String filtro = BarraBusqueda.getText();
+
+        // Crea una nueva lista observable para almacenar los elementos filtrados
+        ObservableList<Ron> filtrado = FXCollections.observableArrayList();
+
+        // Itera sobre la lista original de rones para aplicar el filtro
+        for (Ron ron : inventario.getListaRones()) {
+            // Convierte el nombre del ron y el filtro a minúsculas para hacer la comparación insensible a mayúsculas
+            if (ron.getNombre().toLowerCase().contains(filtro.toLowerCase())) {
+                // Si el nombre del ron contiene el filtro, añade el ron a la lista filtrada
+                filtrado.add(ron);
+            }
+        }
+
+        // Muestra el número de elementos filtrados
+        System.out.println("Elementos filtrados: " + filtrado.size());
+
+        // Actualiza el TableView con los elementos filtrados
+        TablaView.setItems(filtrado);
+    }
+
 
     public void examinarPonerFoto(){FileChooser fileChooser = new FileChooser();
         // Puedes agregar más filtros si es necesario
@@ -111,7 +145,6 @@ public class InventoryGestionController implements Initializable {
 
     @FXML
     void eventExaminar(MouseEvent event) {
-
         examinarPonerFoto();
     }
 
@@ -157,6 +190,11 @@ public class InventoryGestionController implements Initializable {
         limpiarCampos();
 
         cargarRonInventario();
+    }
+
+    @FXML
+    void eventBuscar(MouseEvent event) {
+        buscar();
     }
 
     @Override
