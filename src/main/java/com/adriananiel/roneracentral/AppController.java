@@ -2,6 +2,8 @@ package com.adriananiel.roneracentral;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -29,14 +31,25 @@ public class AppController {
     @FXML
     private AnchorPane VentanaApp;
 
-    private void ajustarTamanoVentana() {
-        // Obtener el Stage asociado a la escena de la vista actual
+    public void cerrarAbrirVentana(){
+        // Obtener el Stage desde el PaneGestionarCuenta
         Stage stage = (Stage) VentanaApp.getScene().getWindow();
+        stage.close(); // Cierra la ventana
 
-        // Establecer el tamaño de la ventana
-        stage.setWidth(1000);
-        stage.setHeight(600);
-        stage.centerOnScreen();
+        try {
+            // Cargar el FXML de la nueva ventana
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("SignIn.fxml"));
+            Parent root = loader.load(); // Esto carga el FXML y devuelve el nodo raíz
+            SignInController controller = loader.getController(); // Obtiene el controlador de la vista cargada
+
+            // Crear una nueva escena y mostrarla en una nueva ventana
+            Stage nuevaVentana = new Stage();
+            Scene escenaNuevaVentana = new Scene(root);
+            nuevaVentana.setScene(escenaNuevaVentana);
+            nuevaVentana.show();
+        } catch (IOException e) {
+            System.err.println("Error al cargar la nueva ventana: " + e.getMessage());
+        }
     }
 
     @FXML
@@ -61,9 +74,6 @@ public class AppController {
 
     @FXML
     void eventCerrarSesión(MouseEvent event) throws IOException {
-        ajustarTamanoVentana();
-        Pane ventanaGestionarCuentaFXML = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
-        VentanaApp.getChildren().setAll(ventanaGestionarCuentaFXML);
-
+        cerrarAbrirVentana();
     }
 }

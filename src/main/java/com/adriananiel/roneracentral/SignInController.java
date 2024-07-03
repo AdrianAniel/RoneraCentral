@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -29,14 +31,25 @@ public class SignInController implements Initializable {
     @FXML
     public Pane LoginMessenger;
 
-    private void ajustarTamanoVentana() {
-        // Obtener el Stage asociado a la escena de la vista actual
+    public void cerrarAbrirVentana(){
+        // Obtener el Stage desde el PaneGestionarCuenta
         Stage stage = (Stage) VentanaSignIn.getScene().getWindow();
+        stage.close(); // Cierra la ventana
 
-        // Establecer el tamaño de la ventana
-        stage.setWidth(1295);
-        stage.setHeight(760);
-        stage.centerOnScreen();
+        try {
+            // Cargar el FXML de la nueva ventana
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("App.fxml"));
+            Parent root = loader.load(); // Esto carga el FXML y devuelve el nodo raíz
+            AppController controller = loader.getController(); // Obtiene el controlador de la vista cargada
+
+            // Crear una nueva escena y mostrarla en una nueva ventana
+            Stage nuevaVentana = new Stage();
+            Scene escenaNuevaVentana = new Scene(root);
+            nuevaVentana.setScene(escenaNuevaVentana);
+            nuevaVentana.show();
+        } catch (IOException e) {
+            System.err.println("Error al cargar la nueva ventana: " + e.getMessage());
+        }
     }
 
     public void iniciarCesion() throws IOException {
@@ -46,9 +59,7 @@ public class SignInController implements Initializable {
 
         if (Login.iniciarSesion(username, password)) {
             System.out.println("Acceso concedido.");
-            ajustarTamanoVentana();
-            AnchorPane ventanaAppFXML = FXMLLoader.load(getClass().getResource("App.fxml"));
-            VentanaSignIn.getChildren().setAll(ventanaAppFXML);
+            cerrarAbrirVentana();
         } else {
             System.out.println("No se pudo iniciar session");
             Pane UserPassIcorrectFXML = FXMLLoader.load(getClass().getResource("LoginMessenger.fxml"));

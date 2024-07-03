@@ -17,11 +17,10 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 
 public class SignUpController {
-
-    private static String imagePath;
-    private static String urlImagen;
+    private static String newPath;
 
     @FXML
     private Hyperlink btnSignIn;
@@ -44,23 +43,52 @@ public class SignUpController {
     @FXML
     private ImageView ImagenCrearCuenta;
 
-    public void examinarPonerFoto(){
+    // Método para copiar el archivo
+    private void copyFile(String sourcePath, String destinationPath) {
+        File sourceFile = new File(sourcePath);
+        File destinationFile = new File(destinationPath);
+
+        if (!sourceFile.exists()) {
+            System.out.println("El archivo origen no existe.");
+            return;
+        }
+
+        if (destinationFile.exists()) {
+            System.out.println("El archivo de destino ya existe. Se sobrescribirá.");
+        }
+
+        try {
+            // Leer el contenido del archivo origen
+            byte[] content = Files.readAllBytes(sourceFile.toPath());
+            // Escribir el contenido en el archivo de destino
+            Files.write(destinationFile.toPath(), content);
+            System.out.println("Archivo copiado exitosamente a: " + destinationPath);
+        } catch (IOException e) {
+            System.out.println("Error al copiar el archivo.");
+            e.printStackTrace();
+        }
+    }
+
+    public void examinarPonerFoto() {
         FileChooser fileChooser = new FileChooser();
-        // Puedes agregar más filtros si es necesario
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Archivos de imagen", "*.png", "*.jpg")); // Filtra por archivos de texto
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Archivos de imagen", "*.png", "*.jpg"));
 
-        File selectedFile = fileChooser.showOpenDialog(null); // Pasamos null ya que estamos en un contexto de aplicación sin Stage
+        File selectedFile = fileChooser.showOpenDialog(null);
         if (selectedFile!= null) {
-            imagePath = selectedFile.getAbsolutePath();
-            System.out.println("Archivo seleccionado: " + selectedFile.getAbsolutePath());
+            String originalPath = selectedFile.getAbsolutePath();
+            System.out.println("Archivo seleccionado: " + originalPath);
+            // Definir la nueva ruta donde se copiará la foto
+            newPath = "BaseDatos/ImgUsuario/" + selectedFile.getName();
 
-            // Aquí pone la foto seleccionada con fileChooser en la UI que establecimos
+            // Copiar la foto a la nueva ubicación
+            copyFile(originalPath, newPath);
+
+            // Cargar la imagen desde la nueva ubicación
             try {
-                // Cargar la imagen utilizando ImageIO
-                BufferedImage bufferedImage = ImageIO.read(selectedFile);
+                BufferedImage bufferedImage = ImageIO.read(new File(newPath));
                 WritableImage image = SwingFXUtils.toFXImage(bufferedImage, null);
+                System.out.println("Imagen cargada desde nueva ubicación: " + newPath);
                 ImagenCrearCuenta.setImage(image);
-                System.out.println("Imagen cargada: " + image.getUrl());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -72,14 +100,13 @@ public class SignUpController {
         String password = textPassword.getText();
         String email = textGmail.getText();
         String confirmPassword = textConfirmPassword.getText();
-        String imagenDireccion = imagePath;
+        String imagenDireccion = newPath;
 
         // Verificando si las contraseñas son iguales y entonces registra el usuario
         if (password.equals(confirmPassword)) {
             System.out.println("Contraseñas iguales");
             Usuario nuevoUsuario = new Usuario(username, password, email, imagenDireccion);
             Registro.agregarUsuario(nuevoUsuario);
-
 
             try {
                 AnchorPane ventanaSignInFXML = FXMLLoader.load(getClass().getResource("SignIn.fxml"));

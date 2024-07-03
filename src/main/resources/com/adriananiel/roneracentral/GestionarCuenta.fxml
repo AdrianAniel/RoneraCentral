@@ -13,7 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.GestionarCuentaController">
    <children>
-      <Pane prefHeight="590.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
+      <Pane fx:id="PaneGestionarCuenta" prefHeight="590.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
          <children>
             <ImageView fx:id="ImagenPerfil" fitHeight="200.0" fitWidth="200.0" layoutX="546.0" layoutY="30.0" pickOnBounds="true">
                <image>
