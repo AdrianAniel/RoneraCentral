@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
@@ -29,6 +30,7 @@ public class GestionarCuentaController implements Initializable {
 
     private String newPath;
     private String imagePath;
+    private String Rol;
 
     @FXML
     private Button BtnCambiarFoto;
@@ -47,12 +49,47 @@ public class GestionarCuentaController implements Initializable {
 
     @FXML
     private ImageView ImagenPerfil;
+
     @FXML
     private Button BtnEliminar;
+
     @FXML
     private TextField UsuarioActualField;
+
     @FXML
     private Pane PaneGestionarCuenta;
+
+    @FXML
+    private CheckBox CheckCalidad;
+
+    @FXML
+    private CheckBox CheckInventario;
+
+    @FXML
+    private CheckBox CheckProcesos;
+
+    public void selecionarDeseleccionarCheckBox(){
+        CheckCalidad.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                CheckInventario.setSelected(false);
+                CheckProcesos.setSelected(false);
+            }
+        });
+
+        CheckInventario.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                CheckCalidad.setSelected(false);
+                CheckProcesos.setSelected(false);
+            }
+        });
+
+        CheckProcesos.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                CheckCalidad.setSelected(false);
+                CheckInventario.setSelected(false);
+            }
+        });
+    }
 
     public void cerrarAbrirVentana(){
         // Obtener el Stage desde el PaneGestionarCuenta
@@ -215,7 +252,10 @@ public class GestionarCuentaController implements Initializable {
         String nuevaPassword = CambiarContrasenaField.getText();
         String nuevoEmail = CambiarCorreoField.getText();
         String nuevaImagenDireccion = this.newPath;
-        String nuevoRol = "";
+        String nuevoRol = this.Rol;
+        CheckCalidad.setSelected(false);
+        CheckInventario.setSelected(false);
+        CheckProcesos.setSelected(false);
 
         boolean actualizacionExitosa = Registro.actualizarUsuario(usernameActual, nuevoUsername, nuevaPassword, nuevoEmail, nuevaImagenDireccion, nuevoRol);
 
@@ -236,8 +276,26 @@ public class GestionarCuentaController implements Initializable {
         cerrarAbrirVentana();
     }
 
+    @FXML
+    public void eventCheckCalidad(MouseEvent event) {
+        this.Rol = "Calidad";
+    }
+
+    @FXML
+    public void eventCheckInventario(MouseEvent event) {
+        this.Rol = "Inventario";
+
+    }
+
+    @FXML
+    public void eventCheckProcesos(MouseEvent event) {
+        this.Rol = "Procesos";
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cargarImagenPerfilDeBaseDatos();
+        selecionarDeseleccionarCheckBox();
     }
 }

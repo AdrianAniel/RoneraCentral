@@ -135,7 +135,6 @@ public class SignUpController implements Initializable {
         String confirmPassword = textConfirmPassword.getText();
         String imagenDireccion = newPath;
         String rol = this.Rol;
-        System.out.println(Rol);
 
         // Verificando si las contraseñas son iguales y entonces registra el usuario
         if (password.equals(confirmPassword)) {

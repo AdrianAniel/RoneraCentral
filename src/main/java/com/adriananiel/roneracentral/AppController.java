@@ -87,7 +87,7 @@ public class AppController implements Initializable {
             System.err.println("Error al cargar la nueva ventana: " + e.getMessage());
         }
     }
-    //arreglar el metodo obtenerRolDeUsuaria
+
     public void obtenerRolDeUsuario() {
         String loggedInUserName = AppUtil.getLoggedInUser();
         if (loggedInUserName != null) {
