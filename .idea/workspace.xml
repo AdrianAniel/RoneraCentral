@@ -9,8 +9,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2c99ea6e-4280-4a1a-b793-428af5570791" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/InventoryGestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/InventoryGestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/InventoryGestion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/InventoryGestion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseDatos/usuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/usuarios.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nota.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionarCuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionarCuentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Registro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/App.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/App.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/SignUp.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

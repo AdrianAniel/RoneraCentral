@@ -22,10 +22,10 @@ public class Registro {
         return null;
     }
 
-    public static boolean actualizarUsuario(String usernameActual, String nuevoUsername, String nuevaPassword, String nuevoEmail, String nuevaImagenDireccion) {
+    public static boolean actualizarUsuario(String usernameActual, String nuevoUsername, String nuevaPassword, String nuevoEmail, String nuevaImagenDireccion, String nuevoRol) {
         int index = listaUsuarios.indexOf(buscarUsuarioPorNombre(usernameActual));
         if (index!= -1) {
-            Usuario usuarioActualizado = new Usuario(nuevoUsername, nuevaPassword, nuevoEmail, nuevaImagenDireccion);
+            Usuario usuarioActualizado = new Usuario(nuevoUsername, nuevaPassword, nuevoEmail, nuevaImagenDireccion, nuevoRol);
             listaUsuarios.set(index, usuarioActualizado);
             guardarUsuarios();
             return true;
@@ -46,7 +46,7 @@ public class Registro {
     private static void guardarUsuarios() {
         try (PrintWriter writer = new PrintWriter(new FileWriter(archivo))) {
             for (Usuario usuario : listaUsuarios) {
-                writer.println(usuario.getUsername() + "," + usuario.getPassword() + "," + usuario.getEmail() + "," + usuario.getImagenDireccion());
+                writer.println(usuario.getUsername() + "," + usuario.getPassword() + "," + usuario.getEmail() + "," + usuario.getImagenDireccion() + "," + usuario.getRol());
             }
         } catch (IOException e) {
             System.out.println("Error al guardar los usuarios: " + e.getMessage());
@@ -67,13 +67,14 @@ public class Registro {
         listaUsuarios.clear();
         try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
             String linea;
-            while ((linea = reader.readLine())!= null) {
+            while ((linea = reader.readLine()) != null) {
                 String[] partes = linea.trim().split(",");
                 String username = partes[0].trim();
                 String password = partes[1].trim();
                 String email = partes[2].trim();
-                String imagenDireccion = partes.length > 3? partes[3].trim() : "";
-                Usuario usuario = new Usuario(username, password, email, imagenDireccion);
+                String imagenDireccion = partes.length > 3 ? partes[3].trim() : "";
+                String rol = partes.length > 4 ? partes[4].trim():"";
+                Usuario usuario = new Usuario(username, password, email, imagenDireccion, rol);
                 listaUsuarios.add(usuario);
             }
         } catch (IOException e) {

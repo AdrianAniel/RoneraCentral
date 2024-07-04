@@ -21,7 +21,7 @@
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink alignment="CENTER" layoutX="611.0" layoutY="56.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="PROCESOS" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnProcesos" alignment="CENTER" layoutX="611.0" layoutY="56.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="PROCESOS" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -31,7 +31,7 @@
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink alignment="CENTER" layoutX="750.0" layoutY="56.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CALIDAD" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnCalidad" alignment="CENTER" layoutX="750.0" layoutY="56.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CALIDAD" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>

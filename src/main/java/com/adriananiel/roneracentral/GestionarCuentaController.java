@@ -215,8 +215,9 @@ public class GestionarCuentaController implements Initializable {
         String nuevaPassword = CambiarContrasenaField.getText();
         String nuevoEmail = CambiarCorreoField.getText();
         String nuevaImagenDireccion = this.newPath;
+        String nuevoRol = "";
 
-        boolean actualizacionExitosa = Registro.actualizarUsuario(usernameActual, nuevoUsername, nuevaPassword, nuevoEmail, nuevaImagenDireccion);
+        boolean actualizacionExitosa = Registro.actualizarUsuario(usernameActual, nuevoUsername, nuevaPassword, nuevoEmail, nuevaImagenDireccion, nuevoRol);
 
         if (actualizacionExitosa) {
             System.out.println("Nombre de usuario actualizado exitosamente.");

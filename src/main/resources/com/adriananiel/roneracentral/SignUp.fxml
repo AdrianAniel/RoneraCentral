@@ -2,6 +2,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -28,7 +29,7 @@
                   <Image url="@image/LookCuenta.png" />
                </image>
             </ImageView>
-            <Button fx:id="BtnAgregarImagen" layoutX="35.0" layoutY="433.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#eventBtnAgregarImagen" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #1a273c; -fx-text-fill: #fff; -fx-background-radius: 10px;" text="AGREGAR IMAGEN">
+            <Button fx:id="BtnAgregarImagen" layoutX="106.0" layoutY="445.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#eventBtnAgregarImagen" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #1a273c; -fx-text-fill: #fff; -fx-background-radius: 10px;" text="AGREGAR">
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font>
@@ -52,12 +53,12 @@
       </PasswordField>
       <Label layoutX="24.0" layoutY="268.0" prefHeight="18.0" prefWidth="270.0" style="-fx-background-color: transparent;" text="                                                                                  " textFill="#162133" underline="true" wrapText="true" />
       <Label layoutX="331.0" layoutY="268.0" prefHeight="9.0" prefWidth="270.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="                                                                                 " textFill="#162133" underline="true" />
-      <Label layoutX="188.0" layoutY="492.0" style="-fx-text-fill: #a3a3a3;" styleClass="forgetBtn" text="¿TIENES UNA CUENTA?" textFill="#a3a3a3">
+      <Label layoutX="188.0" layoutY="509.0" style="-fx-text-fill: #a3a3a3;" styleClass="forgetBtn" text="¿TIENES UNA CUENTA?" textFill="#a3a3a3">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Label>
-      <Hyperlink fx:id="BtnSignUp" layoutX="353.0" layoutY="489.0" onMouseClicked="#eventBtnSignIn" style="-fx-border-color: transparent;" text="INICIA SESIÓN" textAlignment="CENTER" textFill="#1a273c">
+      <Hyperlink fx:id="BtnSignUp" layoutX="353.0" layoutY="506.0" onMouseClicked="#eventBtnSignIn" style="-fx-border-color: transparent;" text="INICIA SESIÓN" textAlignment="CENTER" textFill="#1a273c">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
@@ -90,7 +91,7 @@
             <Image url="@image/icons8-usuario-96.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnSignUp" layoutX="200.0" layoutY="432.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#eventbtnCreateAccount" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #1a273c; -fx-text-fill: #fff; -fx-background-radius: 10px;" text="CREAR CUENTA">
+      <Button fx:id="btnSignUp" layoutX="200.0" layoutY="449.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#eventbtnCreateAccount" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #1a273c; -fx-text-fill: #fff; -fx-background-radius: 10px;" text="CREAR CUENTA">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
@@ -98,5 +99,20 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <CheckBox fx:id="CheckInventario" layoutX="36.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#eventCheckInventario" text="GESTIÓN DE INVENTARIO" textAlignment="CENTER" textFill="#0d093c">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="CheckProcesos" layoutX="233.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#eventCheckProcesos" text="GESTIÓN DE PROCESOS" textAlignment="CENTER" textFill="#0d093c">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="CheckCalidad" layoutX="425.0" layoutY="416.0" mnemonicParsing="false" onMouseClicked="#eventCheckCalidad" text="CONTROL DE CALIDAD" textAlignment="CENTER" textFill="#0d093c">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </CheckBox>
    </Pane>
 </AnchorPane>

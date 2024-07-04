@@ -1,1 +1,0 @@
-me quede haciendo la parte donde se mueve la imagen y carga la imagen de la nueva ubicacion

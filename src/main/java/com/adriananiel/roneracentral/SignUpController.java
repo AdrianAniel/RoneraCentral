@@ -3,24 +3,26 @@ package com.adriananiel.roneracentral;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.control.Button;
 import javafx.stage.FileChooser;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.nio.file.Files;
+import java.util.ResourceBundle;
 
-public class SignUpController {
+public class SignUpController implements Initializable {
+
     private static String newPath;
+    private String Rol;
 
     @FXML
     private Hyperlink btnSignIn;
@@ -42,6 +44,37 @@ public class SignUpController {
     private Button BtnAgregarImagen;
     @FXML
     private ImageView ImagenCrearCuenta;
+    @FXML
+    private CheckBox CheckCalidad;
+
+    @FXML
+    private CheckBox CheckInventario;
+
+    @FXML
+    private CheckBox CheckProcesos;
+
+    public void selecionarDeseleccionarCheckBox(){
+        CheckCalidad.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                CheckInventario.setSelected(false);
+                CheckProcesos.setSelected(false);
+            }
+        });
+
+        CheckInventario.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                CheckCalidad.setSelected(false);
+                CheckProcesos.setSelected(false);
+            }
+        });
+
+        CheckProcesos.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                CheckCalidad.setSelected(false);
+                CheckInventario.setSelected(false);
+            }
+        });
+    }
 
     // Método para copiar el archivo
     private void copyFile(String sourcePath, String destinationPath) {
@@ -101,11 +134,13 @@ public class SignUpController {
         String email = textGmail.getText();
         String confirmPassword = textConfirmPassword.getText();
         String imagenDireccion = newPath;
+        String rol = this.Rol;
+        System.out.println(Rol);
 
         // Verificando si las contraseñas son iguales y entonces registra el usuario
         if (password.equals(confirmPassword)) {
             System.out.println("Contraseñas iguales");
-            Usuario nuevoUsuario = new Usuario(username, password, email, imagenDireccion);
+            Usuario nuevoUsuario = new Usuario(username, password, email, imagenDireccion, rol);
             Registro.agregarUsuario(nuevoUsuario);
 
             try {
@@ -137,5 +172,27 @@ public class SignUpController {
     @FXML
     void eventBtnAgregarImagen(MouseEvent event) {
         examinarPonerFoto();
+    }
+
+    @FXML
+    public void eventCheckCalidad(MouseEvent event) {
+        this.Rol = "Calidad";
+    }
+
+    @FXML
+    public void eventCheckInventario(MouseEvent event) {
+        this.Rol = "Inventario";
+
+    }
+
+    @FXML
+    public void eventCheckProcesos(MouseEvent event) {
+        this.Rol = "Procesos";
+
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        selecionarDeseleccionarCheckBox();
     }
 }
