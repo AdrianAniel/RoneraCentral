@@ -1,2 +1,1 @@
-Havana Club,20,2/2/2040,null
-Santiago,38,22/06/2030,null
+Prueba,23,2029-07-05,barril,null

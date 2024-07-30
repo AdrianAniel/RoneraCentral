@@ -31,6 +31,9 @@ public class GestionarCuentaController implements Initializable {
     private String newPath;
     private String imagePath;
     private String Rol;
+    private String acceso;
+    private String usernameActual;
+    private String NameComprobar;
 
     @FXML
     private Button BtnCambiarFoto;
@@ -247,6 +250,7 @@ public class GestionarCuentaController implements Initializable {
 
     @FXML
     void eventEditar(MouseEvent event) throws IOException {
+        
         String usernameActual = UsuarioActualField.getText();
         String nuevoUsername = CambiarUsuarioField.getText();
         String nuevaPassword = CambiarContrasenaField.getText();
@@ -265,9 +269,10 @@ public class GestionarCuentaController implements Initializable {
             System.out.println("No se pudo actualizar el nombre de usuario.");
         }
 
-        limpiarCampos();
 
+            limpiarCampos();
     }
+
     @FXML
     void eventBtnEliminar(MouseEvent event) throws IOException {
         eliminarUsuarioDeBaseDatos();

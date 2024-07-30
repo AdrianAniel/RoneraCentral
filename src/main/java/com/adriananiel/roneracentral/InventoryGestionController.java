@@ -6,11 +6,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Collection;
 import java.util.ResourceBundle;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
@@ -68,21 +68,28 @@ public class InventoryGestionController implements Initializable {
     private TableColumn<Ron, String> FotoView;
 
     @FXML
+    private TableColumn<Ron, String> AlmacenamientoView;
+
+    @FXML
     private TextField BarraBusqueda;
 
     @FXML
     private ImageView BtnBuscar;
 
+    @FXML
+    private TextField TipoField;
+
     public void limpiarCampos(){
         NombreField.clear();
         CantidadField.clear();
         VencimientoDatePicker.setValue(null);
+        TipoField.clear();
     }
 
     public void cargarRonInventario(){
         inventario.cargarRonesDesdeArchivo();
 
-        ObservableList<Ron> rons = FXCollections.observableArrayList(inventario.getListaRones());
+        ObservableList<Ron> rons = (ObservableList<Ron>) FXCollections.observableArrayList((Collection<? extends RonGeneral>) inventario.getListaRones());
 
         // Asigna la lista observable al TableView
         TablaView.setItems(rons);
@@ -90,8 +97,9 @@ public class InventoryGestionController implements Initializable {
         // Configura las columnas del TableView
         CantidadView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getCantidadEnAlmacen()).asString());
         NombreView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getNombre()));
-        VencimientoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getFechaVencimiento()));
+        VencimientoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getFechaVencimiento()).asString());
         FotoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getDireccionImagen()));
+        AlmacenamientoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getTipoAlmacen()));
     }
 
     public void buscar() {
@@ -105,11 +113,11 @@ public class InventoryGestionController implements Initializable {
         ObservableList<Ron> filtrado = FXCollections.observableArrayList();
 
         // Itera sobre la lista original de rones para aplicar el filtro
-        for (Ron ron : inventario.getListaRones()) {
+        for (RonGeneral ron : inventario.getListaRones()) {
             // Convierte el nombre del ron y el filtro a minúsculas para hacer la comparación insensible a mayúsculas
             if (ron.getNombre().toLowerCase().contains(filtro.toLowerCase())) {
                 // Si el nombre del ron contiene el filtro, añade el ron a la lista filtrada
-                filtrado.add(ron);
+                filtrado.add((Ron) ron);
             }
         }
 
@@ -156,8 +164,9 @@ public class InventoryGestionController implements Initializable {
         LocalDate fechaVencimiento = VencimientoDatePicker.getValue();
         String fechaVencimiento1 = fechaVencimiento.format(dateFormatter);
         String direccionImagen = imagePath;
+        String tipoAlmacen = TipoField.getText();
 
-        inventario.agregarRon(new Ron(nombre, Integer.parseInt(cantidadEnAlmacen), fechaVencimiento1, direccionImagen));
+        inventario.agregarRon(new Ron(nombre, cantidadEnAlmacen, tipoAlmacen, fechaVencimiento, direccionImagen));
         System.out.println("Ron Añadido");
 
         limpiarCampos();
@@ -171,10 +180,10 @@ public class InventoryGestionController implements Initializable {
         String cantidadEnAlmacen = CantidadField.getText();
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate fechaVencimiento = VencimientoDatePicker.getValue();
-        String fechaVencimiento1 = fechaVencimiento.format(dateFormatter);
         String direccionImagen = imagePath;
+        String tipoAlmacen = TipoField.getText();
 
-        inventario.actualizarRon(new Ron(nombre, Integer.parseInt(cantidadEnAlmacen), fechaVencimiento1, direccionImagen));
+        inventario.actualizarRon(new Ron(nombre, cantidadEnAlmacen, tipoAlmacen, fechaVencimiento, direccionImagen));
         System.out.println("Ron actualizado");
 
         limpiarCampos();

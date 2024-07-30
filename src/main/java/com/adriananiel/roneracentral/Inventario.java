@@ -1,20 +1,21 @@
 package com.adriananiel.roneracentral;
 
 import java.io.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Inventario {
-    private List<Ron> listaRones = new ArrayList<>();
+    private List<RonGeneral> listaRones = new ArrayList<>();
     private final String archivo = "BaseDatos/inventario_rones.txt";
 
-    public void agregarRon(Ron ron) {
+    public void agregarRon(RonGeneral ron) {
         listaRones.add(ron);
         guardarRones();
     }
 
-    public Ron buscarRonPorNombre(String nombre) {
-        for (Ron ron : listaRones) {
+    public RonGeneral buscarRonPorNombre(String nombre) {
+        for (RonGeneral ron : listaRones) {
             if (ron.getNombre().equalsIgnoreCase(nombre)) {
                 return ron;
             }
@@ -22,7 +23,7 @@ public class Inventario {
         return null;
     }
 
-    public boolean actualizarRon(Ron ronActualizado) {
+    public boolean actualizarRon(RonGeneral ronActualizado) {
         int index = listaRones.indexOf(buscarRonPorNombre(ronActualizado.getNombre()));
         if (index!= -1) {
             listaRones.set(index, ronActualizado);
@@ -44,8 +45,11 @@ public class Inventario {
 
     private void guardarRones() {
         try (PrintWriter writer = new PrintWriter(new FileWriter(archivo))) {
-            for (Ron ron : listaRones) {
-                writer.println(ron.getNombre() + "," + ron.getCantidadEnAlmacen() + "," + ron.getFechaVencimiento() + "," + ron.getDireccionImagen());
+            for (RonGeneral ron : listaRones) {
+                if (ron instanceof Ron) { // Verifica si el objeto es realmente una instancia de Ron
+                    Ron ronEspecificado = (Ron) ron; // Realiza el cast
+                    writer.println(ron.getNombre() + "," + ron.getCantidadEnAlmacen() + "," + ron.getFechaVencimiento() + "," + ronEspecificado.getTipoAlmacen() + ","+ ron.getDireccionImagen());
+                }
             }
         } catch (IOException e) {
             System.out.println("Error al guardar el inventario: " + e.getMessage());
@@ -59,10 +63,11 @@ public class Inventario {
             while ((linea = reader.readLine())!= null) {
                 String[] partes = linea.trim().split(",");
                 String nombre = partes[0].trim();
-                int cantidad = Integer.parseInt(partes[1].trim());
-                String fecha = partes[2].trim();
-                String direccionImagen = partes.length > 3? partes[3].trim() : "";
-                Ron ron = new Ron(nombre , cantidad, fecha, direccionImagen);
+                String cantidad = partes[1].trim();
+                LocalDate fecha = LocalDate.parse(partes[2].trim());
+                String tipoAlmacen = partes[3].trim();
+                String direccionImagen = partes.length > 4? partes[4].trim() : "";
+                RonGeneral ron = new Ron(nombre , cantidad, tipoAlmacen, fecha, direccionImagen);
                 ron.setDireccionImagen(direccionImagen);
                 listaRones.add(ron);
             }
@@ -71,7 +76,7 @@ public class Inventario {
         }
     }
 
-    public List<Ron> getListaRones() {
+    public List<RonGeneral> getListaRones() {
         return listaRones;
     }
 }

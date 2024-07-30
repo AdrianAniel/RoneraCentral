@@ -1,48 +1,18 @@
 package com.adriananiel.roneracentral;
 
-public class Ron {
-    private String nombre;
-    private int cantidadEnAlmacen;
-    private String fechaVencimiento;
-    private String direccionImagen;
+import java.time.LocalDate;
 
-    public Ron(String nombre, int cantidadEnAlmacen, String fechaVencimiento, String direccionImagen) {
-        this.nombre = nombre;
-        this.cantidadEnAlmacen = cantidadEnAlmacen;
-        this.fechaVencimiento = fechaVencimiento;
-        this.direccionImagen = direccionImagen;
+public class Ron extends RonGeneral {
+    private String tipoAlmacen;
+
+    public Ron(String nombre, String cantidadEnAlmacen, String tipoAlmacen, LocalDate fechaVencimiento, String direccionImagen) {
+        super(nombre, cantidadEnAlmacen, fechaVencimiento, direccionImagen);
+        this.tipoAlmacen = tipoAlmacen;
     }
 
-    // Getters y Setters
-    public String getNombre() {
-        return nombre;
-    }
+    // Getter y Setter
+    public String getTipoAlmacen() { return tipoAlmacen; }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getCantidadEnAlmacen() {
-        return cantidadEnAlmacen;
-    }
-
-    public void setCantidadEnAlmacen(int cantidadEnAlmacen) {
-        this.cantidadEnAlmacen = cantidadEnAlmacen;
-    }
-
-    public String getFechaVencimiento() {
-        return fechaVencimiento;
-    }
-
-    public void setFechaVencimiento(String fechaVencimiento) {
-        this.fechaVencimiento = fechaVencimiento;
-    }
-
-    public String getDireccionImagen() {
-        return direccionImagen;
-    }
-
-    public void setDireccionImagen(String direccionImagen) {
-        this.direccionImagen = direccionImagen;
-    }
+    public void setTipoAlmacen(String tipoAlmacen) { this.tipoAlmacen = tipoAlmacen; }
 }
+
