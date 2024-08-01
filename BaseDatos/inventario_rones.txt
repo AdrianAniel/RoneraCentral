@@ -1,1 +1,19 @@
-Prueba,23,2029-07-05,barril,null
+Havana Club,234,2030-08-16,Barriles,null
+Santiago,123,2031-08-14,Barriles,null
+Zarcapa,231,2033-08-26,Botellas,null
+Matusalem,111,2035-08-23,Barriles,null
+Bacardi,211,2032-08-28,Barriles,null
+Flor de Caña,411,2035-09-01,Barriles,null
+Appleton,100,2035-09-07,Barriles,null
+Abuelo,99,2036-08-01,Barriles,null
+Mount Gay,59,2033-08-19,Barriles,null
+Boré,169,2029-09-01,Barriles,null
+Dictador,790,2037-08-22,Botellas,null
+Santa Teresa 1796,321,2033-08-25,Botellas,null
+Kong,145,2030-08-30,Botellas,null
+Cacique,412,2030-08-31,Barriles,null
+Mulata,222,2032-08-28,Barriles,null
+Legendario,64,2028-08-25,Barriles,null
+Carupano,356,2032-08-28,Botellas,null
+Arehucas,361,2036-08-28,Botellas,null
+Brugal,219,2036-08-30,Barriles,null

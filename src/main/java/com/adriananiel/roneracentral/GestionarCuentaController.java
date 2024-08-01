@@ -31,9 +31,7 @@ public class GestionarCuentaController implements Initializable {
     private String newPath;
     private String imagePath;
     private String Rol;
-    private String acceso;
-    private String usernameActual;
-    private String NameComprobar;
+    private String usuarioLogueado;
 
     @FXML
     private Button BtnCambiarFoto;
@@ -70,6 +68,13 @@ public class GestionarCuentaController implements Initializable {
 
     @FXML
     private CheckBox CheckProcesos;
+
+    public void comprobarUsuarioLogeadoYAEditar(){
+        String loggedInUserName = AppUtil.getLoggedInUser();
+        if (loggedInUserName != null) {
+            this.usuarioLogueado = loggedInUserName; // Actualiza la variable con el nombre de usuario logueado
+        }
+    }
 
     public void selecionarDeseleccionarCheckBox(){
         CheckCalidad.selectedProperty().addListener((observable, oldValue, newValue) -> {
@@ -135,7 +140,11 @@ public class GestionarCuentaController implements Initializable {
 
     private void eliminarUsuarioDeBaseDatos() throws IOException {
         String username = UsuarioActualField.getText();
-        Registro.eliminarUsuario(username);
+
+        if (username.equals(usuarioLogueado)){
+            Registro.eliminarUsuario(username);
+            eliminarImagenDeBaseDatos();
+        }
     }
 
     public void cargarImagenPerfilDeBaseDatos(){
@@ -189,6 +198,9 @@ public class GestionarCuentaController implements Initializable {
         CambiarCorreoField.clear();
         CambiarUsuarioField.clear();
         UsuarioActualField.clear();
+        CheckCalidad.setSelected(false);
+        CheckInventario.setSelected(false);
+        CheckProcesos.setSelected(false);
     }
 
     // Método para copiar el archivo
@@ -250,16 +262,14 @@ public class GestionarCuentaController implements Initializable {
 
     @FXML
     void eventEditar(MouseEvent event) throws IOException {
-        
         String usernameActual = UsuarioActualField.getText();
         String nuevoUsername = CambiarUsuarioField.getText();
         String nuevaPassword = CambiarContrasenaField.getText();
         String nuevoEmail = CambiarCorreoField.getText();
         String nuevaImagenDireccion = this.newPath;
         String nuevoRol = this.Rol;
-        CheckCalidad.setSelected(false);
-        CheckInventario.setSelected(false);
-        CheckProcesos.setSelected(false);
+
+        if (usernameActual.equals(usuarioLogueado)){
 
         boolean actualizacionExitosa = Registro.actualizarUsuario(usernameActual, nuevoUsername, nuevaPassword, nuevoEmail, nuevaImagenDireccion, nuevoRol);
 
@@ -268,7 +278,9 @@ public class GestionarCuentaController implements Initializable {
         } else {
             System.out.println("No se pudo actualizar el nombre de usuario.");
         }
-
+        }else{
+            System.out.println("no cohincide el usuario");
+        }
 
             limpiarCampos();
     }
@@ -276,7 +288,6 @@ public class GestionarCuentaController implements Initializable {
     @FXML
     void eventBtnEliminar(MouseEvent event) throws IOException {
         eliminarUsuarioDeBaseDatos();
-        eliminarImagenDeBaseDatos();
         limpiarCampos();
         cerrarAbrirVentana();
     }
@@ -302,5 +313,6 @@ public class GestionarCuentaController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cargarImagenPerfilDeBaseDatos();
         selecionarDeseleccionarCheckBox();
+        comprobarUsuarioLogeadoYAEditar();
     }
 }

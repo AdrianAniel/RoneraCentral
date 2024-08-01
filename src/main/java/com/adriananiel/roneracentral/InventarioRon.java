@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Inventario {
+public class InventarioRon {
     private List<RonGeneral> listaRones = new ArrayList<>();
     private final String archivo = "BaseDatos/inventario_rones.txt";
 

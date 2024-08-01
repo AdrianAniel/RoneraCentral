@@ -47,6 +47,7 @@ public class SignInController implements Initializable {
             Scene escenaNuevaVentana = new Scene(root);
             nuevaVentana.setScene(escenaNuevaVentana);
             nuevaVentana.show();
+            nuevaVentana.setResizable(false);
         } catch (IOException e) {
             System.err.println("Error al cargar la nueva ventana: " + e.getMessage());
         }

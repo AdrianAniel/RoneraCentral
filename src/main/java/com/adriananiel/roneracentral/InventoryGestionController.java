@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Collection;
 import java.util.ResourceBundle;
 import javafx.beans.property.SimpleObjectProperty;
@@ -25,8 +24,10 @@ import javax.imageio.ImageIO;
 public class InventoryGestionController implements Initializable {
 
     private static String imagePath;
-    private Inventario inventario = new Inventario();
+    private InventarioRon inventario = new InventarioRon();
+    private InventarioMateriaPrima inventarioMateriaPrima = new InventarioMateriaPrima();
     private ObservableList<Ron> rons = FXCollections.observableArrayList();
+    private ObservableList<MateriaPrima> materiaPrima = FXCollections.observableArrayList();
 
     @FXML
     private Pane PaneInfo;
@@ -79,11 +80,67 @@ public class InventoryGestionController implements Initializable {
     @FXML
     private TextField TipoField;
 
+    // Aqui empieza el almacenamiento de la materia prima
+    @FXML
+    private TextField BarraBusquedaMateriaPrima;
+
+    @FXML
+    private Button BtnActualizarMateriaPrima;
+
+    @FXML
+    private Button BtnAnadirMateriaPrima;
+
+    @FXML
+    private ImageView BtnBuscarMateriaPrima;
+
+    @FXML
+    private Button BtnEliminarMateriaPrima;
+
+    @FXML
+    private Button BtnExaminarMateriaPrima;
+
+    @FXML
+    private TextField CantidadFieldMateriaPrima;
+
+    @FXML
+    private TableColumn<MateriaPrima, String > CantidadViewMateriaPrima;
+
+    @FXML
+    private TextField CaracteristicasFieldMateriaPrima;
+
+    @FXML
+    private TableColumn<MateriaPrima, String > CaracteristicasViewMateriaPrima;
+
+    @FXML
+    private TableColumn<MateriaPrima, String> FotoViewMateriaPrima;
+
+    @FXML
+    private TextField NombreFieldMateriaPrima;
+
+    @FXML
+    private TableColumn<MateriaPrima, String> NombreViewMateriaPrima;
+
+    @FXML
+    private TableView<MateriaPrima> TablaViewMateriaPriama;
+
+    @FXML
+    private DatePicker VencimientoDatePickerMateriaPrima;
+
+    @FXML
+    private TableColumn<MateriaPrima, String> VencimientoViewMateriaPrima;
+
+    @FXML
+    private ImageView imagenPuestaMateriaPrima;
+
     public void limpiarCampos(){
         NombreField.clear();
         CantidadField.clear();
         VencimientoDatePicker.setValue(null);
         TipoField.clear();
+        NombreFieldMateriaPrima.clear();
+        CantidadFieldMateriaPrima.clear();
+        VencimientoDatePickerMateriaPrima.setValue(null);
+        CaracteristicasFieldMateriaPrima.clear();
     }
 
     public void cargarRonInventario(){
@@ -100,6 +157,22 @@ public class InventoryGestionController implements Initializable {
         VencimientoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getFechaVencimiento()).asString());
         FotoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getDireccionImagen()));
         AlmacenamientoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getTipoAlmacen()));
+    }
+
+    public void cargarMateriaPrimaInventario(){
+        inventarioMateriaPrima.cargarMateriaPrimaDesdeArchivo();
+
+        ObservableList<MateriaPrima> materiaPrima = (ObservableList<MateriaPrima>) FXCollections.observableArrayList((Collection<? extends MateriaPrimaGeneral>) inventarioMateriaPrima.getListaMateriaPrima());
+
+        // Asigna la lista observable al TableView
+        TablaViewMateriaPriama.setItems(materiaPrima);
+
+        // Configura las columnas del TableView
+        CantidadViewMateriaPrima.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getCantidadEnAlmacen()).asString());
+        NombreViewMateriaPrima.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getNombre()));
+        VencimientoViewMateriaPrima.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getFechaVencimiento()).asString());
+        FotoViewMateriaPrima.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getDireccionImagen()));
+        CaracteristicasViewMateriaPrima.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getCaracteristicas()));
     }
 
     public void buscar() {
@@ -128,6 +201,32 @@ public class InventoryGestionController implements Initializable {
         TablaView.setItems(filtrado);
     }
 
+    public void buscarMateriaPrima() {
+        // Asegúrate de que los datos se carguen desde el archivo antes de realizar la búsqueda
+        inventarioMateriaPrima.cargarMateriaPrimaDesdeArchivo();
+
+        // Obtiene el texto de búsqueda del campo de texto
+        String filtro = BarraBusquedaMateriaPrima.getText();
+
+        // Crea una nueva lista observable para almacenar los elementos filtrados
+        ObservableList<MateriaPrima> filtrado = FXCollections.observableArrayList();
+
+        // Itera sobre la lista original de rones para aplicar el filtro
+        for (MateriaPrimaGeneral materiaPrima : inventarioMateriaPrima.getListaMateriaPrima()) {
+            // Convierte el nombre del ron y el filtro a minúsculas para hacer la comparación insensible a mayúsculas
+            if (materiaPrima.getNombre().toLowerCase().contains(filtro.toLowerCase())) {
+                // Si el nombre del ron contiene el filtro, añade el ron a la lista filtrada
+                filtrado.add((MateriaPrima) materiaPrima);
+            }
+        }
+
+        // Muestra el número de elementos filtrados
+        System.out.println("Elementos filtrados: " + filtrado.size());
+
+        // Actualiza el TableView con los elementos filtrados
+        TablaViewMateriaPriama.setItems(filtrado);
+    }
+
 
     public void examinarPonerFoto(){FileChooser fileChooser = new FileChooser();
         // Puedes agregar más filtros si es necesario
@@ -151,6 +250,59 @@ public class InventoryGestionController implements Initializable {
         }
     }
 
+    //Botones comienzan aquí
+    @FXML
+    void eventActualizarMateriaPrima(MouseEvent event) {
+        String nombre = NombreFieldMateriaPrima.getText();
+        String cantidadEnAlmacen = CantidadFieldMateriaPrima.getText();
+        LocalDate fechaVencimiento = VencimientoDatePickerMateriaPrima.getValue();
+        String direccionImagen = imagePath;
+        String caracteristicas = CaracteristicasFieldMateriaPrima.getText();
+
+        inventarioMateriaPrima.actualizarMateriaPrima(new MateriaPrima(nombre, cantidadEnAlmacen, caracteristicas, fechaVencimiento, direccionImagen));
+        System.out.println("Materia prima actualizado");
+
+        limpiarCampos();
+
+        cargarMateriaPrimaInventario();
+    }
+
+    @FXML
+    void eventAnadirMateriaPrima(MouseEvent event) {
+        String nombre = NombreFieldMateriaPrima.getText();
+        String cantidadEnAlmacen = CantidadFieldMateriaPrima.getText();
+        LocalDate fechaVencimiento = VencimientoDatePickerMateriaPrima.getValue();
+        String direccionImagen = imagePath;
+        String caracteristicas = CaracteristicasFieldMateriaPrima.getText();
+
+        inventarioMateriaPrima.agregarMateriaPrima(new MateriaPrima(nombre, cantidadEnAlmacen, caracteristicas, fechaVencimiento, direccionImagen));
+        System.out.println("Materia prima Añadida");
+
+        limpiarCampos();
+
+        cargarMateriaPrimaInventario();
+    }
+
+    @FXML
+    void eventBuscarMateriaPrima(MouseEvent event) {
+        buscarMateriaPrima();
+    }
+
+    @FXML
+    void eventEliminarMateriaPrima(MouseEvent event) {
+        String nombre = NombreFieldMateriaPrima.getText();
+        inventarioMateriaPrima.eliminarMateriaPrima(nombre);
+
+        limpiarCampos();
+
+        cargarMateriaPrimaInventario();
+    }
+
+    @FXML
+    void eventExaminarMateriaPrima(MouseEvent event) {
+        examinarPonerFoto();
+    }
+
     @FXML
     void eventExaminar(MouseEvent event) {
         examinarPonerFoto();
@@ -160,9 +312,7 @@ public class InventoryGestionController implements Initializable {
     void eventAnadir(MouseEvent event) {
         String nombre = NombreField.getText();
         String cantidadEnAlmacen = CantidadField.getText();
-        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate fechaVencimiento = VencimientoDatePicker.getValue();
-        String fechaVencimiento1 = fechaVencimiento.format(dateFormatter);
         String direccionImagen = imagePath;
         String tipoAlmacen = TipoField.getText();
 
@@ -178,7 +328,6 @@ public class InventoryGestionController implements Initializable {
     private void eventActualizar(MouseEvent event) {
         String nombre = NombreField.getText();
         String cantidadEnAlmacen = CantidadField.getText();
-        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate fechaVencimiento = VencimientoDatePicker.getValue();
         String direccionImagen = imagePath;
         String tipoAlmacen = TipoField.getText();
@@ -208,6 +357,8 @@ public class InventoryGestionController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         cargarRonInventario();
+        cargarMateriaPrimaInventario();
     }
 }

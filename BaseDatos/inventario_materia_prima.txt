@@ -1,0 +1,20 @@
+Caña de azúcar,100,2031-08-14,Importada,null
+Agua natural,211,2035-08-23,Nacional,null
+Miel,213,2029-08-01,Importada,null
+Levadura,111,2033-08-25,Nacional,null
+Aguardiente,421,2032-08-14,Nacional,null
+Sistema de bases añejas,765,2028-09-05,Importado,null
+Madera,242,2040-08-02,Roble importado,null
+Piedra pizarrosa,327,2051-09-09,Nacional,null
+Barriles,892,2036-08-21,De madera,null
+Botellas,542,2035-08-09,Plastico,null
+Cajas,865,2036-08-29,Cartón,null
+Caramelos,576,2034-08-18,Importado,null
+Colorante,428,2037-08-20,Color ámbar,null
+Alambiques,207,2033-08-31,Nacional,null
+Canela,187,2030-08-31,Nacional,null
+Café,761,2044-09-02,Importado,null
+Vainilla,75,2031-08-14,Importado,null
+Naranja,555,2024-08-16,Importado,null
+Menta,431,2026-08-21,Importado,null
+Limón,777,2030-07-31,Criollo,null

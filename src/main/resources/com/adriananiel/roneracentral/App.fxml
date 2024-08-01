@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="VentanaApp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.AppController">
+<AnchorPane fx:id="VentanaApp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.AppController">
    <children>
       <Pane layoutX="-2.0" prefHeight="140.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
          <children>
@@ -47,9 +47,9 @@
                </image>
             </ImageView>
          </children></Pane>
-      <Pane fx:id="PaneCambia" layoutX="-2.0" layoutY="130.0" prefHeight="590.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
+      <Pane fx:id="PaneCambia" layoutX="-2.0" layoutY="130.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
          <children>
-            <ImageView fitHeight="551.0" fitWidth="1178.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="551.0" fitWidth="1178.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@image/Home.png" />
                </image>
