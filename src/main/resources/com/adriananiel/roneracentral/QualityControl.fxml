@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -13,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.QualityControl">
    <children>
       <ScrollPane prefHeight="720.0" prefWidth="1280.0">
         <content>
@@ -46,20 +45,37 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                   </TableView>
-                  <TextField id="product_textfield" fx:id="product_field" layoutX="42.0" layoutY="98.0" promptText="Product Name" />
-                  <Label layoutX="42.0" layoutY="150.0" text="Controllers:" underline="true">
+                  <Label layoutX="42.0" layoutY="59.0" text="Product:" underline="true">
                      <font>
                         <Font name="Segoe UI Black Italic" size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="457.0" layoutY="489.0" text="Quality Controller">
+                  <TextField fx:id="product_textfield" layoutX="42.0" layoutY="98.0" promptText="Product Name" />
+                  <Label layoutX="220.0" layoutY="59.0" text="Quality:" underline="true">
                      <font>
-                        <Font name="Segoe UI Black Italic" size="24.0" />
+                        <Font name="Segoe UI Black Italic" size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="42.0" layoutY="234.0" text="Turbidity">
+                  <TextField fx:id="quality_textfield" layoutX="220.0" layoutY="98.0" promptText="Quality Product" />
+                  <Label layoutX="408.0" layoutY="59.0" text="Amount:" underline="true">
+                     <font>
+                        <Font name="Segoe UI Black Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="591.0" layoutY="63.0" text="Enviar al Almacén" underline="true">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="amount_textfield" layoutX="403.0" layoutY="98.0" promptText="Amount Product" />
+                  <Button fx:id="sendButton" layoutX="591.0" layoutY="98.0" mnemonicParsing="false" onAction="#guardarTexto" text="Send">
+                     <font>
+                        <Font name="Segoe UI Semibold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="42.0" layoutY="150.0" text="Controllers:" underline="true">
+                     <font>
+                        <Font name="Segoe UI Black Italic" size="18.0" />
                      </font>
                   </Label>
                   <Label layoutX="42.0" layoutY="188.0" text="AVB(Alcohol Content)">
@@ -67,138 +83,117 @@
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="42.0" layoutY="59.0" text="Product:" underline="true">
-                     <font>
-                        <Font name="Segoe UI Black Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <TextField id="quality_textfield" layoutX="220.0" layoutY="98.0" promptText="Quality Product" />
-                  <Label layoutX="220.0" layoutY="59.0" text="Quality:" underline="true">
-                     <font>
-                        <Font name="Segoe UI Black Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="408.0" layoutY="59.0" text="Amount:" underline="true">
-                     <font>
-                        <Font name="Segoe UI Black Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <TextField id="amount_textfield" layoutX="403.0" layoutY="98.0" promptText="Amount Product" />
-                  <Label layoutX="591.0" layoutY="63.0" text="Enviar al Almacén" underline="true">
-                     <font>
-                        <Font name="Segoe UI Black" size="14.0" />
-                     </font>
-                  </Label>
-                  <CheckBox layoutX="653.0" layoutY="102.0" mnemonicParsing="false" text="Yes">
-                     <font>
-                        <Font name="Segoe UI Semilight" size="12.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox layoutX="703.0" layoutY="102.0" mnemonicParsing="false" text="No">
-                     <font>
-                        <Font name="Segoe UI Semilight" size="12.0" />
-                     </font>
-                  </CheckBox>
-                  <Button id="btn_send" layoutX="591.0" layoutY="98.0" mnemonicParsing="false" text="Send">
-                     <font>
-                        <Font name="Segoe UI Semibold Italic" size="12.0" />
-                     </font>
-                  </Button>
-                  <ImageView fitHeight="201.0" fitWidth="325.0" layoutX="1034.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/Designer23.png" />
-                     </image>
-                  </ImageView>
                   <TextField id="avb_textfield" layoutX="42.0" layoutY="208.0" promptText="Ingrese la Puntuacion">
                      <font>
                         <Font name="Segoe UI Semibold" size="12.0" />
                      </font>
                   </TextField>
-                  <TextField id="turbidity_textfield" layoutX="42.0" layoutY="254.0" promptText="Ingrese la Puntuacion" />
-                  <Label layoutX="42.0" layoutY="325.0" text="Chemical Analysis">
+                  <Label layoutX="42.0" layoutY="234.0" text="Turbidity">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <TextField id="color_textfield" layoutX="42.0" layoutY="299.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="analysis_chemical_textfield" layoutX="42.0" layoutY="345.0" promptText="Ingrese la Puntuacion" />
+                  <TextField fx:id="turbidity_textfield" layoutX="42.0" layoutY="254.0" promptText="Ingrese la Puntuacion" />
                   <Label layoutX="42.0" layoutY="280.0" text="Color">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="562.0" layoutY="419.0" text="Rawn Material">
+                  <TextField fx:id="color_textfield" layoutX="42.0" layoutY="299.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="42.0" layoutY="325.0" text="Chemical Analysis">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="561.0" layoutY="325.0" text="Blend">
+                  <TextField fx:id="analysis_chemical_textfield" layoutX="42.0" layoutY="345.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="42.0" layoutY="375.0" text="Microbiological Analysis">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <TextField id="facilities_textfield" layoutX="309.0" layoutY="445.0" promptText="Ingrese la Puntuacion" />
-                  <Label layoutX="563.0" layoutY="188.0" text="Human Factor">
-                     <font>
-                        <Font name="Segoe UI Black" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="311.0" layoutY="375.0" text="Equipement">
-                     <font>
-                        <Font name="Segoe UI Black" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="311.0" layoutY="325.0" text="Manufacturing Process">
-                     <font>
-                        <Font name="Segoe UI Black" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="309.0" layoutY="280.0" text="Packaging and Labeling">
-                     <font>
-                        <Font name="Segoe UI Black" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="307.0" layoutY="234.0" text="Aroma">
-                     <font>
-                        <Font name="Segoe UI Black" size="14.0" />
-                     </font>
-                  </Label>
+                  <TextField fx:id="microbiological_analysis_textfield" layoutX="42.0" layoutY="395.0" promptText="Ingrese la Puntuacion" />
                   <Label layoutX="309.0" layoutY="188.0" text="Flavor">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="561.0" layoutY="375.0" text="Level PH">
+                  <TextField fx:id="flavor_textfield" layoutX="309.0" layoutY="208.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="307.0" layoutY="234.0" text="Aroma">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <TextField id="level_ph_textfield" layoutX="560.0" layoutY="395.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="blend_textfield" layoutX="560.0" layoutY="345.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="human_factor_textfield" layoutX="558.0" layoutY="208.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="equipement_textfield" layoutX="309.0" layoutY="395.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="manufacturing_process_textfield" layoutX="309.0" layoutY="345.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="pack_and_label_textfield" layoutX="309.0" layoutY="299.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="aroma_textfield" layoutX="309.0" layoutY="254.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="flavor_textfield" layoutX="309.0" layoutY="208.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="microbiological_analysis_textfield" layoutX="42.0" layoutY="395.0" promptText="Ingrese la Puntuacion" />
-                  <Label layoutX="560.0" layoutY="280.0" text="Aging">
+                  <TextField fx:id="aroma_textfield" layoutX="309.0" layoutY="254.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="309.0" layoutY="280.0" text="Packaging and Labeling">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <TextField id="aging_textfield" layoutX="560.0" layoutY="299.0" promptText="Ingrese la Puntuacion" />
-                  <TextField id="filtration_textfield" layoutX="560.0" layoutY="254.0" promptText="Ingrese la Puntuacion" />
-                  <Label layoutX="559.0" layoutY="234.0" text="Filtration">
+                  <TextField fx:id="pack_and_label_textfield" layoutX="309.0" layoutY="299.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="311.0" layoutY="325.0" text="Manufacturing Process">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
+                  <TextField fx:id="manufacturing_process_textfield" layoutX="309.0" layoutY="345.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="311.0" layoutY="375.0" text="Equipement">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="equipement_textfield" layoutX="309.0" layoutY="395.0" promptText="Ingrese la Puntuacion" />
                   <Label layoutX="311.0" layoutY="421.0" text="Facilities">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
+                  <TextField fx:id="facilities_textfield" layoutX="309.0" layoutY="445.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="563.0" layoutY="188.0" text="Human Factor">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="human_factor_textfield" layoutX="558.0" layoutY="208.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="559.0" layoutY="234.0" text="Filtration">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="filtration_textfield" layoutX="560.0" layoutY="254.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="560.0" layoutY="280.0" text="Aging">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="aging_textfield" layoutX="560.0" layoutY="299.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="561.0" layoutY="325.0" text="Blend">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="blend_textfield" layoutX="560.0" layoutY="345.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="561.0" layoutY="375.0" text="Level PH">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="level_ph_textfield" layoutX="560.0" layoutY="395.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="562.0" layoutY="419.0" text="Rawn Material">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="rawn_material_textfield" layoutX="560.0" layoutY="445.0" promptText="Ingrese la Puntuacion" />
+                  <Label layoutX="457.0" layoutY="489.0" text="Quality Controller">
+                     <font>
+                        <Font name="Segoe UI Black Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="201.0" fitWidth="325.0" layoutX="1034.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Designer23.png" />
+                     </image>
+                  </ImageView>
                   <ImageView fitHeight="378.0" fitWidth="333.0" layoutX="714.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@image/EST.%202024.png" />
@@ -224,12 +219,6 @@
                         <Image url="@image/3.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="42.0" layoutY="375.0" text="Microbiological Analysis">
-                     <font>
-                        <Font name="Segoe UI Black" size="14.0" />
-                     </font>
-                  </Label>
-                  <TextField id="rawn_material_textfield" layoutX="560.0" layoutY="445.0" promptText="Ingrese la Puntuacion" />
                </children>
             </AnchorPane>
         </content>

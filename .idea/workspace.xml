@@ -8,11 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c99ea6e-4280-4a1a-b793-428af5570791" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/prueba_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaseDatos/usuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/usuarios.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/App.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/App.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseDatos/inventario_calidad.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/inventario_calidad.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/QualityControl.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/QualityControl.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,16 +54,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.prueba.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/Programming/Clases/RoneraCentral/src/main/java/com/adriananiel/roneracentral",
-    "last_opened_file_path": "D:/Proyectos Personales/proyecto 1",
+    "last_opened_file_path": "D:/GitHub/prueba",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "preferences.keymap"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -85,13 +88,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.adriananiel.roneracentral.Main" />
-      <module name="RoneraCentral" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <module name="RoneraCentral" />
       <method v="2">
