@@ -8,12 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c99ea6e-4280-4a1a-b793-428af5570791" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/prueba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/prueba_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaseDatos/inventario_calidad.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/inventario_calidad.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/QualityControl.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/QualityControl.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.prueba.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/Programming/Clases/RoneraCentral/src/main/java/com/adriananiel/roneracentral",
-    "last_opened_file_path": "D:/GitHub/prueba",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.prueba.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/Programming/Clases/RoneraCentral/src/main/java/com/adriananiel/roneracentral&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/prueba&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "EditorConfig"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;EditorConfig&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programming\Clases\RoneraCentral\BaseDatos" />
