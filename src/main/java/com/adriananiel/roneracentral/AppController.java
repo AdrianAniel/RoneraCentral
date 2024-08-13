@@ -138,6 +138,12 @@ public class AppController implements Initializable {
     }
 
     @FXML
+    void eventBtnCalidad(MouseEvent event) throws IOException {
+        Pane ventanaQualityControlFXML = FXMLLoader.load(getClass().getResource("QualityControl.fxml"));
+        PaneCambia.getChildren().setAll(ventanaQualityControlFXML);
+    }
+
+    @FXML
     void eventCerrarSesión(MouseEvent event) throws IOException {
         cerrarAbrirVentana();
     }
