@@ -1,12 +1,42 @@
 package com.adriananiel.roneracentral;
 
+import com.adriananiel.roneracentral.Corzo.DB;
+import com.adriananiel.roneracentral.Corzo.QualityRonSearcher;
+import com.adriananiel.roneracentral.Corzo.QualityRonTable;
+import com.adriananiel.roneracentral.Corzo.WriteObject;
+import javafx.application.Platform;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import java.util.ArrayList;
+
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.ResourceBundle;
 
-public class QualityControl {
+
+//Clase Principal
+
+public class QualityControl implements Initializable {
+
+    private ArrayList<QualityRonTable> ronList;
+    private ObservableList<QualityRonTable> observableRonList;
+    public QualityRonTable ron;
+    WriteObject wo = new WriteObject("BaseDatos/ron_db.ser");
+
+    // ...Control de Eventos TextField de JavaFX...
 
     @FXML
     private TextField product_textfield;
@@ -68,38 +98,116 @@ public class QualityControl {
     @FXML
     private TextField rawn_material_textfield;
 
-    @FXML
-    public void guardarTexto(ActionEvent event) {
-        String product = product_textfield.getText();
-        String quality = quality_textfield.getText();
-        String amount = amount_textfield.getText();
-        String avb = avb_textfield.getText();
-        String turbidity = turbidity_textfield.getText();
-        String color = color_textfield.getText();
-        String chemical_analysis = analysis_chemical_textfield.getText();
-        String microbiological_analysis = microbiological_analysis_textfield.getText();
-        String flavor = flavor_textfield.getText();
-        String aroma = aroma_textfield.getText();
-        String pack_and_label = pack_and_label_textfield.getText();
-        String manufacturing_process = manufacturing_process_textfield.getText();
-        String equipement = equipement_textfield.getText();
-        String facilities = facilities_textfield.getText();
-        String human_factor = human_factor_textfield.getText();
-        String filtration = filtration_textfield.getText();
-        String aging = aging_textfield.getText();
-        String blend = blend_textfield.getText();
-        String level_ph = level_ph_textfield.getText();
-        String rawn_material = rawn_material_textfield.getText();
+    // Controlador de eventos de la TableView
 
-        if (product.isEmpty() || quality.isEmpty() || amount.isEmpty() || avb.isEmpty() || turbidity.isEmpty() || color.isEmpty() || chemical_analysis.isEmpty() || microbiological_analysis.isEmpty() || flavor.isEmpty() || aroma.isEmpty() || pack_and_label.isEmpty() || manufacturing_process.isEmpty() || equipement.isEmpty() || facilities.isEmpty() || human_factor.isEmpty() || filtration.isEmpty() || aging.isEmpty() || blend.isEmpty() || level_ph.isEmpty() || rawn_material.isEmpty()) {
+    @FXML
+    private TableView<QualityRonTable> table;
+    @FXML
+    private TableColumn<QualityRonTable, String> product_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> avb_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> turbidity_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> color_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> chemical_analysis_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> microbiological_analysis_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> flavor__list;
+    @FXML
+    private TableColumn<QualityRonTable, String> aroma_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> pack_and_label_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> manufacturing__list;
+    @FXML
+    private TableColumn<QualityRonTable, String> equipement_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> facilities_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> human_factor_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> filtration_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> aging_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> blend_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> level_ph_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> rawn_material_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> quality_list;
+    @FXML
+    private TableColumn<QualityRonTable, String> amount;
+
+
+
+
+
+    /////CRUD////
+    // Clase para guardar los textfield en la base de datos...
+
+    @FXML  // Evento de Button de JavaFX en la Clase guardarTexto (Write an Read)
+    public void guardarTexto(ActionEvent event) {
+
+        if (product_textfield.getText().isEmpty() || quality_textfield.getText().isEmpty() || amount_textfield.getText().isEmpty() || avb_textfield.getText().isEmpty() || turbidity_textfield.getText().isEmpty() || color_textfield.getText().isEmpty() || analysis_chemical_textfield.getText().isEmpty() || microbiological_analysis_textfield.getText().isEmpty() || flavor_textfield.getText().isEmpty() || aroma_textfield.getText().isEmpty() || pack_and_label_textfield.getText().isEmpty() || manufacturing_process_textfield.getText().isEmpty() || equipement_textfield.getText().isEmpty() || facilities_textfield.getText().isEmpty() || human_factor_textfield.getText().isEmpty() || filtration_textfield.getText().isEmpty() || aging_textfield.getText().isEmpty() || blend_textfield.getText().isEmpty() || level_ph_textfield.getText().isEmpty() || rawn_material_textfield.getText().isEmpty()) {
             showError("Debes ingresar un texto");
             return;
+        }else {
+            ron = new QualityRonTable(
+                    product_textfield.getText(),
+                    quality_textfield.getText(),
+                    amount_textfield.getText(),
+                    avb_textfield.getText(),
+                    turbidity_textfield.getText(),
+                    color_textfield.getText(),
+                    analysis_chemical_textfield.getText(),
+                    microbiological_analysis_textfield.getText(),
+                    flavor_textfield.getText(),
+                    aroma_textfield.getText(),
+                    pack_and_label_textfield.getText(),
+                    manufacturing_process_textfield.getText(),
+                    equipement_textfield.getText(),
+                    facilities_textfield.getText(),
+                    human_factor_textfield.getText(),
+                    filtration_textfield.getText(),
+                    aging_textfield.getText(),
+                    blend_textfield.getText(),
+                    level_ph_textfield.getText(),
+                    rawn_material_textfield.getText()
+                    );
+            if (ronList.isEmpty()){
+                System.out.println("La lista esta vacia");
+            } else {
+                System.out.println(ronList.getLast().getProduct());
+            }
+
+            ronList.add(ron);
+            observableRonList.add(ron);
+            wo.Write(ronList);
+
+            System.out.println(ron.getProduct());
+            clearTextFields();
+            System.out.println("Se limpio correctamente");
+
         }
-        String text = product + "," + quality + "," + amount + "," + avb + "," + turbidity + "," + color + "," + chemical_analysis + "," + microbiological_analysis + "," + flavor + "," + aroma + "," + pack_and_label + "," + manufacturing_process + "," + equipement + "," + facilities + "," + human_factor + "," + filtration + "," + aging + "," + blend + "," + level_ph + "," + rawn_material;
+
+        //Se verifica que todos los campos esten llenos ,sino da error de llenar los campos
+
+
+            //Se crea la cadena de texto que ingresa en el txt
+        /*String text = product + "," + quality + "," + amount + "," + avb + "," + turbidity + "," + color + "," + chemical_analysis + "," + microbiological_analysis + "," + flavor + "," + aroma + "," + pack_and_label + "," + manufacturing_process + "," + equipement + "," + facilities + "," + human_factor + "," + filtration + "," + aging + "," + blend + "," + level_ph + "," + rawn_material;
+
+        // Se crea el objeto FileWriter para escribir la informacion en la base de datos, el valor true indica que se va a agregar el texto la ultima posicion del archivo en lugar de sobreescribirla...
+
         try (FileWriter writer = new FileWriter("BaseDatos/inventario_calidad.txt", true)) {
             writer.write(text + "\n");
             System.out.println("Texto guardado correctamente");
-            product_textfield.clear(); // Limpiar el TextField
+
+            product_textfield.clear(); // Limpieza de los TextField
             quality_textfield.clear();
             amount_textfield.clear();
             avb_textfield.clear();
@@ -119,12 +227,179 @@ public class QualityControl {
             blend_textfield.clear();
             level_ph_textfield.clear();
             rawn_material_textfield.clear();
+
         } catch (IOException e) {
             showError("Error al guardar el texto: " + e.getMessage());
+        }*/
+    }
+
+    // Evento de Button de JavaFX en la Clase updateTexto...
+    @FXML
+    public void updateTexto(ActionEvent actionEvent) {
+        System.out.println("Botón presionado Update!");
+
+        // Crear un nuevo objeto QualityRonTable con los valores ingresados
+        ron = new QualityRonTable(
+                product_textfield.getText(),
+                quality_textfield.getText(),
+                amount_textfield.getText(),
+                avb_textfield.getText(),
+                turbidity_textfield.getText(),
+                color_textfield.getText(),
+                analysis_chemical_textfield.getText(),
+                microbiological_analysis_textfield.getText(),
+                flavor_textfield.getText(),
+                aroma_textfield.getText(),
+                pack_and_label_textfield.getText(),
+                manufacturing_process_textfield.getText(),
+                equipement_textfield.getText(),
+                facilities_textfield.getText(),
+                human_factor_textfield.getText(),
+                filtration_textfield.getText(),
+                aging_textfield.getText(),
+                blend_textfield.getText(),
+                level_ph_textfield.getText(),
+                rawn_material_textfield.getText()
+        );
+
+        // Iterar sobre ronList usando un bucle for tradicional para tener acceso al índice
+        for (int i = 0; i < ronList.size(); i++) {
+            QualityRonTable lron = ronList.get(i);
+            System.out.println("antes del if : nombre del ron a actualizar " + lron.getProduct());
+            if (lron.getProduct().equals(ron.getProduct())) {
+                // Actualizar el elemento en ronList y observableRonList usando el índice 'i'
+                ronList.set(i, ron);
+                observableRonList.set(i, ron);
+                table.setItems(observableRonList);
+                System.out.println("dentro del if despues de actualizar");
+
+                break; // Salir del bucle una vez que se encontró y actualizó el elemento
+            }
         }
+
+        // Guardar la lista actualizada
+        wo.Write(ronList);
+
+        System.out.println("Se actualizo correctamente el elemento: " + ron.getProduct());
+        System.out.println("quality" + ron.getQuality());
+        for (QualityRonTable pron : ronList) {
+            System.out.println(pron.getProduct());
+            System.out.println(pron.getQuality());
+        }
+    }
+
+    // Evento de Button de JavaFX en la Clase deleteTexto...
+    @FXML
+    public void deleteTexto(ActionEvent actionEvent)  {
+        System.out.println("Botón presionado Delete!");
+        ron = new QualityRonTable(
+                product_textfield.getText(),
+                quality_textfield.getText(),
+                amount_textfield.getText(),
+                avb_textfield.getText(),
+                turbidity_textfield.getText(),
+                color_textfield.getText(),
+                analysis_chemical_textfield.getText(),
+                microbiological_analysis_textfield.getText(),
+                flavor_textfield.getText(),
+                aroma_textfield.getText(),
+                pack_and_label_textfield.getText(),
+                manufacturing_process_textfield.getText(),
+                equipement_textfield.getText(),
+                facilities_textfield.getText(),
+                human_factor_textfield.getText(),
+                filtration_textfield.getText(),
+                aging_textfield.getText(),
+                blend_textfield.getText(),
+                level_ph_textfield.getText(),
+                rawn_material_textfield.getText()
+        );
+        int index = 0;
+        for (QualityRonTable lron : ronList){
+            if (lron.getProduct().equals(ron.getProduct())) {
+                int currentIndex = index;
+                ronList.remove(lron);
+                observableRonList.remove(currentIndex);
+                break;
+            }
+            index++;
+        }
+        wo.Write(ronList);
+        System.out.println("Se elimino correctamente el elemento: " + ron.getProduct());
+        for ( QualityRonTable pron: ronList) {
+            System.out.println(pron.getProduct());
+        }
+    }
+
+    private void clearTextFields(){
+        product_textfield.clear(); // Limpieza de los TextField
+        quality_textfield.clear();
+        amount_textfield.clear();
+        avb_textfield.clear();
+        turbidity_textfield.clear();
+        color_textfield.clear();
+        analysis_chemical_textfield.clear();
+        microbiological_analysis_textfield.clear();
+        flavor_textfield.clear();
+        aroma_textfield.clear();
+        pack_and_label_textfield.clear();
+        manufacturing_process_textfield.clear();
+        equipement_textfield.clear();
+        facilities_textfield.clear();
+        human_factor_textfield.clear();
+        filtration_textfield.clear();
+        aging_textfield.clear();
+        blend_textfield.clear();
+        level_ph_textfield.clear();
+        rawn_material_textfield.clear();
     }
 
     private void showError(String message) {
         System.out.println("Error: " + message);
+    }
+
+    private void loadTable() throws IOException, ClassNotFoundException {
+        DB ronDB = new DB("BaseDatos/ron_db.ser");
+        ronList = ronDB.startDB();
+        observableRonList = FXCollections.observableArrayList(ronList);
+        table.setItems(observableRonList);
+        product_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        avb_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        turbidity_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        color_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        chemical_analysis_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        microbiological_analysis_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        flavor__list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        aroma_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        pack_and_label_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        manufacturing__list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        equipement_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        facilities_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        human_factor_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        filtration_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        aging_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        blend_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        level_ph_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        rawn_material_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        quality_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        amount.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));
+        for (QualityRonTable pron : ronList) {
+            System.out.println(pron.getProduct());
+            System.out.println(pron.getQuality());
+        }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+
+        try {
+            loadTable();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }

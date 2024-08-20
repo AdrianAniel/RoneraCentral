@@ -16,30 +16,30 @@
    <children>
       <ScrollPane prefHeight="720.0" prefWidth="1280.0">
         <content>
-          <AnchorPane id="manufacturing_process_text_field" minHeight="0.0" minWidth="0.0" prefHeight="1280.0" prefWidth="1280.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1280.0" prefWidth="1280.0">
                <children>
-                  <TableView editable="true" layoutX="35.0" layoutY="540.0" prefHeight="700.0" prefWidth="1200.0">
+                  <TableView  fx:id="table"  editable="true" layoutX="35.0" layoutY="540.0" prefHeight="700.0" prefWidth="1200.0">
                     <columns>
-                      <TableColumn id="product_list" prefWidth="89.60000228881836" text="Product" />
-                        <TableColumn id="avb_list" prefWidth="89.60000228881836" text="AVB(Alcohol Content)" />
-                        <TableColumn id="turbidity_list" prefWidth="89.60000228881836" text="Turbidity" />
-                        <TableColumn id="color_list" prefWidth="89.60000228881836" text="Color" />
-                        <TableColumn id="chemical_analysis_list" prefWidth="89.60000228881836" text="Chemical Analysis" />
-                        <TableColumn id="microbiological_analysis_list" prefWidth="89.60000228881836" text="Microbiological Analysis" />
-                        <TableColumn id="flavor__list" prefWidth="89.60000228881836" text="Flavor" />
-                        <TableColumn id="aroma_list" prefWidth="89.60000228881836" text="Aroma" />
-                        <TableColumn id="pack_and_label_list" prefWidth="89.60000228881836" text="Packaging and Labeling" />
-                        <TableColumn id="manufacturing__list" prefWidth="89.60000228881836" text="Manufacturing Process" />
-                        <TableColumn id="equipement_list" prefWidth="89.60000228881836" text="Equipement" />
-                        <TableColumn id="facilities_list" prefWidth="89.60000228881836" text="Facilities" />
-                        <TableColumn id="human_factor_list" prefWidth="89.60000228881836" text="Human Factor" />
-                        <TableColumn id="filtration_list" prefWidth="89.60000228881836" text="Filtration" />
-                        <TableColumn id="aging_list" prefWidth="89.60000228881836" text="Aging" />
-                        <TableColumn id="blend_list" prefWidth="89.60000228881836" text="Blend" />
-                        <TableColumn id="level_ph_list" prefWidth="89.60000228881836" text="Level PH" />
-                        <TableColumn id="rawn_material_list" prefWidth="89.60000228881836" text="Rawn Material" />
-                        <TableColumn id="quality_list" prefWidth="89.60000228881836" text="Quality" />
-                        <TableColumn id="amount" prefWidth="89.60000228881836" text="Amount" />
+                      <TableColumn fx:id="product_list" prefWidth="89.60000228881836" text="Product" />
+                        <TableColumn fx:id="avb_list" prefWidth="89.60000228881836" text="AVB(Alcohol Content)" />
+                        <TableColumn fx:id="turbidity_list" prefWidth="89.60000228881836" text="Turbidity" />
+                        <TableColumn fx:id="color_list" prefWidth="89.60000228881836" text="Color" />
+                        <TableColumn fx:id="chemical_analysis_list" prefWidth="89.60000228881836" text="Chemical Analysis" />
+                        <TableColumn fx:id="microbiological_analysis_list" prefWidth="89.60000228881836" text="Microbiological Analysis" />
+                        <TableColumn fx:id="flavor__list" prefWidth="89.60000228881836" text="Flavor" />
+                        <TableColumn fx:id="aroma_list" prefWidth="89.60000228881836" text="Aroma" />
+                        <TableColumn fx:id="pack_and_label_list" prefWidth="89.60000228881836" text="Packaging and Labeling" />
+                        <TableColumn fx:id="manufacturing__list" prefWidth="89.60000228881836" text="Manufacturing Process" />
+                        <TableColumn fx:id="equipement_list" prefWidth="89.60000228881836" text="Equipement" />
+                        <TableColumn fx:id="facilities_list" prefWidth="89.60000228881836" text="Facilities" />
+                        <TableColumn fx:id="human_factor_list" prefWidth="89.60000228881836" text="Human Factor" />
+                        <TableColumn fx:id="filtration_list" prefWidth="89.60000228881836" text="Filtration" />
+                        <TableColumn fx:id="aging_list" prefWidth="89.60000228881836" text="Aging" />
+                        <TableColumn fx:id="blend_list" prefWidth="89.60000228881836" text="Blend" />
+                        <TableColumn fx:id="level_ph_list" prefWidth="89.60000228881836" text="Level PH" />
+                        <TableColumn fx:id="rawn_material_list" prefWidth="89.60000228881836" text="Rawn Material" />
+                        <TableColumn fx:id="quality_list" prefWidth="89.60000228881836" text="Quality" />
+                        <TableColumn fx:id="amount" prefWidth="89.60000228881836" text="Amount" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -62,13 +62,33 @@
                         <Font name="Segoe UI Black Italic" size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="591.0" layoutY="63.0" text="Enviar al Almacén" underline="true">
+                  <TextField fx:id="amount_textfield" layoutX="403.0" layoutY="98.0" promptText="Amount Product" />
+                  <Label layoutX="591.0" layoutY="63.0" text="Send to Storage" underline="true">
                      <font>
                         <Font name="Segoe UI Black" size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="amount_textfield" layoutX="403.0" layoutY="98.0" promptText="Amount Product" />
                   <Button fx:id="sendButton" layoutX="591.0" layoutY="98.0" mnemonicParsing="false" onAction="#guardarTexto" text="Send">
+                     <font>
+                        <Font name="Segoe UI Semibold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="723.0" layoutY="63.0" text="Update to Storage" underline="true">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="updateButton" layoutX="723.0" layoutY="98.0" mnemonicParsing="false" onAction="#updateTexto" text="Update">
+                     <font>
+                        <Font name="Segoe UI Semibold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="860.0" layoutY="63.0" text="Delete to Storage" underline="true">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="deleteButton" layoutX="872.0" layoutY="98.0" mnemonicParsing="false" onAction="#deleteTexto" text="Delete">
                      <font>
                         <Font name="Segoe UI Semibold Italic" size="12.0" />
                      </font>
@@ -194,9 +214,9 @@
                         <Image url="@image/Designer23.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="378.0" fitWidth="333.0" layoutX="714.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="315.0" fitWidth="333.0" layoutX="714.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@image/EST.%202024.png" />
+                        <Image url="@image/Title.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="115.0" fitWidth="87.0" layoutX="470.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
