@@ -226,12 +226,13 @@ public class QualityControl implements Initializable {
         // Guardar la lista actualizada
         wo.Write(ronList);
 
-        System.out.println("Se actualizo correctamente el elemento: " + ron.getProduct());
-        System.out.println("quality" + ron.getQuality());
+        /*System.out.println("Se actualizo correctamente el elemento: " + ron.getProduct());
+        System.out.println("quality" + ron.getQuality());*/
         for (QualityRonTable pron : ronList) {
             System.out.println(pron.getProduct());
             System.out.println(pron.getQuality());
         }
+        clearTextFields();
     }
 
     // Evento de Button de JavaFX en la Clase deleteTexto...
@@ -340,6 +341,33 @@ public class QualityControl implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
             loadTable();
+            table.setOnMouseClicked(mouseEvent -> {
+                if (mouseEvent.getClickCount() == 1){
+                    QualityRonTable quality = table.getSelectionModel().getSelectedItem();
+                    if (quality != null){
+                        avb_textfield.setText(quality.getAvb());
+                        turbidity_textfield.setText(quality.getTurbidity());
+                        color_textfield.setText(quality.getColor());
+                        analysis_chemical_textfield.setText(quality.getChemical_analysis());
+                        microbiological_analysis_textfield.setText(quality.getMicrobiological_analysis());
+                        flavor_textfield.setText(quality.getFlavor());
+                        aroma_textfield.setText(quality.getAroma());
+                        pack_and_label_textfield.setText(quality.getPack_and_label());
+                        manufacturing_process_textfield.setText(quality.getManufacturing_process());
+                        equipement_textfield.setText(quality.getEquipement());
+                        facilities_textfield.setText(quality.getFacilities());
+                        human_factor_textfield.setText(quality.getHuman_factor());
+                        filtration_textfield.setText(quality.getFiltration());
+                        aging_textfield.setText(quality.getAging());
+                        blend_textfield.setText(quality.getBlend());
+                        level_ph_textfield.setText(quality.getLevel_ph());
+                        rawn_material_textfield.setText(quality.getRawn_material());
+                        product_textfield.setText(quality.getProduct());
+                        quality_textfield.setText(quality.getQuality());
+                        amount_textfield.setText(quality.getAmount());
+                    }
+                }
+            });
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
