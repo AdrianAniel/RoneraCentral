@@ -7,36 +7,31 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="VentanaApp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.AppController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.AppController">
    <children>
       <Pane layoutX="-2.0" prefHeight="140.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
          <children>
-            <Hyperlink fx:id="BtnHome" alignment="CENTER" layoutX="310.0" layoutY="56.0" onMouseClicked="#eventBtnHome" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INICIO" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnHome" alignment="CENTER" layoutX="507.0" layoutY="53.0" onMouseClicked="#eventBtnHome" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INICIO" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="BtnInventario" alignment="CENTER" layoutX="443.0" layoutY="56.0" onMouseClicked="#eventBtnInventario" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INVENTARIO" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnInventario" alignment="CENTER" layoutX="640.0" layoutY="53.0" onMouseClicked="#eventBtnInventario" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INVENTARIO" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="BtnProcesos" alignment="CENTER" layoutX="611.0" layoutY="56.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="PROCESOS" textAlignment="CENTER">
+            <Hyperlink alignment="CENTER" layoutX="808.0" layoutY="53.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="PROCESOS" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="BtnCuenta" alignment="CENTER" layoutX="896.0" layoutY="56.0" onMouseClicked="#eventBtnCuenta" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CUENTA" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnCuenta" alignment="CENTER" layoutX="1093.0" layoutY="53.0" onMouseClicked="#eventBtnCuenta" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CUENTA" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="BtnCalidad" alignment="CENTER" layoutX="750.0" layoutY="56.0" onMouseClicked="#eventBtnCalidad" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CALIDAD" textAlignment="CENTER">
-               <font>
-                  <Font name="Arial Bold" size="18.0" />
-               </font>
-            </Hyperlink>
-            <Hyperlink fx:id="BtnCerrarSesión" alignment="CENTER" layoutX="1034.0" layoutY="56.0" onMouseClicked="#eventCerrarSesión" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CERRAR SESIÓN" textAlignment="CENTER">
+            <Hyperlink alignment="CENTER" layoutX="947.0" layoutY="53.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CALIDAD" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -46,10 +41,11 @@
                   <Image url="@image/Designer23.png" />
                </image>
             </ImageView>
+            <Pane fx:id="PaneBusqueda" layoutX="230.0" layoutY="45.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #F1F6F9;" />
          </children></Pane>
-      <Pane fx:id="PaneCambia" layoutX="-2.0" layoutY="130.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
+      <Pane fx:id="PaneCambia" layoutX="-2.0" layoutY="130.0" prefHeight="590.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
          <children>
-            <ImageView fitHeight="551.0" fitWidth="1178.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="551.0" fitWidth="1178.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@image/Home.png" />
                </image>

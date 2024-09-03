@@ -14,5 +14,8 @@ module com.adriananiel.roneracentral {
     requires javafx.swing;
 
     opens com.adriananiel.roneracentral to javafx.fxml;
+    opens com.adriananiel.roneracentral.GestionDeProcesos to javafx.fxml;
+
     exports com.adriananiel.roneracentral;
+    exports com.adriananiel.roneracentral.GestionDeProcesos to javafx.fxml;
 }

@@ -152,4 +152,10 @@ public class AppController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         activarDesactivarMenu();
     }
+
+    @FXML
+    void eventBtnProcesos(MouseEvent event) throws IOException{
+        Pane ventanaInventarioFXML = FXMLLoader.load(getClass().getResource("GestionDeProcesos/Procesos.fxml"));
+        PaneCambia.getChildren().setAll(ventanaInventarioFXML);
+    }
 }
