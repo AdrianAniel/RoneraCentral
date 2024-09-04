@@ -25,8 +25,6 @@ public class SignUpController implements Initializable {
     private String Rol;
 
     @FXML
-    private Hyperlink btnSignIn;
-    @FXML
     public AnchorPane VentanaSignUp;
     @FXML
     public TextField textUsername;
@@ -39,20 +37,15 @@ public class SignUpController implements Initializable {
     @FXML
     public Pane PanePasswordInvalid;
     @FXML
-    private Button btnSignUp;
-    @FXML
-    private Button BtnAgregarImagen;
-    @FXML
     private ImageView ImagenCrearCuenta;
     @FXML
     private CheckBox CheckCalidad;
-
     @FXML
     private CheckBox CheckInventario;
-
     @FXML
     private CheckBox CheckProcesos;
 
+    //metodo para activar los check cuando seleccionas otro a la vez
     public void selecionarDeseleccionarCheckBox(){
         CheckCalidad.selectedProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue) {
@@ -102,6 +95,7 @@ public class SignUpController implements Initializable {
         }
     }
 
+    //examina y pone la foto en la interfas desde la nueva ubicacion que es la base de datos
     public void examinarPonerFoto() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Archivos de imagen", "*.png", "*.jpg"));
@@ -128,6 +122,7 @@ public class SignUpController implements Initializable {
         }
     }
 
+    //registra los usuarios
     public void Registrar() throws IOException {
         String username = textUsername.getText();
         String password = textPassword.getText();
@@ -158,21 +153,26 @@ public class SignUpController implements Initializable {
     }
 
 
+    //evento que registra al usuario
     @FXML
     public void eventbtnCreateAccount() throws IOException {
         Registrar();
     }
 
+    //evento que cambia a la vista de iniciar sesion
     @FXML
     public void eventBtnSignIn() throws IOException {
         AnchorPane ventanaSignInFXML = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
         VentanaSignUp.getChildren().setAll(ventanaSignInFXML);
     }
+    //evento que pone la imagen
     @FXML
     void eventBtnAgregarImagen(MouseEvent event) {
+
         examinarPonerFoto();
     }
 
+    //los check que ponen el rol
     @FXML
     public void eventCheckCalidad(MouseEvent event) {
         this.Rol = "Calidad";
@@ -190,8 +190,10 @@ public class SignUpController implements Initializable {
 
     }
 
+    //inicializador de la clase
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         selecionarDeseleccionarCheckBox();
     }
 }

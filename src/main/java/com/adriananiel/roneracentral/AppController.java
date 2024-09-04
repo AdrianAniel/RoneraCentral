@@ -23,16 +23,7 @@ public class AppController implements Initializable {
     private Hyperlink BtnInventario;
 
     @FXML
-    private Hyperlink BtnCuenta;
-
-    @FXML
     private Pane PaneCambia;
-
-    @FXML
-    private Pane PaneInfo;
-
-    @FXML
-    private Hyperlink BtnCerrarSesión;
 
     @FXML
     private AnchorPane VentanaApp;
@@ -43,6 +34,7 @@ public class AppController implements Initializable {
     @FXML
     private Hyperlink BtnProcesos;
 
+    // activa y desactiva el menu en dependencia del rol del usuario que inicio sesion
     public void activarDesactivarMenu(){
         obtenerRolDeUsuario();
         String inventario = "Inventario";
@@ -67,8 +59,9 @@ public class AppController implements Initializable {
         }
     }
 
+    // metodo para cerrar y abrir la nueva ventana
     public void cerrarAbrirVentana(){
-        // Obtener el Stage desde el PaneGestionarCuenta
+        // Obtener el Stage desde el AnchorPaneVentanaApp
         Stage stage = (Stage) VentanaApp.getScene().getWindow();
         stage.close(); // Cierra la ventana
 
@@ -88,12 +81,13 @@ public class AppController implements Initializable {
         }
     }
 
+    //Con este metodo se obtiene el rol del usuario que inicia sesion
     public void obtenerRolDeUsuario() {
         String loggedInUserName = AppUtil.getLoggedInUser();
         if (loggedInUserName != null) {
             System.out.println("Bienvenido, " + loggedInUserName);
         }
-
+        // lee la base de datos para buscar el usuario y el rol
         try {
             BufferedReader reader = new BufferedReader(new FileReader("BaseDatos/usuarios.txt"));
             String line;
@@ -117,6 +111,7 @@ public class AppController implements Initializable {
         }
     }
 
+    // evento que carga la vista de la cuenta
     @FXML
     void eventBtnCuenta(MouseEvent event) throws IOException {
         Pane ventanaGestionarCuentaFXML = FXMLLoader.load(getClass().getResource("GestionarCuenta.fxml"));
@@ -124,19 +119,21 @@ public class AppController implements Initializable {
 
     }
 
+    // evento que carga la vista de  home
     @FXML
     void eventBtnHome(MouseEvent event) throws IOException {
         Pane ventanaHomeFXML = FXMLLoader.load(getClass().getResource("PaneHome.fxml"));
         PaneCambia.getChildren().setAll(ventanaHomeFXML);
     }
 
-
+    // evento que carga la vista del inventario
     @FXML
     void eventBtnInventario(MouseEvent event) throws IOException {
         Pane ventanaInventarioFXML = FXMLLoader.load(getClass().getResource("InventoryGestion.fxml"));
         PaneCambia.getChildren().setAll(ventanaInventarioFXML);
     }
 
+    // evento que carga la vista de control de calidad
     @FXML
     void eventBtnCalidad(MouseEvent event) throws IOException {
         Pane ventanaQualityControlFXML = FXMLLoader.load(getClass().getResource("QualityControl.fxml"));
@@ -144,10 +141,18 @@ public class AppController implements Initializable {
     }
 
     @FXML
+    //evento que carga la vista de reseñas
+    void eventBtnReseña(MouseEvent event) {
+        System.out.println("Proximamente");
+    }
+
+    // evento que cierra la ventana
+    @FXML
     void eventCerrarSesión(MouseEvent event) throws IOException {
         cerrarAbrirVentana();
     }
 
+    //inicializador de la clase
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         activarDesactivarMenu();

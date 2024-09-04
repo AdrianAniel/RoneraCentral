@@ -8,9 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c99ea6e-4280-4a1a-b793-428af5570791" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaseDatos/ron_db.ser" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/ron_db.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionarCuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionarCuentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/InventarioMateriaPrima.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/InventarioMateriaPrima.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/InventarioRon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/InventarioRon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/InventoryGestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/InventoryGestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/QualityData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Corzo/QualityData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Registro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/App.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/App.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionarCuenta.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionarCuenta.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/QualityControl.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/QualityControl.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +72,11 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;D:/Programming/Clases/RoneraCentral/src/main/java/com/adriananiel/roneracentral&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/prueba&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/Clases/RoneraCentral&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -87,6 +103,13 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.adriananiel.roneracentral.Main" />
+      <module name="RoneraCentral" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <module name="RoneraCentral" />
       <method v="2">
