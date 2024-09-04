@@ -1,0 +1,6 @@
+Humberto,123,humberto@gmail.com,BaseDatos/ImgUsuario/wallpaperbetter.jpg,Calidad
+Aime,321,aime@gmail.com,BaseDatos/ImgUsuario/wp12535723-sword-art-online-4k-pc-wallpapers.jpg,Calidad
+Adrian,123,adrian@gmail.com,BaseDatos/ImgUsuario/wp5231556-4k-gaming-wallpapers.jpg,Inventario
+DanielCorzo,ferxxo1000,danielcorzo101@gmail.com,null,Calidad
+dcorzo,12,dcorzo@gmail.com,null,Inventario
+dan,123,da@gmail.com,null,Calidad

@@ -9,6 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2c99ea6e-4280-4a1a-b793-428af5570791" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/BaseDatos/usuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/usuarios.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Login.java" afterDir="false" />
@@ -21,6 +22,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionarCuenta.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionarCuenta.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/SignIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/SignIn.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/SignUp.fxml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +60,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
@@ -70,20 +74,51 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.prueba.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/Programming/Clases/RoneraCentral/src/main/java/com/adriananiel/roneracentral",
+    "last_opened_file_path": "C:/Users/djand/OneDrive/Documentos/GitHub/RoneraCentral/BaseDatos",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> Stashed changes
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;EditorConfig&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "EditorConfig"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+<<<<<<< Updated upstream
+=======
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.adriananiel.roneracentral" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\djand\OneDrive\Documentos\GitHub\RoneraCentral\BaseDatos" />
+    </key>
+>>>>>>> Stashed changes
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\djand\OneDrive\Documentos\GitHub\RoneraCentral\src\main\java\com\adriananiel\roneracentral\Alejandro" />
+      <recent name="C:\Users\djand\OneDrive\Documentos\GitHub\RoneraCentral\src\main\resources\com\adriananiel\roneracentral" />
       <recent name="D:\Programming\Clases\RoneraCentral\BaseDatos" />
       <recent name="D:\Programming\Clases\RoneraCentral\src\main\java\com\adriananiel\roneracentral" />
       <recent name="D:\Programming\Clases\RoneraCentral\src\main\resources\com\adriananiel\roneracentral\image" />
-      <recent name="D:\Proyectos Personales\Proyecto Programación\RoneraCentral\src\main\resources\com\adriananiel\roneracentral\image" />
-      <recent name="D:\Programming\Clases\RoneraCentral\src\main\resources\com\adriananiel\roneracentral" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.adriananiel.roneracentral" />
@@ -104,6 +139,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,8 +155,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716858470405</updated>
+      <workItem from="1725476353495" duration="1694000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
