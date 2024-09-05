@@ -1,4 +1,4 @@
-package com.adriananiel.roneracentral;
+package com.adriananiel.roneracentral.Corzo;
 
 public class QualityData {
     private String product;

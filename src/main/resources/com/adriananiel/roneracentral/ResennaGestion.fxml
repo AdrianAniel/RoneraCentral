@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.Alejandro.ResennaController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" hmax="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="720.0" prefWidth="1280.0" style="-fx-border-color: #F1F6F9; -fx-background-color: #F1F6F9;">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1380.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
+               <children>
+                  <Pane layoutX="635.0" layoutY="120.0" prefHeight="529.0" prefWidth="592.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 20;">
+                     <children>
+                        <TableView fx:id="TablaView" editable="true" layoutX="1.0" layoutY="44.0" prefHeight="487.0" prefWidth="591.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-alignment: CENTER;">
+                           <columns>
+                              <TableColumn fx:id="NombreView" prefWidth="110.0" style="-fx-background-color: #F1F6F9; -fx-alignment: CENTER; -fx-font-size: 18px; -fx-font-family: Arial;" text="NOMBRE" />
+                              <TableColumn fx:id="CalificacionView" prefWidth="110.0" style="-fx-background-color: #F1F6F9; -fx-font-size: 18px; -fx-font-family: Arial; -fx-alignment: CENTER;" text="CALIFICACIÓN" />
+                              <TableColumn fx:id="ComentariosView" prefWidth="110.0" style="-fx-background-color: #F1F6F9; -fx-alignment: CENTER; -fx-font-size: 18px; -fx-font-family: Arial;" text="COMENTARIOS" />
+                           </columns>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <TextField fx:id="BarraBusqueda" layoutX="224.0" layoutY="19.0" promptText="BUSCAR" style="-fx-border-radius: 7; -fx-background-radius: 7; -fx-background-color: transparent; -fx-border-color: #d3d3d3; -fx-font-family: Arial; -fx-font-size: 12px;" />
+                        <ImageView fx:id="BtnBuscar" fitHeight="26.0" fitWidth="24.0" layoutX="347.0" layoutY="20.0" onMouseClicked="#eventBuscar" opacity="0.19" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Lupa.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Pane layoutY="62.0" prefHeight="470.0" prefWidth="592.0" visible="false" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="50.0" layoutY="120.0" prefHeight="529.0" prefWidth="564.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10px;">
+                     <children>
+                        <Label layoutX="38.0" layoutY="14.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="NOMBRE DEL RON">
+                           <font>
+                              <Font name="Arial" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="123.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="CLASIFICACIÓN">
+                           <font>
+                              <Font name="Arial" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="232.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="COMENTARIOS">
+                           <font>
+                              <Font name="Arial" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label ellipsisString="" layoutX="38.0" layoutY="188.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
+                        <ComboBox fx:id="RonsComboBox" layoutX="38.0" layoutY="44.0" prefHeight="53.0" prefWidth="290.0" promptText="SELECCIONE" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;" />
+                        <Label ellipsisString="" layoutX="38.0" layoutY="79.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
+                        <TextField fx:id="ClasificacionField" layoutX="38.0" layoutY="153.0" prefHeight="53.0" prefWidth="290.0" promptText="CLASIFICACIÓN" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="ComentariosField" layoutX="38.0" layoutY="262.0" prefHeight="53.0" prefWidth="290.0" promptText="COMENTARIOS" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label ellipsisString="" layoutX="38.0" layoutY="300.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
+                        <Button fx:id="BtnActualizar" layoutX="61.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#eventActualizar" prefHeight="50.0" prefWidth="160.0" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="ACTUALIZAR">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

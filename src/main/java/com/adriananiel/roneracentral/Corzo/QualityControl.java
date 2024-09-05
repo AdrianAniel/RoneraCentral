@@ -1,8 +1,5 @@
-package com.adriananiel.roneracentral;
+package com.adriananiel.roneracentral.Corzo;
 
-import com.adriananiel.roneracentral.Corzo.DB;
-import com.adriananiel.roneracentral.Corzo.QualityRonTable;
-import com.adriananiel.roneracentral.Corzo.WriteObject;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

@@ -7,7 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.image.WritableImage;
@@ -34,12 +33,6 @@ public class GestionarCuentaController implements Initializable {
     private String usuarioLogueado;
 
     @FXML
-    private Button BtnCambiarFoto;
-
-    @FXML
-    private Button BtnEditar;
-
-    @FXML
     private TextField CambiarContrasenaField;
 
     @FXML
@@ -50,9 +43,6 @@ public class GestionarCuentaController implements Initializable {
 
     @FXML
     private ImageView ImagenPerfil;
-
-    @FXML
-    private Button BtnEliminar;
 
     @FXML
     private TextField UsuarioActualField;
@@ -69,13 +59,17 @@ public class GestionarCuentaController implements Initializable {
     @FXML
     private CheckBox CheckProcesos;
 
+    //Comprueba si hay un usuario logueado y actualiza la variable local 'usuarioLogueado con el nombre del usuario logueado.
     public void comprobarUsuarioLogeadoYAEditar(){
+        // Obtiene el nombre del usuario logueado usando la clase utilitaria AppUtil
         String loggedInUserName = AppUtil.getLoggedInUser();
+        // Verifica si el nombre del usuario logueado no es nulo
         if (loggedInUserName != null) {
             this.usuarioLogueado = loggedInUserName; // Actualiza la variable con el nombre de usuario logueado
         }
     }
 
+    //metodo que deselecciona los Check cuando seleccionas otro
     public void selecionarDeseleccionarCheckBox(){
         CheckCalidad.selectedProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue) {
@@ -99,6 +93,7 @@ public class GestionarCuentaController implements Initializable {
         });
     }
 
+    // metodo para cerrar y abrir la nueva ventana
     public void cerrarAbrirVentana(){
         // Obtener el Stage desde el PaneGestionarCuenta
         Stage stage = (Stage) PaneGestionarCuenta.getScene().getWindow();
@@ -120,6 +115,7 @@ public class GestionarCuentaController implements Initializable {
         }
     }
 
+    //elimina la imagen de perfil
     private void eliminarImagenDeBaseDatos() {
         Platform.runLater(() -> {
             // Tu código aquí que modifica la UI
@@ -138,6 +134,7 @@ public class GestionarCuentaController implements Initializable {
         });
     }
 
+    //elimina tu cuenta
     private void eliminarUsuarioDeBaseDatos() throws IOException {
         String username = UsuarioActualField.getText();
 
@@ -147,6 +144,7 @@ public class GestionarCuentaController implements Initializable {
         }
     }
 
+    //carga la imagen de perfil en dependencia del usuario logueado
     public void cargarImagenPerfilDeBaseDatos(){
         String loggedInUserName = AppUtil.getLoggedInUser();
         if (loggedInUserName!= null) {
@@ -193,6 +191,7 @@ public class GestionarCuentaController implements Initializable {
         }
     }
 
+    //limpia todos los campos
     public void limpiarCampos(){
         CambiarContrasenaField.clear();
         CambiarCorreoField.clear();
@@ -229,6 +228,7 @@ public class GestionarCuentaController implements Initializable {
         }
     }
 
+    //este metodo busca la foto que elijas y la pone en la base de datos y carga un la ui desde la nueva ubicacion la foto
     public void examinarPonerFoto() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Archivos de imagen", "*.png", "*.jpg"));
@@ -255,11 +255,14 @@ public class GestionarCuentaController implements Initializable {
         }
     }
 
+    //evento que pone la foto de perfil
     @FXML
     void eventCambiarFoto(MouseEvent event) {
+
         examinarPonerFoto();
     }
 
+    //evento que edita el perfil
     @FXML
     void eventEditar(MouseEvent event) throws IOException {
         String usernameActual = UsuarioActualField.getText();
@@ -285,6 +288,7 @@ public class GestionarCuentaController implements Initializable {
             limpiarCampos();
     }
 
+    //evento para eliminar la cuenta
     @FXML
     void eventBtnEliminar(MouseEvent event) throws IOException {
         eliminarUsuarioDeBaseDatos();
@@ -292,8 +296,10 @@ public class GestionarCuentaController implements Initializable {
         cerrarAbrirVentana();
     }
 
+    //evento para seleccionar los check y obtines su rol
     @FXML
     public void eventCheckCalidad(MouseEvent event) {
+
         this.Rol = "Calidad";
     }
 
@@ -309,6 +315,7 @@ public class GestionarCuentaController implements Initializable {
 
     }
 
+    // inicializador de la clase
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cargarImagenPerfilDeBaseDatos();

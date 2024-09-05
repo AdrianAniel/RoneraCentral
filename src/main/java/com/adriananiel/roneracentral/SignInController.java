@@ -19,8 +19,6 @@ public class SignInController implements Initializable {
     @FXML
     public Button btnSignIn;
     @FXML
-    private Hyperlink ForgetPassword;
-    @FXML
     public Hyperlink SignUp;
     @FXML
     public AnchorPane VentanaSignIn;
@@ -31,6 +29,7 @@ public class SignInController implements Initializable {
     @FXML
     public Pane LoginMessenger;
 
+    //metodo para cambiar de ventana
     public void cerrarAbrirVentana(){
         // Obtener el Stage desde el PaneGestionarCuenta
         Stage stage = (Stage) VentanaSignIn.getScene().getWindow();
@@ -53,6 +52,7 @@ public class SignInController implements Initializable {
         }
     }
 
+    //metodo para iniciar sesion
     public void iniciarCesion() throws IOException {
         Registro.cargarUsuariosDesdeArchivo();
         String username = textUsername.getText();
@@ -68,6 +68,7 @@ public class SignInController implements Initializable {
         }
     }
 
+    //evento para iniciar sesion
     @FXML
     public void eventSignIn (ActionEvent event) throws IOException {
         iniciarCesion();
@@ -77,12 +78,15 @@ public class SignInController implements Initializable {
     protected void eventForgetPassword (ActionEvent event) {
         System.out.println("Has presionado se me olvido lo contraseña");
     }
+
+    //evento para canbiar la vista para crear cuenta
     @FXML
     public void eventSignUp() throws IOException {
         AnchorPane ventanaSignUpFXML = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
         VentanaSignIn.getChildren().setAll(ventanaSignUpFXML);
     }
 
+    //inicializador de la clase
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Registro.cargarUsuariosDesdeArchivo();

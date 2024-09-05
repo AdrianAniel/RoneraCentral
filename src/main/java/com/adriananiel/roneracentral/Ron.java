@@ -15,4 +15,3 @@ public class Ron extends RonGeneral {
 
     public void setTipoAlmacen(String tipoAlmacen) { this.tipoAlmacen = tipoAlmacen; }
 }
-

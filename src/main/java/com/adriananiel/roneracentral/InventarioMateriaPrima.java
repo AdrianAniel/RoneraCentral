@@ -5,15 +5,20 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+//Clase encargada de gestionar el inventario de materia prima. Utiliza archivos para persistir y recuperar datos.
 public class InventarioMateriaPrima {
+    // Lista de objetos MateriaPrimaGeneral
     private List<MateriaPrimaGeneral> listaMateriaPrima = new ArrayList<>();
+    // Ruta del archivo donde se guardará/leerá el inventario
     private final String archivo = "BaseDatos/inventario_materia_prima.txt";
 
+    //Agrega una nueva materia prima al inventario y la guarda en el archivo.
     public void agregarMateriaPrima(MateriaPrimaGeneral materiaPrima) {
         listaMateriaPrima.add(materiaPrima);
         guardarMateriaPrima();
     }
 
+    //Busca una materia prima por su nombre y devuelve un objeto si lo encuentra.
     public MateriaPrimaGeneral buscarMateriaPrimaPorNombre(String nombre) {
         for (MateriaPrimaGeneral materiaPrima : listaMateriaPrima) {
             if (materiaPrima.getNombre().equalsIgnoreCase(nombre)) {
@@ -23,6 +28,7 @@ public class InventarioMateriaPrima {
         return null;
     }
 
+    //Actualiza una materia prima existente en el inventario.
     public boolean actualizarMateriaPrima(MateriaPrimaGeneral materiaPrimaActualizado) {
         int index = listaMateriaPrima.indexOf(buscarMateriaPrimaPorNombre(materiaPrimaActualizado.getNombre()));
         if (index!= -1) {
@@ -33,6 +39,7 @@ public class InventarioMateriaPrima {
         return false;
     }
 
+    //Elimina una materia prima del inventario.
     public boolean eliminarMateriaPrima(String nombre) {
         int index = listaMateriaPrima.indexOf(buscarMateriaPrimaPorNombre(nombre));
         if (index!= -1) {
@@ -43,6 +50,7 @@ public class InventarioMateriaPrima {
         return false;
     }
 
+    //Guarda el inventario en el archivo especificado.
     private void guardarMateriaPrima() {
         try (PrintWriter writer = new PrintWriter(new FileWriter(archivo))) {
             for (MateriaPrimaGeneral materiaPrima : listaMateriaPrima) {
@@ -56,6 +64,7 @@ public class InventarioMateriaPrima {
         }
     }
 
+    //Carga el inventario desde el archivo especificado.
     public void cargarMateriaPrimaDesdeArchivo() {
         listaMateriaPrima.clear();
         try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
@@ -76,7 +85,9 @@ public class InventarioMateriaPrima {
         }
     }
 
+    //Devuelve la lista completa de materia prima.
     public List<MateriaPrimaGeneral> getListaMateriaPrima() {
+
         return listaMateriaPrima;
     }
 }

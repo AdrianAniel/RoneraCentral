@@ -17,7 +17,6 @@ import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
 import javax.imageio.ImageIO;
 
@@ -28,12 +27,6 @@ public class InventoryGestionController implements Initializable {
     private InventarioMateriaPrima inventarioMateriaPrima = new InventarioMateriaPrima();
     private ObservableList<Ron> rons = FXCollections.observableArrayList();
     private ObservableList<MateriaPrima> materiaPrima = FXCollections.observableArrayList();
-
-    @FXML
-    private Pane PaneInfo;
-
-    @FXML
-    private Button BtnExaminar;
 
     @FXML
     private ImageView imagenPuesta;
@@ -60,12 +53,6 @@ public class InventoryGestionController implements Initializable {
     private DatePicker VencimientoDatePicker;
 
     @FXML
-    private Button BtnActualizar;
-
-    @FXML
-    private Button BtnEliminar;
-
-    @FXML
     private TableColumn<Ron, String> FotoView;
 
     @FXML
@@ -75,29 +62,11 @@ public class InventoryGestionController implements Initializable {
     private TextField BarraBusqueda;
 
     @FXML
-    private ImageView BtnBuscar;
-
-    @FXML
     private TextField TipoField;
 
     // Aqui empieza el almacenamiento de la materia prima
     @FXML
     private TextField BarraBusquedaMateriaPrima;
-
-    @FXML
-    private Button BtnActualizarMateriaPrima;
-
-    @FXML
-    private Button BtnAnadirMateriaPrima;
-
-    @FXML
-    private ImageView BtnBuscarMateriaPrima;
-
-    @FXML
-    private Button BtnEliminarMateriaPrima;
-
-    @FXML
-    private Button BtnExaminarMateriaPrima;
 
     @FXML
     private TextField CantidadFieldMateriaPrima;
@@ -132,6 +101,7 @@ public class InventoryGestionController implements Initializable {
     @FXML
     private ImageView imagenPuestaMateriaPrima;
 
+    //limpia todos los campos
     public void limpiarCampos(){
         NombreField.clear();
         CantidadField.clear();
@@ -143,6 +113,7 @@ public class InventoryGestionController implements Initializable {
         CaracteristicasFieldMateriaPrima.clear();
     }
 
+    //carga el ron en el tableView
     public void cargarRonInventario(){
         inventario.cargarRonesDesdeArchivo();
 
@@ -159,6 +130,7 @@ public class InventoryGestionController implements Initializable {
         AlmacenamientoView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getTipoAlmacen()));
     }
 
+    //carga la materia prima en el tableView
     public void cargarMateriaPrimaInventario(){
         inventarioMateriaPrima.cargarMateriaPrimaDesdeArchivo();
 
@@ -175,6 +147,7 @@ public class InventoryGestionController implements Initializable {
         CaracteristicasViewMateriaPrima.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getCaracteristicas()));
     }
 
+    //metodo de busqueda de los rones en los tableView
     public void buscar() {
         // Asegúrate de que los datos se carguen desde el archivo antes de realizar la búsqueda
         inventario.cargarRonesDesdeArchivo();
@@ -201,6 +174,7 @@ public class InventoryGestionController implements Initializable {
         TablaView.setItems(filtrado);
     }
 
+    //metodo de busqueda de las materias prima en los tableView
     public void buscarMateriaPrima() {
         // Asegúrate de que los datos se carguen desde el archivo antes de realizar la búsqueda
         inventarioMateriaPrima.cargarMateriaPrimaDesdeArchivo();
@@ -227,9 +201,8 @@ public class InventoryGestionController implements Initializable {
         TablaViewMateriaPriama.setItems(filtrado);
     }
 
-
-    public void examinarPonerFoto(){
-        FileChooser fileChooser = new FileChooser();
+    // busca en el equipo la imagen y la pone en la ui
+    public void examinarPonerFoto(){FileChooser fileChooser = new FileChooser();
         // Puedes agregar más filtros si es necesario
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Archivos de imagen", "*.png", "*.jpg")); // Filtra por archivos de texto
 
@@ -251,7 +224,30 @@ public class InventoryGestionController implements Initializable {
         }
     }
 
-    //Botones comienzan aquí
+    // busca en el equipo la imagen y la pone en la ui
+    public void examinarPonerFotoMateriaPrima(){FileChooser fileChooser = new FileChooser();
+        // Puedes agregar más filtros si es necesario
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Archivos de imagen", "*.png", "*.jpg")); // Filtra por archivos de texto
+
+        File selectedFile = fileChooser.showOpenDialog(null); // Pasamos null ya que estamos en un contexto de aplicación sin Stage
+        if (selectedFile!= null) {
+            imagePath = selectedFile.getAbsolutePath();
+            System.out.println("Archivo seleccionado: " + selectedFile.getAbsolutePath());
+
+            // Aquí pone la foto seleccionada con fileChooser en la UI que establecimos
+            try {
+                // Cargar la imagen utilizando ImageIO
+                BufferedImage bufferedImage = ImageIO.read(selectedFile);
+                WritableImage image = SwingFXUtils.toFXImage(bufferedImage, null);
+                imagenPuestaMateriaPrima.setImage(image);
+                System.out.println("Imagen cargada: " + image.getUrl());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    //evento para actualizar materia prima
     @FXML
     void eventActualizarMateriaPrima(MouseEvent event) {
         String nombre = NombreFieldMateriaPrima.getText();
@@ -268,6 +264,7 @@ public class InventoryGestionController implements Initializable {
         cargarMateriaPrimaInventario();
     }
 
+    //añadir materia prima
     @FXML
     void eventAnadirMateriaPrima(MouseEvent event) {
         String nombre = NombreFieldMateriaPrima.getText();
@@ -284,11 +281,14 @@ public class InventoryGestionController implements Initializable {
         cargarMateriaPrimaInventario();
     }
 
+    //evento busca la materia prima en el tableView
     @FXML
     void eventBuscarMateriaPrima(MouseEvent event) {
+
         buscarMateriaPrima();
     }
 
+    //evento que elimina la materia prima
     @FXML
     void eventEliminarMateriaPrima(MouseEvent event) {
         String nombre = NombreFieldMateriaPrima.getText();
@@ -299,16 +299,20 @@ public class InventoryGestionController implements Initializable {
         cargarMateriaPrimaInventario();
     }
 
+    //evento que pone la imagen de la materia prima
     @FXML
     void eventExaminarMateriaPrima(MouseEvent event) {
-        examinarPonerFoto();
+        examinarPonerFotoMateriaPrima();
     }
 
+    //evento que pone la imagen del ron
     @FXML
     void eventExaminar(MouseEvent event) {
+
         examinarPonerFoto();
     }
 
+    //evento de añadir los rones
     @FXML
     void eventAnadir(MouseEvent event) {
         String nombre = NombreField.getText();
@@ -325,6 +329,7 @@ public class InventoryGestionController implements Initializable {
         cargarRonInventario();
     }
 
+    //evento para actualizar los rones
     @FXML
     private void eventActualizar(MouseEvent event) {
         String nombre = NombreField.getText();
@@ -341,6 +346,7 @@ public class InventoryGestionController implements Initializable {
         cargarRonInventario();
     }
 
+    //evento que elimina un ron especifico
     @FXML
     void eventEliminar(MouseEvent event) {
         String nombre = NombreField.getText();
@@ -351,11 +357,13 @@ public class InventoryGestionController implements Initializable {
         cargarRonInventario();
     }
 
+    //evento que busca ron en el tableView
     @FXML
     void eventBuscar(MouseEvent event) {
         buscar();
     }
 
+    //inicializador de la clase
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

@@ -7,6 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="2c99ea6e-4280-4a1a-b793-428af5570791" name="Changes" comment=""/>
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Alejandro/RegistroResenna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Alejandro/RegistroResenna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Alejandro/ResennaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Alejandro/ResennaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Ron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Ron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/amanda/Resenna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/amanda/Resenna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/ResennaGestion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/ResennaGestion.fxml" afterDir="false" />
     <list default="true" id="2c99ea6e-4280-4a1a-b793-428af5570791" name="Changes" comment="nuevo">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ButtonEditController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/button-edit.fxml" afterDir="false" />
@@ -72,10 +82,19 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;/home/brayan/IdeaProjects/RoneraCentral/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Proyectos Personales/proyecto 1&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/Programming/Clases/RoneraCentral/src/main/java/com/adriananiel/roneracentral&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/Clases/RoneraCentral&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -126,6 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716858470405</updated>
+      <workItem from="1725482298794" duration="621000" />
     </task>
     <task id="LOCAL-00001" summary="nuevo">
       <option name="closed" value="true" />
@@ -153,6 +173,9 @@
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
