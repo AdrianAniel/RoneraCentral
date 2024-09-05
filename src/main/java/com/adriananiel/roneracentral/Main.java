@@ -11,12 +11,10 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
-        //Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("App.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
         primaryStage.setTitle("Ronera Central");
         primaryStage.setResizable(false);
-        //primaryStage.setScene(new Scene(root, 1000, 600));
-        primaryStage.setScene(new Scene(root, 1295, 760));
+        primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.centerOnScreen();
         primaryStage.show();
     }
