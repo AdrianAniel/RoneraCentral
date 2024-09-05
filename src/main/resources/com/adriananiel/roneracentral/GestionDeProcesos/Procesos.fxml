@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.GestionDeProcesos.ProcesosController">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <Button fx:id="btnPedidos" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#eventBtnPedidos" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20;" text="Pedidos" textFill="WHITE">
+               <font>
+                  <Font name="AsanaMathJax_Variants-Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="95.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnSumunistros" alignment="CENTER" layoutX="1140.0" layoutY="13.0" mnemonicParsing="false" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20;" text="Suministros" textFill="WHITE">
+               <font>
+                  <Font name="AsanaMathJax_Variants-Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="95.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane fx:id="panel" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

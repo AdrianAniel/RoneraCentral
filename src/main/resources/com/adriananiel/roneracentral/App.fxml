@@ -11,37 +11,37 @@
    <children>
       <Pane layoutX="-2.0" prefHeight="140.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
          <children>
-            <Hyperlink alignment="CENTER" layoutX="211.0" layoutY="56.0" onMouseClicked="#eventBtnHome" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INICIO" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnHome" alignment="CENTER" layoutX="310.0" layoutY="56.0" onMouseClicked="#eventBtnHome" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INICIO" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="BtnInventario" alignment="CENTER" layoutX="344.0" layoutY="56.0" onMouseClicked="#eventBtnInventario" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INVENTARIO" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnInventario" alignment="CENTER" layoutX="443.0" layoutY="56.0" onMouseClicked="#eventBtnInventario" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="INVENTARIO" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="BtnProcesos" alignment="CENTER" layoutX="512.0" layoutY="56.0" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="PROCESOS" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnProcesos" alignment="CENTER" layoutX="611.0" layoutY="56.0" onMouseClicked="#eventBtnProcesos" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="PROCESOS" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink alignment="CENTER" layoutX="797.0" layoutY="56.0" onMouseClicked="#eventBtnCuenta" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CUENTA" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnCuenta" alignment="CENTER" layoutX="896.0" layoutY="56.0" onMouseClicked="#eventBtnCuenta" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CUENTA" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="BtnCalidad" alignment="CENTER" layoutX="651.0" layoutY="56.0" onMouseClicked="#eventBtnCalidad" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CALIDAD" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnCalidad" alignment="CENTER" layoutX="750.0" layoutY="56.0" onMouseClicked="#eventBtnCalidad" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CALIDAD" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <Hyperlink alignment="CENTER" layoutX="1034.0" layoutY="56.0" onMouseClicked="#eventCerrarSesión" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CERRAR SESIÓN" textAlignment="CENTER">
+            <Hyperlink fx:id="BtnCerrarSesión" alignment="CENTER" layoutX="1034.0" layoutY="56.0" onMouseClicked="#eventCerrarSesión" style="-fx-border-color: transparent; -fx-text-fill: #000000;" text="CERRAR SESIÓN" textAlignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Hyperlink>
-            <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="62.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+            <ImageView fitHeight="118.0" fitWidth="115.0" layoutX="62.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
                <image>
                   <Image url="@image/Designer23.png" />
                </image>

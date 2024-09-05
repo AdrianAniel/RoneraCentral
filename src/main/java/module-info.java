@@ -13,11 +13,14 @@ module com.adriananiel.roneracentral {
     requires java.desktop;
     requires javafx.swing;
 
-    exports com.adriananiel.roneracentral;
     opens com.adriananiel.roneracentral to javafx.fxml;
+    opens com.adriananiel.roneracentral.GestionDeProcesos to javafx.fxml;
+
+    exports com.adriananiel.roneracentral;
     exports com.adriananiel.roneracentral.Corzo;
     opens com.adriananiel.roneracentral.Corzo to javafx.fxml;
     opens com.adriananiel.roneracentral.Alejandro;
     exports com.adriananiel.roneracentral.Alejandro to javafx.fxml;
 
+    exports com.adriananiel.roneracentral.GestionDeProcesos to javafx.fxml;
 }
