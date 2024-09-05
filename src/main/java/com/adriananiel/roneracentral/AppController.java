@@ -142,7 +142,9 @@ public class AppController implements Initializable {
 
     @FXML
     //evento que carga la vista de reseñas
-    void eventBtnReseña(MouseEvent event) {
+    void eventBtnReseña(MouseEvent event) throws IOException {
+        Pane ventanaResennaGestionFXML = FXMLLoader.load(getClass().getResource("ResennaGestion.fxml"));
+        PaneCambia.getChildren().setAll(ventanaResennaGestionFXML);
         System.out.println("Proximamente");
     }
 

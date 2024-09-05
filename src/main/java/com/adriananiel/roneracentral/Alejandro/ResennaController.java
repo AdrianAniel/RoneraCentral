@@ -1,9 +1,12 @@
-package com.adriananiel.roneracentral;
+package com.adriananiel.roneracentral.Alejandro;
 
+import com.adriananiel.roneracentral.InventarioRon;
+import com.adriananiel.roneracentral.amanda.Resenna;
+import com.adriananiel.roneracentral.Ron;
+import com.adriananiel.roneracentral.RonGeneral;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -29,18 +32,19 @@ import java.util.stream.Collectors;
 public class ResennaController implements Initializable {
 
     private InventarioRon inventario = new InventarioRon();
+    private RegistroResenna resenna = new RegistroResenna();
 
     @FXML
-    private TableView<Ron> TablaView;
+    private TableView<RonGeneral> TablaView;
 
     @FXML
-    private TableColumn<Ron, String> CalificacionView;
+    private TableColumn<RonGeneral, String> CalificacionView;
 
     @FXML
-    private TableColumn<Ron, String> NombreView;
+    private TableColumn<RonGeneral, String> NombreView;
 
     @FXML
-    private TableColumn<Ron, String> ComentariosView;
+    private TableColumn<RonGeneral, String> ComentariosView;
 
     @FXML
     private ComboBox<String> RonsComboBox;
@@ -56,7 +60,7 @@ public class ResennaController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        cargarInicial();
+        //cargarInicial();
         ClasificacionField.addEventFilter(KeyEvent.KEY_TYPED, this::filtrarSoloNumeros);
     }
 
@@ -71,98 +75,83 @@ public class ResennaController implements Initializable {
         ComentariosField.clear();
     }
 
-    public void cargarInicial(){
+    /*public void cargarInicial(){
         inventario.cargarRonesDesdeArchivo();
 
-        ObservableList<Ron> rons = (ObservableList<Ron>) FXCollections.observableArrayList((Collection<? extends RonGeneral>) inventario.getListaRones());
+        ObservableList<Resenna> resennaList = FXCollections.observableArrayList(resenna.getListaResenna());
 
-        // Mapea la lista de RonGeneral a una lista de nombres (String)
-        List<String> nombresRones = inventario.getListaRones().stream()
+
+        List<String> nombresRones = Resenna.stream()
                 .map(RonGeneral::getNombre)
                 .collect(Collectors.toList());
 
-        // Convierte la lista de nombres a una lista observable
         ObservableList<String> observableNombresRones = FXCollections.observableArrayList(nombresRones);
 
-        // Asigna la lista observable al ComboBox
         RonsComboBox.setItems(observableNombresRones);
 
-        // Asigna la lista observable al TableView
-        TablaView.setItems(rons);
+        TablaView.setItems(FXCollections.observableArrayList(Resenna));
 
-        // Configura las columnas del TableView
-        CalificacionView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(Objects.nonNull(cellData.getValue().getResenna()) ? cellData.getValue().getResenna().getClasificacion() : "").asString());
+        CalificacionView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getClasificacion()).asString());
         NombreView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getNombre()));
-        ComentariosView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(Objects.nonNull(cellData.getValue().getResenna()) ? cellData.getValue().getResenna().getComentario() : "").asString());
-    }
+        ComentariosView.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getComentario()));
+    }*/
 
     public void buscar() {
-        // Asegúrate de que los datos se carguen desde el archivo antes de realizar la búsqueda
         inventario.cargarRonesDesdeArchivo();
 
-        // Obtiene el texto de búsqueda del campo de texto
         String filtro = BarraBusqueda.getText();
 
-        // Crea una nueva lista observable para almacenar los elementos filtrados
-        ObservableList<Ron> filtrado = FXCollections.observableArrayList();
-
-        // Itera sobre la lista original de rones para aplicar el filtro
+        ObservableList<RonGeneral> filtrado = FXCollections.observableArrayList();
         for (RonGeneral ron : inventario.getListaRones()) {
-            // Convierte el nombre del ron y el filtro a minúsculas para hacer la comparación insensible a mayúsculas
             if (ron.getNombre().toLowerCase().contains(filtro.toLowerCase())) {
-                // Si el nombre del ron contiene el filtro, añade el ron a la lista filtrada
-                filtrado.add((Ron) ron);
+                filtrado.add(ron);
             }
         }
 
-        // Muestra el número de elementos filtrados
         System.out.println("Elementos filtrados: " + filtrado.size());
-
-        // Actualiza el TableView con los elementos filtrados
         TablaView.setItems(filtrado);
     }
 
-
-    @FXML
+    /*@FXML
     void eventActualizar(MouseEvent event) {
-        // Verificar si se ha seleccionado un valor en el ComboBox
         String selectedRon = RonsComboBox.getValue();
         if (selectedRon == null || selectedRon.isEmpty()) {
-            // Mostrar un mensaje de error si no hay selección
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error de Actualización");
             alert.setHeaderText(null);
             alert.setContentText("Debe seleccionar un ron del ComboBox antes de actualizar.");
             alert.showAndWait();
-            return; // Salir del método si no se ha seleccionado un ron
+            return;
         }
 
-        // Verificar el valor del TextField
         String clasificacion = ClasificacionField.getText();
-        if (clasificacion == null || clasificacion.isEmpty()) {
+        if (clasificacion.isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error de Actualización");
             alert.setHeaderText(null);
             alert.setContentText("Debe ingresar una clasificación.");
             alert.showAndWait();
-            return; // Salir del método si la clasificación está vacía
+            return;
         }
-        String comentarios = Objects.nonNull(ComentariosField.getText())?ComentariosField.getText():"";
-        var resenna = RegistroResenna.agregarResenna(new Resenna(Integer.parseInt(clasificacion), comentarios));
-        var ron = InventarioRon.buscarRonPorNombre(selectedRon);
+
+        String comentarios = Objects.nonNull(ComentariosField.getText()) ? ComentariosField.getText() : "";
+        String nombre = "";
+        Resenna resenna = RegistroResenna.agregarResenna(new Resenna(nombre, clasificacion, comentarios));
+        RonGeneral ron = inventario.buscarRonPorNombre(selectedRon);
         ron.setResenna(resenna);
         inventario.actualizarRonResenna(ron, resenna);
-        System.out.println("Reseña Añadida");
+        System.out.println("Reseña añadida");
 
         limpiarCampos();
-
         cargarInicial();
-    }
-
+    }*/
 
     @FXML
     void eventBuscar(MouseEvent event) {
         buscar();
     }
 
+    public void eventActualizar(MouseEvent mouseEvent) {
+
+    }
 }

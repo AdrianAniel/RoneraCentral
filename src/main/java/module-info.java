@@ -17,4 +17,7 @@ module com.adriananiel.roneracentral {
     opens com.adriananiel.roneracentral to javafx.fxml;
     exports com.adriananiel.roneracentral.Corzo;
     opens com.adriananiel.roneracentral.Corzo to javafx.fxml;
+    opens com.adriananiel.roneracentral.Alejandro;
+    exports com.adriananiel.roneracentral.Alejandro to javafx.fxml;
+
 }

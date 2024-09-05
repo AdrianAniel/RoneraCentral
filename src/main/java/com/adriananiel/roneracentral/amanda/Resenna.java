@@ -1,40 +1,32 @@
-package com.adriananiel.roneracentral;
+package com.adriananiel.roneracentral.amanda;
 
 public class Resenna {
-    private int id;
-    private int clasificacion;
+    private String nombre;
+    private String clasificacion;
     private String comentario;
 
-    public Resenna(int id, int clasificacion, String comentario) {
-        this.id = id;
+    public Resenna(String nombre, String clasificacion, String comentario) {
+        this.nombre = nombre;
         this.clasificacion = clasificacion;
         this.comentario = comentario;
-    }
-
-    public Resenna(int clasificacion, String comentario) {
-        this.clasificacion = clasificacion;
-        this.comentario = comentario;
-    }
-
-    public Resenna() {
     }
 
     // Getters y Setters
-    public int getId() {
+    public String getNombre() {
 
-        return id;
+        return nombre;
     }
 
-    public void setId(int id) {
+    public void setId(String nombre) {
 
-        this.id = id;
+        this.nombre = nombre;
     }
-    public int getClasificacion() {
+    public String getClasificacion() {
 
         return clasificacion;
     }
 
-    public void setClasificacion(int clasificacion) {
+    public void setClasificacion(String clasificacion) {
 
         this.clasificacion = clasificacion;
     }
