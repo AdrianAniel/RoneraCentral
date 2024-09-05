@@ -24,23 +24,25 @@ public class PedidosController implements Initializable {
     @FXML
     private Button btnGuardar;
     @FXML
-    private TextField inputCliente;
+    public TextField inputCliente;
     @FXML
-    private TextArea inputDescripcion;
+    public TextArea inputDescripcion;
     @FXML
-    private TextField inputPedido;
+    public TextField inputPedido;
     @FXML
-    private TextField inputPrecio;
+    public TextField inputPrecio;
     @FXML
-    private TextField inputPrioridad;
+    public TextField inputPrioridad;
     @FXML
     private Text textCantPedidos;
     @FXML
     private Text textPrecioTotal;
     @FXML
-    private Text textTitle;
+    public Text textTitle;
     @FXML
     private VBox panelPedidos;
+    @FXML
+    private VBox vBoxButton;
 
     private MyUpdateUser myUpdateUser;
 
@@ -96,6 +98,12 @@ public class PedidosController implements Initializable {
         btnGuardar.setStyle("-fx-background-color:   #1a273c; -fx-background-radius: 10");
     }
 
+    void updateButton(Button button){
+        vBoxButton.getChildren().clear();
+        vBoxButton.getChildren().setAll(button);
+    }
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         BaseDatosArchivos bd = new BaseDatosArchivos();
@@ -103,8 +111,18 @@ public class PedidosController implements Initializable {
         VBoxLayout.getChildren().setAll();
         myUpdateUser = new MyUpdateUser() {
             @Override
-            public void updateUser(Pedido pedido) {
+            public void updateUser(Pedido pedido, PedidosController pedidosController) {
                 setData(pedido);
+                FXMLLoader loader1 = new FXMLLoader();
+                loader1.setLocation(getClass().getResource("button-edit.fxml"));
+                try{
+                    Button button = loader1.load();
+                    updateButton(button);
+                    ButtonEditController buttonEditController = loader1.getController();
+                    buttonEditController.setData(pedido, pedidosController);
+                }catch (IOException e){
+                    throw new RuntimeException(e);
+                }
             }
         };
 

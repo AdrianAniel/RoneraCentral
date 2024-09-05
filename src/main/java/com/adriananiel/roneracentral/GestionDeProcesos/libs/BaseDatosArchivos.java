@@ -21,6 +21,14 @@ public class BaseDatosArchivos {
         }
     }
 
+    public void guardarDatos(ArrayList<Pedido> p) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(String.format("%sPedidos.txt", rutaArcivo), false))) {
+            oos.writeObject(p);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public ArrayList<Pedido> leerDatosPedido() {
         String archivo = String.format("%sPedidos.txt", rutaArcivo);

@@ -52,7 +52,7 @@ public class PeidosItemsController {
 
     @FXML
     void editImen(MouseEvent event) {
-        myUpdateUser.updateUser(pedidoUser);
+        myUpdateUser.updateUser(pedidoUser , pedidosController);
     }
 
     public void setController( PedidosController pedidosController){

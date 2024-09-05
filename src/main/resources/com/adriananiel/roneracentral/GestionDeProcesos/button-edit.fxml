@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+
+<Button fx:id="btnEditar" mnemonicParsing="false" onMouseClicked="#eventBtnEditar" onMouseEntered="#setOnMouseEnteredEditar" onMouseExited="#setOnMouseExitEditar" prefHeight="37.0" prefWidth="104.0" style="-fx-background-color: #80ff80; -fx-background-radius: 10;" text="Editar" textFill="WHITE" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.GestionDeProcesos.ButtonEditController">
+   <font>
+      <Font name="JetBrains Mono Medium" size="18.0" />
+   </font>
+</Button>

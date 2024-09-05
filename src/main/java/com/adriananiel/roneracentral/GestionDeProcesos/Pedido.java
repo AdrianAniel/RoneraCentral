@@ -18,6 +18,7 @@ public class Pedido implements Serializable {
     private String prioridad;
 
     public Pedido() {
+        this.idPedido = GenerarID.generarRandomID();
     }
 
     public Pedido(String clientName, String pedido, String description, int price, String prioridad) {
@@ -31,6 +32,10 @@ public class Pedido implements Serializable {
 
     public String getClientName() {
         return clientName;
+    }
+
+    public String getIdPedido() {
+        return idPedido;
     }
 
     public void setClientName(String clientName) {

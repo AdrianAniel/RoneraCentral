@@ -228,7 +228,8 @@ public class InventoryGestionController implements Initializable {
     }
 
 
-    public void examinarPonerFoto(){FileChooser fileChooser = new FileChooser();
+    public void examinarPonerFoto(){
+        FileChooser fileChooser = new FileChooser();
         // Puedes agregar más filtros si es necesario
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Archivos de imagen", "*.png", "*.jpg")); // Filtra por archivos de texto
 

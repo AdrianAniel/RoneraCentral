@@ -109,14 +109,18 @@
                <Insets left="7.0" right="7.0" />
             </VBox.margin>
          </VBox>
-         <Button fx:id="btnGuardar" mnemonicParsing="false" onMouseClicked="#eventBtnSave" onMouseEntered="#setOnMouseEntered" onMouseExited="#setOnMouseExit" style="-fx-background-color: #1a273c; -fx-background-radius: 10;" text="Guardar" textFill="WHITE">
-            <font>
-               <Font name="JetBrains Mono Medium" size="18.0" />
-            </font>
+         <VBox fx:id="vBoxButton" alignment="CENTER">
             <VBox.margin>
                <Insets top="10.0" />
             </VBox.margin>
-         </Button>
+            <children>
+               <Button fx:id="btnGuardar" mnemonicParsing="false" onMouseClicked="#eventBtnSave" onMouseEntered="#setOnMouseEntered" onMouseExited="#setOnMouseExit" style="-fx-background-color: #1a273c; -fx-background-radius: 10;" text="Guardar" textFill="WHITE">
+                  <font>
+                     <Font name="JetBrains Mono Medium" size="18.0" />
+                  </font>
+               </Button>
+            </children>
+         </VBox>
       </VBox>
    </left>
    <center>
