@@ -38,7 +38,7 @@ public class EscribirObjeto {
                 if (list.isEmpty()){
                     System.out.println("lista desde write object vacia");
                 } else {
-                    System.out.println(list.getLast().getNombreField());
+                    System.out.println(list.getLast().getNombreCampo());
                 }
 
                 // cierra los streams

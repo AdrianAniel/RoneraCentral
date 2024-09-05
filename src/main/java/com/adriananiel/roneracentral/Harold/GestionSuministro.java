@@ -1,15 +1,15 @@
 package com.adriananiel.roneracentral.Harold;
 
-import javafx.beans.property.SimpleStringProperty;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 
-import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -22,44 +22,45 @@ public class GestionSuministro implements Initializable {
     private ObservableList<SuministroTable> observableSuministroList;
     EscribirObjeto wo = new EscribirObjeto("BaseDatos/Suministro_DB.ser");
 
+    @FXML
+    private TableColumn<SuministroTable ,String> AlmacenamientoView;
 
     @FXML
-    private TextField nombreField;
+    private TableColumn<SuministroTable, String> CantidadView;
 
-    @FXML
-    private TextField cantidadField;
-
-    @FXML
-    private TextField tipoField;
-
-    @FXML
-    private TableView<SuministroTable> TablaView;
 
     @FXML
     private TableColumn<SuministroTable, String> NombreView;
 
     @FXML
-    private TableColumn<SuministroTable, String> CantidadView;
+    private TableView<SuministroTable> TablaView;
 
     @FXML
-    private TableColumn<SuministroTable, String> AlmacenamientoView;
+    private TextField nombreCampo;
+
+    @FXML
+    private TextField cantidadCampo;
+
+    @FXML
+    private TextField tipoCampo;
+
 
     // Evento de guardar texto FXML
 
     public void eventAnadir(ActionEvent event) {
-        if (nombreField.getText().isEmpty() || cantidadField.getText().isEmpty() || tipoField.getText().isEmpty()) {
+        if (nombreCampo.getText().isEmpty() || cantidadCampo.getText().isEmpty() || tipoCampo.getText().isEmpty()) {
             showError("Debes ingresar un texto");
         } else {
             suministro = new SuministroTable(
-                    nombreField.getText(),
-                    cantidadField.getText(),
-                    tipoField.getText());
+                    nombreCampo.getText(),
+                    cantidadCampo.getText(),
+                    tipoCampo.getText());
         }
         SuministroList.add(suministro);
         observableSuministroList.add(suministro);
         wo.Write(SuministroList);
 
-       /* clearTextFields();*/
+        clearTextFields();
     }
 
     private void showError(String debesIngresarUnTexto) {
@@ -70,14 +71,14 @@ public class GestionSuministro implements Initializable {
         System.out.println("Se presiono el boton actualizar");
 
         suministro = new SuministroTable(
-                nombreField.getText(),
-                cantidadField.getText(),
-                tipoField.getText());
+                nombreCampo.getText(),
+                cantidadCampo.getText(),
+                tipoCampo.getText());
 
         for (int i = 0; i < SuministroList.size(); i++) {
             SuministroTable lron = SuministroList.get(i);
-            System.out.println("antes del if : nombre del ron a actualizar " + lron.getNombreField());
-            if (lron.getNombreField().equals(suministro.getNombreField())) {
+            System.out.println("antes del if : nombre del ron a actualizar " + lron.getNombreCampo());
+            if (lron.getNombreCampo().equals(suministro.getNombreCampo())) {
                 // Actualizar el elemento en ronList y observableRonList usando el índice 'i'
                 SuministroList.set(i, suministro);
                 observableSuministroList.set(i, suministro);
@@ -87,26 +88,44 @@ public class GestionSuministro implements Initializable {
                 break; // Salir del bucle una vez que se encontró y actualizó el elemento
             }
         }
-        wo.Write(SuministroList);
+        SuministroTable selectedSuministro = TablaView.getSelectionModel().getSelectedItem();
 
-        System.out.println("Se actualizo correctamente el elemento: " + suministro.getNombreField());
-        System.out.println("tipo" + suministro.getTipoField());
+        if (selectedSuministro != null) {
+            // Actualizar los valores del objeto seleccionado
+            selectedSuministro.setNombreCampo(nombreCampo.getText());
+            selectedSuministro.setCantidadCampo(cantidadCampo.getText());
+            selectedSuministro.setTipoCampo(tipoCampo.getText());
+
+            // Refrescar la tabla para mostrar los cambios
+            TablaView.refresh();
+
+            // Guardar los cambios en la base de datos
+            wo.Write(SuministroList);
+
+            System.out.println("Se actualizo correctamente el elemento: " + selectedSuministro.getNombreCampo());
+        } else {
+            System.out.println("No se ha seleccionado ningún elemento para actualizar.");
+        }
+
+        System.out.println("Se actualizo correctamente el elemento: " + suministro.getNombreCampo());
+        System.out.println("tipo" + suministro.getTipoCampo());
         for (SuministroTable pron : SuministroList) {
-            System.out.println(pron.getNombreField());
-            System.out.println(pron.getTipoField());
+            System.out.println(pron.getNombreCampo());
+            System.out.println(pron.getTipoCampo());
         }
     }
-    private void eventEliminar(ActionEvent event){
+
+    public void btnDelete(ActionEvent event) {
 
         System.out.println("Botón presionado Delete!");
         suministro = new SuministroTable(
-                nombreField.getText(),
-                cantidadField.getText(),
-                tipoField.getText());
+                nombreCampo.getText(),
+                cantidadCampo.getText(),
+                tipoCampo.getText());
 
         int index = 0;
-        for (SuministroTable lron : SuministroList){
-            if (lron.getNombreField().equals(suministro.getNombreField())) {
+        for (SuministroTable lron : SuministroList) {
+            if (lron.getNombreCampo().equals(suministro.getNombreCampo())) {
                 int currentIndex = index;
                 SuministroList.remove(lron);
                 observableSuministroList.remove(currentIndex);
@@ -114,37 +133,56 @@ public class GestionSuministro implements Initializable {
             }
             index++;
         }
-        wo.Write(SuministroList);
-        System.out.println("Se elimino correctamente el elemento: " + suministro.getNombreField());
-        for (SuministroTable pron: SuministroList) {
-            System.out.println(pron.getNombreField());
+        // Asegúrate de que la fila seleccionada se obtenga correctamente
+        SuministroTable selectedSuministro = TablaView.getSelectionModel().getSelectedItem();
+
+        // Verifica si hay una selección válida
+        if (selectedSuministro != null) {
+            // Elimina el elemento de la lista observable
+            observableSuministroList.remove(selectedSuministro);
+            SuministroList.remove(selectedSuministro);  // También lo eliminas de la lista original
+
+            // Actualiza la tabla para reflejar los cambios
+            TablaView.refresh();
+            wo.Write(SuministroList);
+            System.out.println("Se elimino correctamente el elemento: " + suministro.getNombreCampo());
+            for (SuministroTable pron : SuministroList) {
+                System.out.println(pron.getNombreCampo());
+            }
         }
     }
-
    private void clearTextFields(){
-        nombreField.setText("");
-        cantidadField.setText("");
-        tipoField.setText("");
+        nombreCampo.setText("");
+        cantidadCampo.setText("");
+        tipoCampo.setText("");
     }
+    public void Back(ActionEvent event) {
 
-
+    }
 
     private void loadTable() throws IOException, ClassNotFoundException, IOException {
         DateBase suministroDB = new DateBase("BaseDatos/Suministro_DB.ser");
         SuministroList = suministroDB.startDateBase();
         observableSuministroList = FXCollections.observableArrayList(SuministroList);
         TablaView.setItems(observableSuministroList);
+        NombreView.setCellValueFactory(new PropertyValueFactory<>("nombreCampo"));
+        CantidadView.setCellValueFactory(new PropertyValueFactory<>("cantidadCampo"));
+        AlmacenamientoView.setCellValueFactory(new PropertyValueFactory<>("tipoCampo"));
 
-
-        NombreView.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getNombreField()));
-        CantidadView.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getTipoField()));
-        AlmacenamientoView.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getTipoField()));
+        // Escuchar cambios de selección en la tabla
+        TablaView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                // Cargar los datos seleccionados en los TextFields
+                nombreCampo.setText(newValue.getNombreCampo());
+                cantidadCampo.setText(newValue.getCantidadCampo());
+                tipoCampo.setText(newValue.getTipoCampo());
+            }
+        });
 
         for (SuministroTable pron : SuministroList) {
-            System.out.println(pron.getNombreField());
+            System.out.println(pron.getNombreCampo());
         }
     }
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

@@ -3,37 +3,37 @@ package com.adriananiel.roneracentral.Harold;
 import java.io.Serializable;
 
 public class SuministroTable implements Serializable {
-    String nombreField;
-    String cantidadField;
-    String tipoField;
+    String NombreCampo;
+    String CantidadCampo;
+    String TipoCampo;
 
-    public SuministroTable (String nombreField, String cantidadField, String tipoField){
-        this.nombreField = nombreField;
-        this.cantidadField = cantidadField;
-        this.tipoField = tipoField;
+    public SuministroTable (String NombreCampo, String CantidadCampo, String TipoCampo){
+        this.NombreCampo = NombreCampo;
+        this.CantidadCampo = CantidadCampo;
+        this.TipoCampo = TipoCampo;
     }
 
-    public String getNombreField() {
-        return nombreField;
+    public String getNombreCampo() {
+        return NombreCampo;
     }
 
-    public void setNombreField(String nombreField) {
-        this.nombreField = nombreField;
+    public void setNombreCampo(String nombreCampo) {
+        NombreCampo = nombreCampo;
     }
 
-    public String getCantidadField() {
-        return cantidadField;
+    public String getCantidadCampo() {
+        return CantidadCampo;
     }
 
-    public void setCantidadField(String cantidadField) {
-        this.cantidadField = cantidadField;
+    public void setCantidadCampo(String cantidadCampo) {
+        CantidadCampo = cantidadCampo;
     }
 
-    public String getTipoField() {
-        return tipoField;
+    public String getTipoCampo() {
+        return TipoCampo;
     }
 
-    public void setTipoField(String tipoField) {
-        this.tipoField = tipoField;
+    public void setTipoCampo(String tipoCampo) {
+        TipoCampo = tipoCampo;
     }
 }
