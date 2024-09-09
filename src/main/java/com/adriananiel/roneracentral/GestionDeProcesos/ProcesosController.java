@@ -43,7 +43,6 @@ public class ProcesosController implements Initializable {
         panel.setCenter(ventanaGestionarCuentaFXML);
     }
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Pane ventanaGestionarCuentaFXML = null;
