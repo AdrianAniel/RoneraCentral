@@ -4,3 +4,5 @@ Adrian,123,adrian@gmail.com,BaseDatos/ImgUsuario/wp5231556-4k-gaming-wallpapers.
 corzo,12,dcorzo@gmail.com,null,Inventario
 dan,123,da@gmail.com,null,Calidad
 harol,12,gam@gamil.com,null,Procesos
+harolddd,12,hphernandez2003@gmail.com,null,Procesos
+harold,123,hphernandez2003@gmail.com,null,Procesos
