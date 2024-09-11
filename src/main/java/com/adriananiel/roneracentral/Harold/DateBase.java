@@ -7,15 +7,19 @@ import java.util.ArrayList;
 public class DateBase {
     private String dateBasePath;
     private ArrayList<SuministroTable> suministroList;
-    public DateBase(String dateBasePath){this.dateBasePath = dateBasePath;}
+
+    public DateBase(String dateBasePath) {
+        this.dateBasePath = dateBasePath;
+    }
+    // Database
 
     public ArrayList<SuministroTable> startDateBase() throws ClassNotFoundException, IOException {
         File dateBase_File = new File(dateBasePath);
 
-        if (dateBase_File.exists()){
+        if (dateBase_File.exists()) {
             LeerObjetos ro = new LeerObjetos(dateBasePath);
             suministroList = (ArrayList<SuministroTable>) ro.Read();
-        }else{
+        } else {
             suministroList = new ArrayList<>();
         }
 

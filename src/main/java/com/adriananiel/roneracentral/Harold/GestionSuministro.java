@@ -19,6 +19,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+//Suminitro Gestion General
 public class GestionSuministro implements Initializable {
 
     private ArrayList<SuministroTable> SuministroList;
@@ -27,11 +28,10 @@ public class GestionSuministro implements Initializable {
     EscribirObjeto wo = new EscribirObjeto("BaseDatos/Suministro_DB.ser");
 
     @FXML
-    private TableColumn<SuministroTable ,String> AlmacenamientoView;
+    private TableColumn<SuministroTable, String> AlmacenamientoView;
 
     @FXML
     private TableColumn<SuministroTable, String> CantidadView;
-
 
     @FXML
     private TableColumn<SuministroTable, String> NombreView;
@@ -47,7 +47,6 @@ public class GestionSuministro implements Initializable {
 
     @FXML
     private TextField tipoCampo;
-
 
     // Evento de guardar texto FXML
 
@@ -121,33 +120,33 @@ public class GestionSuministro implements Initializable {
     }
 
     public void btnDelete(ActionEvent event) {
-            System.out.println("Botón presionado Delete!");
+        System.out.println("Botón presionado Delete!");
 
-            // Obtener el suministro seleccionado desde la tabla
-            SuministroTable selectedSuministro = TablaView.getSelectionModel().getSelectedItem();
+        // Obtener el suministro seleccionado desde la tabla
+        SuministroTable selectedSuministro = TablaView.getSelectionModel().getSelectedItem();
 
-            // Verifica si hay una selección válida
-            if (selectedSuministro != null) {
-                // Elimina el elemento de la lista original y de la lista observable
-                SuministroList.remove(selectedSuministro);
-                observableSuministroList.remove(selectedSuministro);
+        // Verifica si hay una selección válida
+        if (selectedSuministro != null) {
+            // Elimina el elemento de la lista original y de la lista observable
+            SuministroList.remove(selectedSuministro);
+            observableSuministroList.remove(selectedSuministro);
 
-                // Actualiza la tabla para reflejar los cambios
-                TablaView.refresh();
+            // Actualiza la tabla para reflejar los cambios
+            TablaView.refresh();
 
-                // Guarda los cambios en la base de datos
-                wo.Write(SuministroList);
+            // Guarda los cambios en la base de datos
+            wo.Write(SuministroList);
 
-                System.out.println("Se eliminó correctamente el elemento: " + selectedSuministro.getNombreCampo());
-            } else {
-                System.out.println("No se ha seleccionado ningún elemento para eliminar.");
-            }
-
-            // Limpiar los campos de texto
-            clearTextFields();
+            System.out.println("Se eliminó correctamente el elemento: " + selectedSuministro.getNombreCampo());
+        } else {
+            System.out.println("No se ha seleccionado ningún elemento para eliminar.");
         }
 
-   private void clearTextFields(){
+        // Limpiar los campos de texto
+        clearTextFields();
+    }
+
+    private void clearTextFields() {
         nombreCampo.setText("");
         cantidadCampo.setText("");
         tipoCampo.setText("");
