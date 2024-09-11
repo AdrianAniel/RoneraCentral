@@ -10,7 +10,6 @@ Mount Gay,59,2033-08-19,Barriles,null
 Boré,169,2029-09-01,Barriles,null
 Dictador,790,2037-08-22,Botellas,null
 Santa Teresa 1796,321,2033-08-25,Botellas,null
-Kong,145,2030-08-30,Botellas,null
 Cacique,412,2030-08-31,Barriles,null
 Mulata,222,2032-08-28,Barriles,null
 Legendario,64,2028-08-25,Barriles,null

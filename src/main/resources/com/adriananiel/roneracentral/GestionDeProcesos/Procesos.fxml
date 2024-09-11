@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.GestionDeProcesos.ProcesosController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.GestionDeProcesos.ProcesosController">
    <top>
       <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -21,7 +21,7 @@
                   <Insets right="95.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="btnSuministros" alignment="CENTER" layoutX="1140.0" layoutY="13.0" mnemonicParsing="false" onAction="#eventbtnSumunistros" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20;" text="Suministros" textFill="WHITE">
+            <Button fx:id="btnSumunistros" alignment="CENTER" layoutX="1140.0" layoutY="13.0" mnemonicParsing="false" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20;" text="Suministros" textFill="WHITE">
                <font>
                   <Font name="AsanaMathJax_Variants-Regular" size="20.0" />
                </font>
@@ -32,7 +32,7 @@
          </children>
       </HBox>
    </top>
-   <bottom>
+   <center>
       <BorderPane fx:id="panel" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-   </bottom>
+   </center>
 </BorderPane>

@@ -8,13 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea7eda8a-6cdb-4f32-91cc-5f483f0959b6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaseDatos/Suministro_DB.ser" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/Suministro_DB.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaseDatos/ron_db.ser" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/ron_db.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseDatos/inventario_rones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/inventario_rones.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaseDatos/usuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/usuarios.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Otico" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,16 +57,20 @@
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Proyectos Personales\Proyecto Programación\RoneraCentral\src\main\resources\com\adriananiel\roneracentral\GestionDeProcesos" />
       <recent name="D:\Programming\Clases\RoneraCentral\BaseDatos" />
       <recent name="D:\Programming\Clases\RoneraCentral\src\main\java\com\adriananiel\roneracentral" />
       <recent name="D:\Programming\Clases\RoneraCentral\src\main\resources\com\adriananiel\roneracentral\image" />
       <recent name="D:\Proyectos Personales\Proyecto Programación\RoneraCentral\src\main\resources\com\adriananiel\roneracentral\image" />
+      <recent name="D:\Programming\Clases\RoneraCentral\src\main\resources\com\adriananiel\roneracentral" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.adriananiel.roneracentral" />
