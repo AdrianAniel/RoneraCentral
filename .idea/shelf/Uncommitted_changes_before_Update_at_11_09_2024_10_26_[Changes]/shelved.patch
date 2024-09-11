@@ -1,0 +1,153 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AnalysisUIOptions\">\r\n    <option name=\"SCOPE_TYPE\" value=\"3\" />\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ea7eda8a-6cdb-4f32-91cc-5f483f0959b6\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaFXApplication\" />\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Otico\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2h4frgdqPhlykJMU2sFFtXlXD2C\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\Programming\\Clases\\RoneraCentral\\BaseDatos\" />\r\n      <recent name=\"D:\\Programming\\Clases\\RoneraCentral\\src\\main\\java\\com\\adriananiel\\roneracentral\" />\r\n      <recent name=\"D:\\Programming\\Clases\\RoneraCentral\\src\\main\\resources\\com\\adriananiel\\roneracentral\\image\" />\r\n      <recent name=\"D:\\Proyectos Personales\\Proyecto Programación\\RoneraCentral\\src\\main\\resources\\com\\adriananiel\\roneracentral\\image\" />\r\n      <recent name=\"D:\\Programming\\Clases\\RoneraCentral\\src\\main\\resources\\com\\adriananiel\\roneracentral\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"com.adriananiel.roneracentral\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.adriananiel.roneracentral.Main\" />\r\n      <module name=\"RoneraCentral\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"Application\" factoryName=\"Application\">\r\n      <module name=\"RoneraCentral\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ea7eda8a-6cdb-4f32-91cc-5f483f0959b6\" name=\"Changes\" comment=\"\" />\r\n      <created>1716858470405</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1716858470405</updated>\r\n      <workItem from=\"1725482298794\" duration=\"621000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"nuevo\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725368293916</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725368293916</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"nuevo\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725368315255</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725368315255</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"nuevo\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725368701051</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725368701051</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/Otico\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"nuevo\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"nuevo\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.NullPointerException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4bc1c43d4d93fb3686cbb5c008c2422ff186c495)
++++ b/.idea/workspace.xml	(date 1726064727891)
+@@ -8,9 +8,27 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="ea7eda8a-6cdb-4f32-91cc-5f483f0959b6" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/LeerObjetosSuministro.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/BaseDatos/Pedidos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/Pedidos.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/BaseDatos/Suministro_DB.ser" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/Suministro_DB.ser" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/BaseDatos/usuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/usuarios.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold P/DateBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/DateBaseSuministro.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold P/EscribirObjeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/EscribirObjetoSuministro.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold P/GestionSuministro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/GestionSuministroSuministro.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold P/LeerObjetos.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold P/SuministroSearcher.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold P/SuministroTable.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/DateBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/DateBase.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/EscribirObjeto.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/GestionSuministro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/GestionSuministro.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/LeerObjetos.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/SuministroSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/SuministroSearcher.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/SuministroTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Harold/SuministroTable.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -51,7 +69,6 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
+     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+@@ -61,8 +78,19 @@
+     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Main.executor": "Run",
++    "Maven.Main.java.executor": "Run",
++    "Maven.RoneraCentral [compile].executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "master",
++    "kotlin-language-version-configured": "true",
++    "project.structure.last.edited": "Modules",
++    "project.structure.proportion": "0.0",
++    "project.structure.side.proportion": "0.0"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="D:\Programming\Clases\RoneraCentral\BaseDatos" />
+@@ -75,7 +103,7 @@
+       <recent name="com.adriananiel.roneracentral" />
+     </key>
+   </component>
+-  <component name="RunManager">
++  <component name="RunManager" selected="Maven.Main.java">
+     <configuration name="Main" type="Application" factoryName="Application">
+       <option name="MAIN_CLASS_NAME" value="com.adriananiel.roneracentral.Main" />
+       <module name="RoneraCentral" />
+Index: BaseDatos/usuarios.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Humberto,123,humberto@gmail.com,BaseDatos/ImgUsuario/wallpaperbetter.jpg,Calidad\r\nAime,321,aime@gmail.com,BaseDatos/ImgUsuario/wp12535723-sword-art-online-4k-pc-wallpapers.jpg,Procesos\r\nAdrian,123,adrian@gmail.com,BaseDatos/ImgUsuario/wp5231556-4k-gaming-wallpapers.jpg,Inventario\r\nDanielCorzo,ferxxo1000,danielcorzo101@gmail.com,null,Calidad\r\ndcorzo,12,dcorzo@gmail.com,null,Inventario\r\ndan,123,da@gmail.com,null,Calidad
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BaseDatos/usuarios.txt b/BaseDatos/usuarios.txt
+--- a/BaseDatos/usuarios.txt	(revision 4bc1c43d4d93fb3686cbb5c008c2422ff186c495)
++++ b/BaseDatos/usuarios.txt	(date 1726064655597)
+@@ -3,4 +3,7 @@
+ Adrian,123,adrian@gmail.com,BaseDatos/ImgUsuario/wp5231556-4k-gaming-wallpapers.jpg,Inventario
+ DanielCorzo,ferxxo1000,danielcorzo101@gmail.com,null,Calidad
+ dcorzo,12,dcorzo@gmail.com,null,Inventario
+-dan,123,da@gmail.com,null,Calidad
+\ No newline at end of file
++dan,123,da@gmail.com,null,Calidad
++harol,12,gam@gamil.com,null,Procesos
++harolddd,12,hphernandez2003@gmail.com,null,Procesos
++harold,123,hphernandez2003@gmail.com,null,Procesos
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>workspace.xml
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.name b/.idea/.name
+--- a/.idea/.name	(revision 4bc1c43d4d93fb3686cbb5c008c2422ff186c495)
++++ b/.idea/.name	(date 1726064655587)
+@@ -1,1 +1,2 @@
++Main.java
+ workspace.xml
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"EntryPointsManager\">\r\n    <writeAnnotations>\r\n      <writeAnnotation name=\"javafx.fxml.FXML\" />\r\n    </writeAnnotations>\r\n  </component>\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"workspaceImportForciblyTurnedOn\" value=\"true\" />\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_21\" project-jdk-name=\"22\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 4bc1c43d4d93fb3686cbb5c008c2422ff186c495)
++++ b/.idea/misc.xml	(date 1726064655587)
+@@ -12,9 +12,8 @@
+         <option value="$PROJECT_DIR$/pom.xml" />
+       </list>
+     </option>
+-    <option name="workspaceImportForciblyTurnedOn" value="true" />
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="22" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="temurin-22" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: BaseDatos/Pedidos.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>��\u0000\u0005sr\u0000\u0013java.util.ArrayListx��\u001D��a�\u0003\u0000\u0001I\u0000\u0004sizexp\u0000\u0000\u0000\u0003w\u0004\u0000\u0000\u0000\u0003sr\u00006com.adriananiel.roneracentral.GestionDeProcesos.Pedido�����ܫ�\u0002\u0000\u0006I\u0000\u0005priceL\u0000\nclientNamet\u0000\u0012Ljava/lang/String;L\u0000\u000Bdescriptionq\u0000~\u0000\u0003L\u0000\bidPedidoq\u0000~\u0000\u0003L\u0000\u0006pedidoq\u0000~\u0000\u0003L\u0000\tprioridadq\u0000~\u0000\u0003xp\u0000\u0000\u00018t\u0000\u0004daawt\u0000\u0007dasdasdt\u0000\njBRopTh$tmt\u0000\u0005dawdat\u0000\u0006adwdawsq\u0000~\u0000\u0002\u0000\u0000\u0000\rt\u0000\u0005Livant\u0000Tme da igual el q sea estoy nececitado, el problema \nes q ya le debo a la universidadt\u0000\neJaopsAZtot\u0000\tUn Chochot\u0000\u0007Urgentesq\u0000~\u0000\u0002\u0000\u0000\u0000�t\u0000\u0005eqweat\u0000\u0007adsad2wt\u0000\nmZDt8uEtY!t\u0000\u0006weaweat\u0000\u0005adasdx
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BaseDatos/Pedidos.txt b/BaseDatos/Pedidos.txt
+--- a/BaseDatos/Pedidos.txt	(revision 4bc1c43d4d93fb3686cbb5c008c2422ff186c495)
++++ b/BaseDatos/Pedidos.txt	(date 1726064655597)
+@@ -1,7 +1,1 @@
+-�� sr java.util.ArrayListx����a� I sizexp   w   sr 6com.adriananiel.roneracentral.GestionDeProcesos.Pedido�����ܫ� I priceL 
+-clientNamet Ljava/lang/String;L descriptionq ~ L idPedidoq ~ L pedidoq ~ L 	prioridadq ~ xp  8t daawt dasdasdt 
+-jBRopTh$tmt dawdat adwdawsq ~    
+-t Livant Tme da igual el q sea estoy nececitado, el problema 
+-es q ya le debo a la universidadt 
+-eJaopsAZtot 	Un Chochot Urgentesq ~    �t eqweat adsad2wt 
+-mZDt8uEtY!t weaweat adasdx
+\ No newline at end of file
++�� sr java.util.ArrayListx����a� I sizexp    w    x
+\ No newline at end of file
