@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import org.kordamp.bootstrapfx.scene.layout.Panel;
 
 import java.io.IOException;
 import java.net.URL;
@@ -34,7 +35,6 @@ public class ProcesosController implements Initializable {
         PedidosController pedidosController = loader.getController();
         pedidosController.setController(this);
     }
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
