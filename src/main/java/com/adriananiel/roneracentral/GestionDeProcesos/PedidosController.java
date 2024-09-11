@@ -4,6 +4,7 @@ import com.adriananiel.roneracentral.GestionDeProcesos.libs.BaseDatosArchivos;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;

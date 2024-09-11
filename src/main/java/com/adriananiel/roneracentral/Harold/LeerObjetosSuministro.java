@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
-public class LeerObjetos {
+public class LeerObjetosSuministro {
     // atributo de la clase para especificar la direccion en el disco del archivo base de datos
     private String filePath;
     // constructor de la clase
-    public LeerObjetos(String path){
+    public LeerObjetosSuministro(String path){
         this.filePath = path;
     }
 

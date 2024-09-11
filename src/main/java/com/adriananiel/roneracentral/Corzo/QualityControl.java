@@ -12,7 +12,6 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 import java.io.IOException;
 import java.net.URL;
-import java.util.Iterator;
 import java.util.ResourceBundle;
 
 //Clase Principal
@@ -170,9 +169,6 @@ public class QualityControl implements Initializable {
             observableRonList.add(ron);
             wo.Write(ronList);
 
-            // Actualizar la tabla para reflejar los cambios
-            table.refresh();
-
             System.out.println(ron.getProduct());
             clearTextFields();
             System.out.println("Se limpio correctamente");
@@ -224,9 +220,6 @@ public class QualityControl implements Initializable {
             }
         }
 
-        // Actualizar la tabla para reflejar los cambios
-        table.refresh();
-
         // Guardar la lista actualizada
         wo.Write(ronList);
 
@@ -265,25 +258,16 @@ public class QualityControl implements Initializable {
                 level_ph_textfield.getText(),
                 rawn_material_textfield.getText()
         );
-        // Utilizamos un iterator para eliminar de forma segura de 'ronList' y 'observableRonList'
-        Iterator<QualityRonTable> iterator = ronList.iterator();
-        while (iterator.hasNext()) {
-            QualityRonTable lron = iterator.next();
-
+        int index = 0;
+        for (QualityRonTable lron : ronList){
             if (lron.getProduct().equals(ron.getProduct())) {
-                // Eliminamos de la lista usando el iterator
-                iterator.remove();
-
-                // Ahora eliminamos de 'observableRonList'
-                observableRonList.remove(lron);
-
-                // Salimos del bucle después de encontrar y eliminar el elemento
+                int currentIndex = index;
+                ronList.remove(lron);
+                observableRonList.remove(currentIndex);
                 break;
             }
+            index++;
         }
-        // Actualizar la tabla para reflejar los cambios
-        table.refresh();
-
         wo.Write(ronList);
         System.out.println("Se elimino correctamente el elemento: " + ron.getProduct());
         for ( QualityRonTable pron: ronList) {
@@ -348,29 +332,6 @@ public class QualityControl implements Initializable {
             System.out.println(pron.getQuality());
         }
     }
-    // Metodo Cargar Datos
-    private void cargarDatosEnTextFields(QualityRonTable selectedRon) {
-        product_textfield.setText(selectedRon.getProduct());
-        quality_textfield.setText(selectedRon.getQuality());
-        amount_textfield.setText(selectedRon.getAmount());
-        avb_textfield.setText(selectedRon.getAvb());
-        turbidity_textfield.setText(selectedRon.getTurbidity());
-        color_textfield.setText(selectedRon.getColor());
-        analysis_chemical_textfield.setText(selectedRon.getChemical_analysis());
-        microbiological_analysis_textfield.setText(selectedRon.getMicrobiological_analysis());
-        flavor_textfield.setText(selectedRon.getFlavor());
-        aroma_textfield.setText(selectedRon.getAroma());
-        pack_and_label_textfield.setText(selectedRon.getPack_and_label());
-        manufacturing_process_textfield.setText(selectedRon.getManufacturing_process());
-        equipement_textfield.setText(selectedRon.getEquipement());
-        facilities_textfield.setText(selectedRon.getFacilities());
-        human_factor_textfield.setText(selectedRon.getHuman_factor());
-        filtration_textfield.setText(selectedRon.getFiltration());
-        aging_textfield.setText(selectedRon.getAging());
-        blend_textfield.setText(selectedRon.getBlend());
-        level_ph_textfield.setText(selectedRon.getLevel_ph());
-        rawn_material_textfield.setText(selectedRon.getRawn_material());
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -381,13 +342,6 @@ public class QualityControl implements Initializable {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        // Añadir listener para detectar la selección de una fila en la tabla
-        table.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
-            if (newSelection != null) {
-                cargarDatosEnTextFields(newSelection);
-            } else {
-                clearTextFields(); // Limpiar los TextFields si no hay selección
-            }
-        });
+
     }
 }

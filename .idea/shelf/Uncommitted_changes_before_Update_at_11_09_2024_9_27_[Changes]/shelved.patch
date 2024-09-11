@@ -1,0 +1,1198 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AnalysisUIOptions\">\r\n    <option name=\"SCOPE_TYPE\" value=\"3\" />\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ea7eda8a-6cdb-4f32-91cc-5f483f0959b6\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.name\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/BaseDatos/inventario_rones.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/BaseDatos/inventario_rones.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/BaseDatos/usuarios.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/BaseDatos/usuarios.txt\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaFXApplication\" />\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Otico\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2h4frgdqPhlykJMU2sFFtXlXD2C\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\Programming\\Clases\\RoneraCentral\\BaseDatos\" />\r\n      <recent name=\"D:\\Programming\\Clases\\RoneraCentral\\src\\main\\java\\com\\adriananiel\\roneracentral\" />\r\n      <recent name=\"D:\\Programming\\Clases\\RoneraCentral\\src\\main\\resources\\com\\adriananiel\\roneracentral\\image\" />\r\n      <recent name=\"D:\\Proyectos Personales\\Proyecto Programación\\RoneraCentral\\src\\main\\resources\\com\\adriananiel\\roneracentral\\image\" />\r\n      <recent name=\"D:\\Programming\\Clases\\RoneraCentral\\src\\main\\resources\\com\\adriananiel\\roneracentral\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"com.adriananiel.roneracentral\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.adriananiel.roneracentral.Main\" />\r\n      <module name=\"RoneraCentral\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"Application\" factoryName=\"Application\">\r\n      <module name=\"RoneraCentral\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ea7eda8a-6cdb-4f32-91cc-5f483f0959b6\" name=\"Changes\" comment=\"\" />\r\n      <created>1716858470405</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1716858470405</updated>\r\n      <workItem from=\"1725482298794\" duration=\"621000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"nuevo\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725368293916</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725368293916</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"nuevo\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725368315255</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725368315255</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"nuevo\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1725368701051</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1725368701051</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/Otico\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"nuevo\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"nuevo\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.NullPointerException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
++++ b/.idea/workspace.xml	(date 1726061210829)
+@@ -11,7 +11,12 @@
+       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/BaseDatos/inventario_rones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/inventario_rones.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/BaseDatos/Suministro_DB.ser" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/Suministro_DB.ser" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/BaseDatos/ron_db.ser" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/ron_db.ser" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/BaseDatos/usuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BaseDatos/usuarios.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -52,7 +57,6 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
+     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+@@ -62,10 +66,17 @@
+     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="D:\Proyectos Personales\Proyecto Programación\RoneraCentral\src\main\resources\com\adriananiel\roneracentral\GestionDeProcesos" />
+       <recent name="D:\Programming\Clases\RoneraCentral\BaseDatos" />
+       <recent name="D:\Programming\Clases\RoneraCentral\src\main\java\com\adriananiel\roneracentral" />
+       <recent name="D:\Programming\Clases\RoneraCentral\src\main\resources\com\adriananiel\roneracentral\image" />
+Index: src/main/java/com/adriananiel/roneracentral/Corzo/QualityData.java
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/Corzo/QualityData.java b/src/main/java/com/adriananiel/roneracentral/Corzo/QualityData.java
+deleted file mode 100644
+--- a/src/main/java/com/adriananiel/roneracentral/Corzo/QualityData.java	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
++++ /dev/null	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
+@@ -1,187 +0,0 @@
+-package com.adriananiel.roneracentral.Corzo;
+-
+-public class QualityData {
+-    private String product;
+-    private String quality;
+-    private String amount;
+-    private String avb;
+-    private String turbidity;
+-    private String color;
+-    private String chemicalAnalysis;
+-    private String microbiologicalAnalysis;
+-    private String flavor;
+-    private String aroma;
+-    private String packAndLabel;
+-    private String manufacturingProcess;
+-    private String equipement;
+-    private String facilities;
+-    private String humanFactor;
+-    private String filtration;
+-    private String aging;
+-    private String blend;
+-    private String levelPH;
+-    private String rawnMaterial;
+-
+-    // Getters y setters para cada propiedad
+-
+-
+-    public String getProduct() {
+-        return product;
+-    }
+-
+-    public void setProduct(String product) {
+-        this.product = product;
+-    }
+-
+-    public String getQuality() {
+-        return quality;
+-    }
+-
+-    public void setQuality(String quality) {
+-        this.quality = quality;
+-    }
+-
+-    public String getAmount() {
+-        return amount;
+-    }
+-
+-    public void setAmount(String amount) {
+-        this.amount = amount;
+-    }
+-
+-    public String getAvb() {
+-        return avb;
+-    }
+-
+-    public void setAvb(String avb){
+-        this.avb = avb;
+-    }
+-
+-    public String getTurbidity() {
+-        return turbidity;
+-    }
+-
+-    public void setTurbidity(String turbidity) {
+-        this.turbidity = turbidity;
+-    }
+-
+-    public String getColor() {
+-        return color;
+-    }
+-
+-    public void setColor(String color) {
+-        this.color = color;
+-    }
+-
+-    public String getChemicalAnalysis() {
+-        return chemicalAnalysis;
+-    }
+-
+-    public void setChemicalAnalysis(String chemicalAnalysis) {
+-        this.chemicalAnalysis = chemicalAnalysis;
+-    }
+-
+-    public String getMicrobiologicalAnalysis() {
+-        return microbiologicalAnalysis;
+-    }
+-
+-    public void setMicrobiologicalAnalysis(String microbiologicalAnalysis) {
+-        this.microbiologicalAnalysis = microbiologicalAnalysis;
+-    }
+-
+-    public String getFlavor() {
+-        return flavor;
+-    }
+-
+-    public void setFlavor(String flavor) {
+-        this.flavor = flavor;
+-    }
+-
+-    public String getAroma() {
+-        return aroma;
+-    }
+-
+-    public void setAroma(String aroma) {
+-        this.aroma = aroma;
+-    }
+-
+-    public String getPackAndLabel() {
+-        return packAndLabel;
+-    }
+-
+-    public void setPackAndLabel(String packAndLabel) {
+-        this.packAndLabel = packAndLabel;
+-    }
+-
+-    public String getManufacturingProcess() {
+-        return manufacturingProcess;
+-    }
+-
+-    public void setManufacturingProcess(String manufacturingProcess) {
+-        this.manufacturingProcess = manufacturingProcess;
+-    }
+-
+-    public String getEquipement() {
+-        return equipement;
+-    }
+-
+-    public void setEquipement(String equipement) {
+-        this.equipement = equipement;
+-    }
+-
+-    public String getFacilities() {
+-        return facilities;
+-    }
+-
+-    public void setFacilities(String facilities) {
+-        this.facilities = facilities;
+-    }
+-
+-    public String getHumanFactor() {
+-        return humanFactor;
+-    }
+-
+-    public void setHumanFactor(String humanFactor) {
+-        this.humanFactor = humanFactor;
+-    }
+-
+-    public String getFiltration() {
+-        return filtration;
+-    }
+-
+-    public void setFiltration(String filtration) {
+-        this.filtration = filtration;
+-    }
+-
+-    public String getAging() {
+-        return aging;
+-    }
+-
+-    public void setAging(String aging) {
+-        this.aging = aging;
+-    }
+-
+-    public String getBlend() {
+-        return blend;
+-    }
+-
+-    public void setBlend(String blend) {
+-        this.blend = blend;
+-    }
+-
+-    public String getLevelPH() {
+-        return levelPH;
+-    }
+-
+-    public void setLevelPH(String levelPH) {
+-        this.levelPH = levelPH;
+-    }
+-
+-    public String getRawnMaterial() {
+-        return rawnMaterial;
+-    }
+-
+-    public void setRawnMaterial(String rawnMaterial) {
+-        this.rawnMaterial = rawnMaterial;
+-    }
+-}
+\ No newline at end of file
+Index: src/main/java/com/adriananiel/roneracentral/Harold/SuministroSearcher.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/Harold/SuministroSearcher.java b/src/main/java/com/adriananiel/roneracentral/Harold/SuministroSearcher.java
+new file mode 100644
+--- /dev/null	(date 1726060794181)
++++ b/src/main/java/com/adriananiel/roneracentral/Harold/SuministroSearcher.java	(date 1726060794181)
+@@ -0,0 +1,29 @@
++package com.adriananiel.roneracentral.Harold;
++
++import com.adriananiel.roneracentral.Corzo.QualityRonTable;
++
++import java.util.ArrayList;
++import java.util.Optional;
++
++public class SuministroSearcher {
++    private ArrayList<SuministroTable> suministroList;
++
++    public SuministroSearcher(ArrayList<SuministroTable> suministroList) {
++        this.suministroList = suministroList;
++    }
++
++    public boolean searchAndRemoveRon(String productName) {
++        Optional<SuministroTable> found = suministroList.stream()
++                .filter(suministro -> suministro.getNombreCampo().equalsIgnoreCase(productName))
++                .findFirst();
++
++        if (found.isPresent()) {
++            suministroList.removeIf(suministro -> suministro.getNombreCampo().equalsIgnoreCase(productName));
++            System.out.println("Producto encontrado y eliminado: " + found.get());
++            return true;
++        } else {
++            System.out.println("Producto no encontrado.");
++            return false;
++        }
++    }
++}
+Index: src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.geometry.Insets?>\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.layout.BorderPane?>\r\n<?import javafx.scene.layout.HBox?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<BorderPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"590.0\" prefWidth=\"1280.0\" xmlns=\"http://javafx.com/javafx/21.0.1\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.adriananiel.roneracentral.GestionDeProcesos.ProcesosController\">\r\n   <top>\r\n      <HBox alignment=\"CENTER_RIGHT\" prefHeight=\"0.0\" prefWidth=\"1280.0\" BorderPane.alignment=\"CENTER\">\r\n         <BorderPane.margin>\r\n            <Insets />\r\n         </BorderPane.margin>\r\n         <children>\r\n            <Button fx:id=\"btnPedidos\" alignment=\"CENTER\" mnemonicParsing=\"false\" onMouseClicked=\"#eventBtnPedidos\" prefWidth=\"150.0\" style=\"-fx-background-color: #1a273c; -fx-background-radius: 20;\" text=\"Pedidos\" textFill=\"WHITE\">\r\n               <font>\r\n                  <Font name=\"AsanaMathJax_Variants-Regular\" size=\"20.0\" />\r\n               </font>\r\n               <HBox.margin>\r\n                  <Insets right=\"95.0\" />\r\n               </HBox.margin>\r\n            </Button>\r\n            <Button fx:id=\"btnSumunistros\" alignment=\"CENTER\" layoutX=\"1140.0\" layoutY=\"13.0\" mnemonicParsing=\"false\" prefWidth=\"150.0\" style=\"-fx-background-color: #1a273c; -fx-background-radius: 20;\" text=\"Suministros\" textFill=\"WHITE\">\r\n               <font>\r\n                  <Font name=\"AsanaMathJax_Variants-Regular\" size=\"20.0\" />\r\n               </font>\r\n               <HBox.margin>\r\n                  <Insets right=\"95.0\" />\r\n               </HBox.margin>\r\n            </Button>\r\n         </children>\r\n      </HBox>\r\n   </top>\r\n   <center>\r\n      <BorderPane fx:id=\"panel\" prefHeight=\"200.0\" prefWidth=\"200.0\" BorderPane.alignment=\"CENTER\" />\r\n   </center>\r\n</BorderPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml b/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml
+--- a/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
++++ b/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/Procesos.fxml	(date 1726060794187)
+@@ -6,7 +6,7 @@
+ <?import javafx.scene.layout.HBox?>
+ <?import javafx.scene.text.Font?>
+ 
+-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.GestionDeProcesos.ProcesosController">
++<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.GestionDeProcesos.ProcesosController">
+    <top>
+       <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+          <BorderPane.margin>
+@@ -21,7 +21,7 @@
+                   <Insets right="95.0" />
+                </HBox.margin>
+             </Button>
+-            <Button fx:id="btnSumunistros" alignment="CENTER" layoutX="1140.0" layoutY="13.0" mnemonicParsing="false" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20;" text="Suministros" textFill="WHITE">
++            <Button fx:id="btnSuministros" alignment="CENTER" layoutX="1140.0" layoutY="13.0" mnemonicParsing="false" onAction="#eventbtnSumunistros" prefWidth="150.0" style="-fx-background-color: #1a273c; -fx-background-radius: 20;" text="Suministros" textFill="WHITE">
+                <font>
+                   <Font name="AsanaMathJax_Variants-Regular" size="20.0" />
+                </font>
+@@ -32,7 +32,7 @@
+          </children>
+       </HBox>
+    </top>
+-   <center>
++   <bottom>
+       <BorderPane fx:id="panel" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+-   </center>
++   </bottom>
+ </BorderPane>
+Index: src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.adriananiel.roneracentral.Corzo;\r\n\r\nimport javafx.beans.property.SimpleStringProperty;\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.control.TableColumn;\r\nimport javafx.scene.control.TableView;\r\nimport javafx.scene.control.TextField;\r\nimport javafx.event.ActionEvent;\r\nimport javafx.collections.FXCollections;\r\nimport javafx.collections.ObservableList;\r\nimport java.util.ArrayList;\r\nimport java.io.IOException;\r\nimport java.net.URL;\r\nimport java.util.ResourceBundle;\r\n\r\n//Clase Principal\r\npublic class QualityControl implements Initializable {\r\n\r\n    private ArrayList<QualityRonTable> ronList;\r\n    private ObservableList<QualityRonTable> observableRonList;\r\n    public QualityRonTable ron;\r\n    WriteObject wo = new WriteObject(\"BaseDatos/ron_db.ser\");\r\n\r\n    // ...Control de Eventos TextField de JavaFX...\r\n\r\n    @FXML\r\n    private TextField product_textfield;\r\n\r\n    @FXML\r\n    private TextField quality_textfield;\r\n\r\n    @FXML\r\n    private TextField amount_textfield;\r\n\r\n    @FXML\r\n    private TextField avb_textfield;\r\n\r\n    @FXML\r\n    private  TextField turbidity_textfield;\r\n\r\n    @FXML\r\n    private TextField color_textfield;\r\n\r\n    @FXML\r\n    private TextField analysis_chemical_textfield;\r\n\r\n    @FXML\r\n    private TextField microbiological_analysis_textfield;\r\n\r\n    @FXML\r\n    private TextField flavor_textfield;\r\n\r\n    @FXML\r\n    private TextField aroma_textfield;\r\n\r\n    @FXML\r\n    private TextField pack_and_label_textfield;\r\n\r\n    @FXML\r\n    private TextField manufacturing_process_textfield;\r\n\r\n    @FXML\r\n    private TextField equipement_textfield;\r\n\r\n    @FXML\r\n    private TextField facilities_textfield;\r\n\r\n    @FXML\r\n    private TextField human_factor_textfield;\r\n\r\n    @FXML\r\n    private TextField filtration_textfield;\r\n\r\n    @FXML\r\n    private TextField aging_textfield;\r\n\r\n    @FXML\r\n    private TextField blend_textfield;\r\n\r\n    @FXML\r\n    private TextField level_ph_textfield;\r\n\r\n    @FXML\r\n    private TextField rawn_material_textfield;\r\n\r\n    // Controlador de eventos de la TableView\r\n\r\n    @FXML\r\n    private TableView<QualityRonTable> table;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> product_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> avb_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> turbidity_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> color_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> chemical_analysis_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> microbiological_analysis_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> flavor__list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> aroma_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> pack_and_label_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> manufacturing__list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> equipement_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> facilities_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> human_factor_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> filtration_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> aging_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> blend_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> level_ph_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> rawn_material_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> quality_list;\r\n    @FXML\r\n    private TableColumn<QualityRonTable, String> amount;\r\n\r\n    /////CRUD////\r\n    // Clase para guardar los textfield en la base de datos...\r\n    @FXML  // Evento de Button de JavaFX en la Clase guardarTexto (Write an Read)\r\n    public void guardarTexto(ActionEvent event) {\r\n\r\n        if (product_textfield.getText().isEmpty() || quality_textfield.getText().isEmpty() || amount_textfield.getText().isEmpty() || avb_textfield.getText().isEmpty() || turbidity_textfield.getText().isEmpty() || color_textfield.getText().isEmpty() || analysis_chemical_textfield.getText().isEmpty() || microbiological_analysis_textfield.getText().isEmpty() || flavor_textfield.getText().isEmpty() || aroma_textfield.getText().isEmpty() || pack_and_label_textfield.getText().isEmpty() || manufacturing_process_textfield.getText().isEmpty() || equipement_textfield.getText().isEmpty() || facilities_textfield.getText().isEmpty() || human_factor_textfield.getText().isEmpty() || filtration_textfield.getText().isEmpty() || aging_textfield.getText().isEmpty() || blend_textfield.getText().isEmpty() || level_ph_textfield.getText().isEmpty() || rawn_material_textfield.getText().isEmpty()) {\r\n            showError(\"Debes ingresar un texto\");\r\n        } else {\r\n            ron = new QualityRonTable(\r\n                    product_textfield.getText(),\r\n                    quality_textfield.getText(),\r\n                    amount_textfield.getText(),\r\n                    avb_textfield.getText(),\r\n                    turbidity_textfield.getText(),\r\n                    color_textfield.getText(),\r\n                    analysis_chemical_textfield.getText(),\r\n                    microbiological_analysis_textfield.getText(),\r\n                    flavor_textfield.getText(),\r\n                    aroma_textfield.getText(),\r\n                    pack_and_label_textfield.getText(),\r\n                    manufacturing_process_textfield.getText(),\r\n                    equipement_textfield.getText(),\r\n                    facilities_textfield.getText(),\r\n                    human_factor_textfield.getText(),\r\n                    filtration_textfield.getText(),\r\n                    aging_textfield.getText(),\r\n                    blend_textfield.getText(),\r\n                    level_ph_textfield.getText(),\r\n                    rawn_material_textfield.getText()\r\n            );\r\n            if (ronList.isEmpty()) {\r\n                System.out.println(\"La lista esta vacia\");\r\n            } else {\r\n                System.out.println(ronList.getLast().getProduct());\r\n            }\r\n\r\n            ronList.add(ron);\r\n            observableRonList.add(ron);\r\n            wo.Write(ronList);\r\n\r\n            System.out.println(ron.getProduct());\r\n            clearTextFields();\r\n            System.out.println(\"Se limpio correctamente\");\r\n\r\n        }\r\n    }\r\n\r\n    // Evento de Button de JavaFX en la Clase updateTexto...\r\n    @FXML\r\n    public void updateTexto(ActionEvent actionEvent) {\r\n        System.out.println(\"Botón presionado Update!\");\r\n\r\n        // Crear un nuevo objeto QualityRonTable con los valores ingresados\r\n        ron = new QualityRonTable(\r\n                product_textfield.getText(),\r\n                quality_textfield.getText(),\r\n                amount_textfield.getText(),\r\n                avb_textfield.getText(),\r\n                turbidity_textfield.getText(),\r\n                color_textfield.getText(),\r\n                analysis_chemical_textfield.getText(),\r\n                microbiological_analysis_textfield.getText(),\r\n                flavor_textfield.getText(),\r\n                aroma_textfield.getText(),\r\n                pack_and_label_textfield.getText(),\r\n                manufacturing_process_textfield.getText(),\r\n                equipement_textfield.getText(),\r\n                facilities_textfield.getText(),\r\n                human_factor_textfield.getText(),\r\n                filtration_textfield.getText(),\r\n                aging_textfield.getText(),\r\n                blend_textfield.getText(),\r\n                level_ph_textfield.getText(),\r\n                rawn_material_textfield.getText()\r\n        );\r\n\r\n        // Iterar sobre ronList usando un bucle for tradicional para tener acceso al índice\r\n        for (int i = 0; i < ronList.size(); i++) {\r\n            QualityRonTable lron = ronList.get(i);\r\n            System.out.println(\"antes del if : nombre del ron a actualizar \" + lron.getProduct());\r\n            if (lron.getProduct().equals(ron.getProduct())) {\r\n                // Actualizar el elemento en ronList y observableRonList usando el índice 'i'\r\n                ronList.set(i, ron);\r\n                observableRonList.set(i, ron);\r\n                table.setItems(observableRonList);\r\n                System.out.println(\"dentro del if despues de actualizar\");\r\n\r\n                break; // Salir del bucle una vez que se encontró y actualizó el elemento\r\n            }\r\n        }\r\n\r\n        // Guardar la lista actualizada\r\n        wo.Write(ronList);\r\n\r\n        System.out.println(\"Se actualizo correctamente el elemento: \" + ron.getProduct());\r\n        System.out.println(\"quality\" + ron.getQuality());\r\n        for (QualityRonTable pron : ronList) {\r\n            System.out.println(pron.getProduct());\r\n            System.out.println(pron.getQuality());\r\n        }\r\n    }\r\n\r\n    // Evento de Button de JavaFX en la Clase deleteTexto...\r\n    @FXML\r\n    public void deleteTexto(ActionEvent actionEvent){\r\n\r\n        System.out.println(\"Botón presionado Delete!\");\r\n        ron = new QualityRonTable(\r\n                product_textfield.getText(),\r\n                quality_textfield.getText(),\r\n                amount_textfield.getText(),\r\n                avb_textfield.getText(),\r\n                turbidity_textfield.getText(),\r\n                color_textfield.getText(),\r\n                analysis_chemical_textfield.getText(),\r\n                microbiological_analysis_textfield.getText(),\r\n                flavor_textfield.getText(),\r\n                aroma_textfield.getText(),\r\n                pack_and_label_textfield.getText(),\r\n                manufacturing_process_textfield.getText(),\r\n                equipement_textfield.getText(),\r\n                facilities_textfield.getText(),\r\n                human_factor_textfield.getText(),\r\n                filtration_textfield.getText(),\r\n                aging_textfield.getText(),\r\n                blend_textfield.getText(),\r\n                level_ph_textfield.getText(),\r\n                rawn_material_textfield.getText()\r\n        );\r\n        int index = 0;\r\n        for (QualityRonTable lron : ronList){\r\n            if (lron.getProduct().equals(ron.getProduct())) {\r\n                int currentIndex = index;\r\n                ronList.remove(lron);\r\n                observableRonList.remove(currentIndex);\r\n                break;\r\n            }\r\n            index++;\r\n        }\r\n        wo.Write(ronList);\r\n        System.out.println(\"Se elimino correctamente el elemento: \" + ron.getProduct());\r\n        for ( QualityRonTable pron: ronList) {\r\n            System.out.println(pron.getProduct());\r\n        }\r\n    }\r\n\r\n    private void clearTextFields(){\r\n        product_textfield.clear(); // Limpieza de los TextField\r\n        quality_textfield.clear();\r\n        amount_textfield.clear();\r\n        avb_textfield.clear();\r\n        turbidity_textfield.clear();\r\n        color_textfield.clear();\r\n        analysis_chemical_textfield.clear();\r\n        microbiological_analysis_textfield.clear();\r\n        flavor_textfield.clear();\r\n        aroma_textfield.clear();\r\n        pack_and_label_textfield.clear();\r\n        manufacturing_process_textfield.clear();\r\n        equipement_textfield.clear();\r\n        facilities_textfield.clear();\r\n        human_factor_textfield.clear();\r\n        filtration_textfield.clear();\r\n        aging_textfield.clear();\r\n        blend_textfield.clear();\r\n        level_ph_textfield.clear();\r\n        rawn_material_textfield.clear();\r\n    }\r\n\r\n    private void showError(String message) {\r\n        System.out.println(\"Error: \" + message);\r\n    }\r\n\r\n    private void loadTable() throws IOException, ClassNotFoundException {\r\n        DB ronDB = new DB(\"BaseDatos/ron_db.ser\");\r\n        ronList = ronDB.startDB();\r\n        observableRonList = FXCollections.observableArrayList(ronList);\r\n        table.setItems(observableRonList);\r\n        product_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getProduct()));\r\n        avb_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getAvb()));\r\n        turbidity_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getTurbidity()));\r\n        color_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getColor()));\r\n        chemical_analysis_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getChemical_analysis()));\r\n        microbiological_analysis_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getMicrobiological_analysis()));\r\n        flavor__list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getFlavor()));\r\n        aroma_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getAroma()));\r\n        pack_and_label_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getPack_and_label()));\r\n        manufacturing__list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getManufacturing_process()));\r\n        equipement_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getEquipement()));\r\n        facilities_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getFacilities()));\r\n        human_factor_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getHuman_factor()));\r\n        filtration_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getFiltration()));\r\n        aging_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getAging()));\r\n        blend_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getBlend()));\r\n        level_ph_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getLevel_ph()));\r\n        rawn_material_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getRawn_material()));\r\n        quality_list.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getQuality()));\r\n        amount.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getAmount()));\r\n        for (QualityRonTable pron : ronList) {\r\n            System.out.println(pron.getProduct());\r\n            System.out.println(pron.getQuality());\r\n        }\r\n    }\r\n\r\n    @Override\r\n    public void initialize(URL url, ResourceBundle resourceBundle) {\r\n        try {\r\n            loadTable();\r\n        } catch (IOException e) {\r\n            throw new RuntimeException(e);\r\n        } catch (ClassNotFoundException e) {\r\n            throw new RuntimeException(e);\r\n        }\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java b/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java
+--- a/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
++++ b/src/main/java/com/adriananiel/roneracentral/Corzo/QualityControl.java	(date 1726060794174)
+@@ -12,6 +12,7 @@
+ import java.util.ArrayList;
+ import java.io.IOException;
+ import java.net.URL;
++import java.util.Iterator;
+ import java.util.ResourceBundle;
+ 
+ //Clase Principal
+@@ -169,6 +170,9 @@
+             observableRonList.add(ron);
+             wo.Write(ronList);
+ 
++            // Actualizar la tabla para reflejar los cambios
++            table.refresh();
++
+             System.out.println(ron.getProduct());
+             clearTextFields();
+             System.out.println("Se limpio correctamente");
+@@ -220,6 +224,9 @@
+             }
+         }
+ 
++        // Actualizar la tabla para reflejar los cambios
++        table.refresh();
++
+         // Guardar la lista actualizada
+         wo.Write(ronList);
+ 
+@@ -258,16 +265,25 @@
+                 level_ph_textfield.getText(),
+                 rawn_material_textfield.getText()
+         );
+-        int index = 0;
+-        for (QualityRonTable lron : ronList){
++        // Utilizamos un iterator para eliminar de forma segura de 'ronList' y 'observableRonList'
++        Iterator<QualityRonTable> iterator = ronList.iterator();
++        while (iterator.hasNext()) {
++            QualityRonTable lron = iterator.next();
++
+             if (lron.getProduct().equals(ron.getProduct())) {
+-                int currentIndex = index;
+-                ronList.remove(lron);
+-                observableRonList.remove(currentIndex);
++                // Eliminamos de la lista usando el iterator
++                iterator.remove();
++
++                // Ahora eliminamos de 'observableRonList'
++                observableRonList.remove(lron);
++
++                // Salimos del bucle después de encontrar y eliminar el elemento
+                 break;
+             }
+-            index++;
+         }
++        // Actualizar la tabla para reflejar los cambios
++        table.refresh();
++
+         wo.Write(ronList);
+         System.out.println("Se elimino correctamente el elemento: " + ron.getProduct());
+         for ( QualityRonTable pron: ronList) {
+@@ -332,6 +348,29 @@
+             System.out.println(pron.getQuality());
+         }
+     }
++    // Metodo Cargar Datos
++    private void cargarDatosEnTextFields(QualityRonTable selectedRon) {
++        product_textfield.setText(selectedRon.getProduct());
++        quality_textfield.setText(selectedRon.getQuality());
++        amount_textfield.setText(selectedRon.getAmount());
++        avb_textfield.setText(selectedRon.getAvb());
++        turbidity_textfield.setText(selectedRon.getTurbidity());
++        color_textfield.setText(selectedRon.getColor());
++        analysis_chemical_textfield.setText(selectedRon.getChemical_analysis());
++        microbiological_analysis_textfield.setText(selectedRon.getMicrobiological_analysis());
++        flavor_textfield.setText(selectedRon.getFlavor());
++        aroma_textfield.setText(selectedRon.getAroma());
++        pack_and_label_textfield.setText(selectedRon.getPack_and_label());
++        manufacturing_process_textfield.setText(selectedRon.getManufacturing_process());
++        equipement_textfield.setText(selectedRon.getEquipement());
++        facilities_textfield.setText(selectedRon.getFacilities());
++        human_factor_textfield.setText(selectedRon.getHuman_factor());
++        filtration_textfield.setText(selectedRon.getFiltration());
++        aging_textfield.setText(selectedRon.getAging());
++        blend_textfield.setText(selectedRon.getBlend());
++        level_ph_textfield.setText(selectedRon.getLevel_ph());
++        rawn_material_textfield.setText(selectedRon.getRawn_material());
++    }
+ 
+     @Override
+     public void initialize(URL url, ResourceBundle resourceBundle) {
+@@ -342,6 +381,13 @@
+         } catch (ClassNotFoundException e) {
+             throw new RuntimeException(e);
+         }
+-
++        // Añadir listener para detectar la selección de una fila en la tabla
++        table.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
++            if (newSelection != null) {
++                cargarDatosEnTextFields(newSelection);
++            } else {
++                clearTextFields(); // Limpiar los TextFields si no hay selección
++            }
++        });
+     }
+ }
+Index: BaseDatos/usuarios.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Humberto,123,humberto@gmail.com,BaseDatos/ImgUsuario/wallpaperbetter.jpg,Calidad\r\nAime,321,aime@gmail.com,BaseDatos/ImgUsuario/wp12535723-sword-art-online-4k-pc-wallpapers.jpg,Procesos\r\nAdrian,123,adrian@gmail.com,BaseDatos/ImgUsuario/wp5231556-4k-gaming-wallpapers.jpg,Inventario\r\nDanielCorzo,ferxxo1000,danielcorzo101@gmail.com,null,Calidad\r\ndcorzo,12,dcorzo@gmail.com,null,Inventario\r\ndan,123,da@gmail.com,null,Calidad
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/BaseDatos/usuarios.txt b/BaseDatos/usuarios.txt
+--- a/BaseDatos/usuarios.txt	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
++++ b/BaseDatos/usuarios.txt	(date 1726060794172)
+@@ -1,6 +1,6 @@
+ Humberto,123,humberto@gmail.com,BaseDatos/ImgUsuario/wallpaperbetter.jpg,Calidad
+ Aime,321,aime@gmail.com,BaseDatos/ImgUsuario/wp12535723-sword-art-online-4k-pc-wallpapers.jpg,Procesos
+ Adrian,123,adrian@gmail.com,BaseDatos/ImgUsuario/wp5231556-4k-gaming-wallpapers.jpg,Inventario
+-DanielCorzo,ferxxo1000,danielcorzo101@gmail.com,null,Calidad
+-dcorzo,12,dcorzo@gmail.com,null,Inventario
+-dan,123,da@gmail.com,null,Calidad
+\ No newline at end of file
++corzo,12,dcorzo@gmail.com,null,Inventario
++dan,123,da@gmail.com,null,Calidad
++harol,12,gam@gamil.com,null,Procesos
+Index: src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.adriananiel.roneracentral.GestionDeProcesos;\r\n\r\nimport com.adriananiel.roneracentral.GestionDeProcesos.libs.BaseDatosArchivos;\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.TextArea;\r\nimport javafx.scene.control.TextField;\r\nimport javafx.scene.input.MouseEvent;\r\nimport javafx.scene.layout.HBox;\r\nimport javafx.scene.layout.VBox;\r\nimport javafx.scene.text.Text;\r\n\r\nimport java.io.IOException;\r\nimport java.net.URL;\r\nimport java.util.ArrayList;\r\nimport java.util.ResourceBundle;\r\n\r\npublic class PedidosController implements Initializable {\r\n    @FXML\r\n    private VBox VBoxLayout;\r\n    @FXML\r\n    private Button btnGuardar;\r\n    @FXML\r\n    public TextField inputCliente;\r\n    @FXML\r\n    public TextArea inputDescripcion;\r\n    @FXML\r\n    public TextField inputPedido;\r\n    @FXML\r\n    public TextField inputPrecio;\r\n    @FXML\r\n    public TextField inputPrioridad;\r\n    @FXML\r\n    private Text textCantPedidos;\r\n    @FXML\r\n    private Text textPrecioTotal;\r\n    @FXML\r\n    public Text textTitle;\r\n    @FXML\r\n    private VBox panelPedidos;\r\n    @FXML\r\n    private VBox vBoxButton;\r\n\r\n    private MyUpdateUser myUpdateUser;\r\n\r\n    private ProcesosController procesosController;\r\n\r\n    public void setController(ProcesosController procesosController){\r\n        this.procesosController = procesosController;\r\n    }\r\n\r\n    @FXML\r\n    void setOnMouseEntered(MouseEvent event) {\r\n        btnGuardar.setStyle(\"-fx-background-radius: 10; -fx-background-color: #304561;\");\r\n        btnGuardar.setFocusTraversable(true);\r\n    }\r\n    @FXML\r\n    void setOnMouseExit(MouseEvent event) {\r\n        btnGuardar.setStyle(\"-fx-background-radius: 10; -fx-background-color: #1a273c;\");\r\n        btnGuardar.setFocusTraversable(false);\r\n    }\r\n    @FXML\r\n    void eventBtnSave(MouseEvent event)throws IOException{\r\n        BaseDatosArchivos bd = new BaseDatosArchivos();\r\n\r\n       try {\r\n           Pedido pedido = new Pedido();\r\n           pedido.setPedido(inputPedido.getText());\r\n           pedido.setClientName(inputCliente.getText());\r\n           pedido.setPrice(Integer.parseInt(inputPrecio.getText()));\r\n           pedido.setDescription(inputDescripcion.getText());\r\n           pedido.setPrioridad(inputPrioridad.getText());\r\n\r\n           bd.guardarDatos(pedido, true);\r\n\r\n           inputCliente.setText(\"\");\r\n           inputDescripcion.setText(\"\");\r\n           inputPedido.setText(\"\");\r\n           inputPrecio.setText(\"\");\r\n           inputPrioridad.setText(\"\");\r\n\r\n           this.getClass().getClassLoader();\r\n\r\n           btnGuardar.setStyle(\"-fx-background-color: #6cac23; -fx-background-radius: 10\");\r\n           initialize(null, null);\r\n       }catch (NumberFormatException error){\r\n           inputPrecio.setStyle(\"-fx-background-color: #dcdcdc; -fx-border-color: #ff5370; -fx-background-radius: 7; -fx-border-radius: 7;\");\r\n           btnGuardar.setStyle(\"-fx-background-color: #ff5370; -fx-background-radius: 10\");\r\n       }\r\n    }\r\n\r\n    @FXML\r\n    void eventTextCliqued(MouseEvent event) throws IOException{\r\n        inputPrecio.setStyle(\"-fx-background-color: #dcdcdc; -fx-border-color: #999999; -fx-background-radius: 7; -fx-border-radius: 7;\");\r\n        btnGuardar.setStyle(\"-fx-background-color:   #1a273c; -fx-background-radius: 10\");\r\n    }\r\n\r\n    void updateButton(Button button){\r\n        vBoxButton.getChildren().clear();\r\n        vBoxButton.getChildren().setAll(button);\r\n    }\r\n\r\n\r\n    @Override\r\n    public void initialize(URL url, ResourceBundle resourceBundle) {\r\n        BaseDatosArchivos bd = new BaseDatosArchivos();\r\n        ArrayList<Pedido> pedidos = new ArrayList<>(bd.leerDatosPedido());\r\n        VBoxLayout.getChildren().setAll();\r\n        myUpdateUser = new MyUpdateUser() {\r\n            @Override\r\n            public void updateUser(Pedido pedido, PedidosController pedidosController) {\r\n                setData(pedido);\r\n                FXMLLoader loader1 = new FXMLLoader();\r\n                loader1.setLocation(getClass().getResource(\"button-edit.fxml\"));\r\n                try{\r\n                    Button button = loader1.load();\r\n                    updateButton(button);\r\n                    ButtonEditController buttonEditController = loader1.getController();\r\n                    buttonEditController.setData(pedido, pedidosController);\r\n                }catch (IOException e){\r\n                    throw new RuntimeException(e);\r\n                }\r\n            }\r\n        };\r\n\r\n        int precio = 0;\r\n\r\n        for (int i = 0; i < pedidos.size(); i++) {\r\n            FXMLLoader loader = new FXMLLoader();\r\n            loader.setLocation(getClass().getResource(\"PeidosItems.fxml\"));\r\n            precio += pedidos.get(i).getPrice();\r\n            try {\r\n                HBox hBox = loader.load();\r\n                PeidosItemsController peidosItemsController = loader.getController();\r\n                peidosItemsController.setDate(pedidos.get(i), i, myUpdateUser);\r\n                peidosItemsController.setController(this);\r\n                VBoxLayout.getChildren().add(hBox);\r\n            } catch (IOException e) {\r\n                throw new RuntimeException(e);\r\n            }\r\n        }\r\n        textCantPedidos.setText(String.valueOf(pedidos.size()));\r\n        textPrecioTotal.setText(String.format(\"%s$\", precio));\r\n    }\r\n\r\n    void setData(Pedido pedido){\r\n        inputCliente.setText(pedido.getClientName());\r\n        inputDescripcion.setText(pedido.getDescription());\r\n        inputPedido.setText(pedido.getPedido());\r\n        inputPrecio.setText(String.valueOf(pedido.getPrice()));\r\n        inputPrioridad.setText(pedido.getPrioridad());\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java b/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java
+--- a/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
++++ b/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/PedidosController.java	(date 1726060794174)
+@@ -4,7 +4,6 @@
+ import javafx.fxml.FXML;
+ import javafx.fxml.FXMLLoader;
+ import javafx.fxml.Initializable;
+-import javafx.scene.Parent;
+ import javafx.scene.control.Button;
+ import javafx.scene.control.TextArea;
+ import javafx.scene.control.TextField;
+Index: src/main/java/com/adriananiel/roneracentral/Harold/EscribirObjeto.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/Harold/EscribirObjeto.java b/src/main/java/com/adriananiel/roneracentral/Harold/EscribirObjeto.java
+new file mode 100644
+--- /dev/null	(date 1726060794177)
++++ b/src/main/java/com/adriananiel/roneracentral/Harold/EscribirObjeto.java	(date 1726060794177)
+@@ -0,0 +1,54 @@
++package com.adriananiel.roneracentral.Harold;
++
++import java.io.File;
++import java.io.FileOutputStream;
++import java.io.IOException;
++import java.io.ObjectOutputStream;
++import java.util.ArrayList;
++
++public class EscribirObjeto {
++
++
++        // atributo de la clase para especificar la direccion en el disco del archivo base de datos
++        private String filePath;
++
++        // constructor de la clase
++        public EscribirObjeto(String filePath){
++            this.filePath = filePath;
++        }
++
++        // metodo principal de la clase el cual escribe en el archivo especificado la lista que le pases como parametro a este metodo
++        public void Write(ArrayList<SuministroTable> list){
++
++            try {
++
++                // crea una nueva instancia del archivo en la direccion que le especificaste
++                File file = new File(filePath);
++                // si el archivo no existe crea uno nuevo en esa ruta
++                if (!file.exists()){
++                    file.createNewFile();
++                }
++                // se crean los stream de salida para primero convertir los objetos al output stream de un archivo y poder escribir en el archivo
++                FileOutputStream fos = new FileOutputStream(file);
++                ObjectOutputStream oos = new ObjectOutputStream(fos);
++
++                // escribe la lista en el archivo usando los streams
++                oos.writeObject(list);
++                System.out.println("Se escribio la lista");
++                if (list.isEmpty()){
++                    System.out.println("lista desde write object vacia");
++                } else {
++                    System.out.println(list.getLast().getNombreCampo());
++                }
++
++                // cierra los streams
++                oos.close();
++                fos.close();
++
++            } catch (IOException e){
++                e.printStackTrace();
++            }
++        }
++    }
++
++
+Index: src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.adriananiel.roneracentral.GestionDeProcesos;\r\n\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.input.MouseEvent;\r\nimport javafx.scene.layout.BorderPane;\r\nimport javafx.scene.layout.Pane;\r\n\r\nimport java.io.IOException;\r\nimport java.net.URL;\r\nimport java.util.ResourceBundle;\r\n\r\npublic class ProcesosController implements Initializable {\r\n    @FXML\r\n    private Button btnPedidos;\r\n\r\n    @FXML\r\n    private Button btnReportes;\r\n\r\n    @FXML\r\n    private Button btnSumunistros;\r\n\r\n    @FXML\r\n    private BorderPane panel;\r\n\r\n    @FXML\r\n    void eventBtnPedidos(MouseEvent event) throws IOException {\r\n        FXMLLoader loader = new FXMLLoader(getClass().getResource(\"Pedidos.fxml\"));\r\n        Pane ventanaGestionarCuentaFXML = loader.load();\r\n        panel.setCenter(ventanaGestionarCuentaFXML);\r\n\r\n        PedidosController pedidosController = loader.getController();\r\n        pedidosController.setController(this);\r\n    }\r\n\r\n\r\n    @Override\r\n    public void initialize(URL url, ResourceBundle resourceBundle) {\r\n        Pane ventanaGestionarCuentaFXML = null;\r\n        try {\r\n            ventanaGestionarCuentaFXML = FXMLLoader.load(getClass().getResource(\"ProcesosHome.fxml\"));\r\n        } catch (IOException e) {\r\n            throw new RuntimeException(e);\r\n        }\r\n        panel.setCenter(ventanaGestionarCuentaFXML);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java b/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java
+--- a/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
++++ b/src/main/java/com/adriananiel/roneracentral/GestionDeProcesos/ProcesosController.java	(date 1726060794174)
+@@ -1,5 +1,6 @@
+ package com.adriananiel.roneracentral.GestionDeProcesos;
+ 
++import javafx.event.ActionEvent;
+ import javafx.fxml.FXML;
+ import javafx.fxml.FXMLLoader;
+ import javafx.fxml.Initializable;
+@@ -20,7 +21,7 @@
+     private Button btnReportes;
+ 
+     @FXML
+-    private Button btnSumunistros;
++    private Button btnSuministros;
+ 
+     @FXML
+     private BorderPane panel;
+@@ -34,7 +35,13 @@
+         PedidosController pedidosController = loader.getController();
+         pedidosController.setController(this);
+     }
+-
++    @FXML
++    void eventbtnSumunistros(ActionEvent event) throws IOException {
++        System.out.println("Se acciono");
++        FXMLLoader loader = new FXMLLoader(getClass().getResource("GestionSuministro.fxml"));
++        Pane ventanaGestionarCuentaFXML = loader.load();
++        panel.setCenter(ventanaGestionarCuentaFXML);
++    }
+ 
+     @Override
+     public void initialize(URL url, ResourceBundle resourceBundle) {
+Index: src/main/java/com/adriananiel/roneracentral/Harold/GestionSuministro.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/Harold/GestionSuministro.java b/src/main/java/com/adriananiel/roneracentral/Harold/GestionSuministro.java
+new file mode 100644
+--- /dev/null	(date 1726060794181)
++++ b/src/main/java/com/adriananiel/roneracentral/Harold/GestionSuministro.java	(date 1726060794181)
+@@ -0,0 +1,195 @@
++package com.adriananiel.roneracentral.Harold;
++
++import com.adriananiel.roneracentral.GestionDeProcesos.PedidosController;
++import javafx.fxml.FXMLLoader;
++import javafx.scene.control.cell.PropertyValueFactory;
++import javafx.collections.FXCollections;
++import javafx.collections.ObservableList;
++import javafx.fxml.FXML;
++import javafx.scene.control.TableColumn;
++import javafx.scene.control.TableView;
++import javafx.event.ActionEvent;
++import javafx.fxml.Initializable;
++import javafx.scene.control.TextField;
++import javafx.scene.input.MouseEvent;
++import javafx.scene.layout.Pane;
++
++import java.io.IOException;
++import java.net.URL;
++import java.util.ArrayList;
++import java.util.ResourceBundle;
++
++public class GestionSuministro implements Initializable {
++
++    private ArrayList<SuministroTable> SuministroList;
++    public SuministroTable suministro;
++    private ObservableList<SuministroTable> observableSuministroList;
++    EscribirObjeto wo = new EscribirObjeto("BaseDatos/Suministro_DB.ser");
++
++    @FXML
++    private TableColumn<SuministroTable ,String> AlmacenamientoView;
++
++    @FXML
++    private TableColumn<SuministroTable, String> CantidadView;
++
++
++    @FXML
++    private TableColumn<SuministroTable, String> NombreView;
++
++    @FXML
++    private TableView<SuministroTable> TablaView;
++
++    @FXML
++    private TextField nombreCampo;
++
++    @FXML
++    private TextField cantidadCampo;
++
++    @FXML
++    private TextField tipoCampo;
++
++
++    // Evento de guardar texto FXML
++
++    public void eventAnadir(ActionEvent event) {
++        if (nombreCampo.getText().isEmpty() || cantidadCampo.getText().isEmpty() || tipoCampo.getText().isEmpty()) {
++            showError("Debes ingresar un texto");
++        } else {
++            suministro = new SuministroTable(
++                    nombreCampo.getText(),
++                    cantidadCampo.getText(),
++                    tipoCampo.getText());
++        }
++        SuministroList.add(suministro);
++        observableSuministroList.add(suministro);
++        wo.Write(SuministroList);
++
++        clearTextFields();
++    }
++
++    private void showError(String debesIngresarUnTexto) {
++    }
++
++    @FXML
++    private void eventActualizar(ActionEvent event) {
++        System.out.println("Se presiono el boton actualizar");
++
++        suministro = new SuministroTable(
++                nombreCampo.getText(),
++                cantidadCampo.getText(),
++                tipoCampo.getText());
++
++        for (int i = 0; i < SuministroList.size(); i++) {
++            SuministroTable lron = SuministroList.get(i);
++            System.out.println("antes del if : nombre del ron a actualizar " + lron.getNombreCampo());
++            if (lron.getNombreCampo().equals(suministro.getNombreCampo())) {
++                // Actualizar el elemento en ronList y observableRonList usando el índice 'i'
++                SuministroList.set(i, suministro);
++                observableSuministroList.set(i, suministro);
++                TablaView.setItems(observableSuministroList);
++                System.out.println("dentro del if despues de actualizar");
++
++                break; // Salir del bucle una vez que se encontró y actualizó el elemento
++            }
++        }
++        SuministroTable selectedSuministro = TablaView.getSelectionModel().getSelectedItem();
++
++        if (selectedSuministro != null) {
++            // Actualizar los valores del objeto seleccionado
++            selectedSuministro.setNombreCampo(nombreCampo.getText());
++            selectedSuministro.setCantidadCampo(cantidadCampo.getText());
++            selectedSuministro.setTipoCampo(tipoCampo.getText());
++
++            // Refrescar la tabla para mostrar los cambios
++            TablaView.refresh();
++
++            // Guardar los cambios en la base de datos
++            wo.Write(SuministroList);
++
++            System.out.println("Se actualizo correctamente el elemento: " + selectedSuministro.getNombreCampo());
++        } else {
++            System.out.println("No se ha seleccionado ningún elemento para actualizar.");
++        }
++
++        System.out.println("Se actualizo correctamente el elemento: " + suministro.getNombreCampo());
++        System.out.println("tipo" + suministro.getTipoCampo());
++        for (SuministroTable pron : SuministroList) {
++            System.out.println(pron.getNombreCampo());
++            System.out.println(pron.getTipoCampo());
++        }
++        clearTextFields();
++    }
++
++    public void btnDelete(ActionEvent event) {
++            System.out.println("Botón presionado Delete!");
++
++            // Obtener el suministro seleccionado desde la tabla
++            SuministroTable selectedSuministro = TablaView.getSelectionModel().getSelectedItem();
++
++            // Verifica si hay una selección válida
++            if (selectedSuministro != null) {
++                // Elimina el elemento de la lista original y de la lista observable
++                SuministroList.remove(selectedSuministro);
++                observableSuministroList.remove(selectedSuministro);
++
++                // Actualiza la tabla para reflejar los cambios
++                TablaView.refresh();
++
++                // Guarda los cambios en la base de datos
++                wo.Write(SuministroList);
++
++                System.out.println("Se eliminó correctamente el elemento: " + selectedSuministro.getNombreCampo());
++            } else {
++                System.out.println("No se ha seleccionado ningún elemento para eliminar.");
++            }
++
++            // Limpiar los campos de texto
++            clearTextFields();
++        }
++
++   private void clearTextFields(){
++        nombreCampo.setText("");
++        cantidadCampo.setText("");
++        tipoCampo.setText("");
++    }
++
++    @FXML
++    public void eventBack(MouseEvent mouseEvent) throws IOException {
++
++    }
++
++    private void loadTable() throws IOException, ClassNotFoundException, IOException {
++        DateBase suministroDB = new DateBase("BaseDatos/Suministro_DB.ser");
++        SuministroList = suministroDB.startDateBase();
++        observableSuministroList = FXCollections.observableArrayList(SuministroList);
++        TablaView.setItems(observableSuministroList);
++        NombreView.setCellValueFactory(new PropertyValueFactory<>("nombreCampo"));
++        CantidadView.setCellValueFactory(new PropertyValueFactory<>("cantidadCampo"));
++        AlmacenamientoView.setCellValueFactory(new PropertyValueFactory<>("tipoCampo"));
++
++        // Escuchar cambios de selección en la tabla
++        TablaView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
++            if (newValue != null) {
++                // Cargar los datos seleccionados en los TextFields
++                nombreCampo.setText(newValue.getNombreCampo());
++                cantidadCampo.setText(newValue.getCantidadCampo());
++                tipoCampo.setText(newValue.getTipoCampo());
++            }
++        });
++
++        for (SuministroTable pron : SuministroList) {
++            System.out.println(pron.getNombreCampo());
++        }
++    }
++
++    @Override
++    public void initialize(URL url, ResourceBundle resourceBundle) {
++        try {
++            loadTable();
++        } catch (IOException e) {
++            throw new RuntimeException(e);
++        } catch (ClassNotFoundException e) {
++            throw new RuntimeException(e);
++        }
++    }
++}
+\ No newline at end of file
+Index: src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/GestionSuministro.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/GestionSuministro.fxml b/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/GestionSuministro.fxml
+new file mode 100644
+--- /dev/null	(date 1726060794181)
++++ b/src/main/resources/com/adriananiel/roneracentral/GestionDeProcesos/GestionSuministro.fxml	(date 1726060794181)
+@@ -0,0 +1,235 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.geometry.Insets?>
++<?import javafx.scene.Cursor?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.DatePicker?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ScrollPane?>
++<?import javafx.scene.control.TableColumn?>
++<?import javafx.scene.control.TableView?>
++<?import javafx.scene.control.TextField?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.layout.Pane?>
++<?import javafx.scene.text.Font?>
++
++<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adriananiel.roneracentral.Harold.GestionSuministro">
++   <children>
++      <ScrollPane hbarPolicy="NEVER" hmax="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="720.0" prefWidth="1280.0" style="-fx-border-color: #F1F6F9; -fx-background-color: #F1F6F9;">
++        <content>
++          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1380.0" prefWidth="1280.0" style="-fx-background-color: #F1F6F9;">
++               <children>
++                  <ScrollPane layoutX="625.0" layoutY="141.0" prefHeight="439.0" prefWidth="614.0">
++                    <content>
++                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="614.0">
++                           <children>
++                              <TableView fx:id="TablaView" editable="true" prefHeight="428.0" prefWidth="598.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-alignment: CENTER;">
++                                <columns>
++                                  <TableColumn fx:id="NombreView" prefWidth="110.0" style="-fx-background-color: #F1F6F9; -fx-alignment: CENTER; -fx-font-size: 18px; -fx-font-family: Arial;" text="TIPO RECURSO" />
++                                  <TableColumn fx:id="CantidadView" prefWidth="110.0" style="-fx-background-color: #F1F6F9; -fx-font-size: 18px; -fx-font-family: Arial; -fx-alignment: CENTER;" text="CANTIDAD" />
++                                    <TableColumn fx:id="AlmacenamientoView" prefWidth="110.0" style="-fx-background-color: #F1F6F9; -fx-alignment: CENTER; -fx-font-size: 18px; -fx-font-family: Arial;" text="TIPO ALMACENAMIENTO" />
++                                </columns>
++                                 <cursor>
++                                    <Cursor fx:constant="DEFAULT" />
++                                 </cursor>
++                                 <columnResizePolicy>
++                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
++                                 </columnResizePolicy>
++                              </TableView>
++                           </children>
++                        </AnchorPane>
++                    </content>
++                  </ScrollPane>
++                  <Pane layoutX="50.0" layoutY="135.0" prefHeight="446.0" prefWidth="564.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10px;">
++                     <children>
++                        <Label layoutX="35.0" layoutY="14.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="TIPO DE RECURSO">
++                           <font>
++                              <Font name="Arial" size="24.0" />
++                           </font>
++                        </Label>
++                        <Label layoutX="38.0" layoutY="123.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="CANTIDAD EN ALMACÉN">
++                           <font>
++                              <Font name="Arial" size="24.0" />
++                           </font>
++                        </Label>
++                        <Label layoutX="34.0" layoutY="236.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="TIPO DE ALMACENAMIENTO">
++                           <font>
++                              <Font name="Arial" size="24.0" />
++                           </font>
++                        </Label>
++                        <TextField fx:id="nombreCampo" layoutX="35.0" layoutY="44.0" prefHeight="53.0" prefWidth="290.0" promptText="TIPO" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;">
++                           <font>
++                              <Font name="Arial" size="18.0" />
++                           </font>
++                        </TextField>
++                        <Label ellipsisString="" layoutX="35.0" layoutY="79.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
++                        <TextField fx:id="cantidadCampo" layoutX="38.0" layoutY="153.0" prefHeight="53.0" prefWidth="290.0" promptText="CANTIDAD" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;">
++                           <font>
++                              <Font name="Arial" size="18.0" />
++                           </font>
++                        </TextField>
++                        <Label ellipsisString="" layoutX="38.0" layoutY="188.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
++                        <Button fx:id="BtnAnadir" layoutX="420.0" layoutY="78.0" mnemonicParsing="false" onAction="#eventAnadir" prefHeight="39.0" prefWidth="101.0" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="AÑADIR">
++                           <font>
++                              <Font name="Arial Bold" size="18.0" />
++                           </font>
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                        </Button>
++                        <Button fx:id="BtnActualizar" layoutX="406.0" layoutY="187.0" mnemonicParsing="false" onAction="#eventActualizar" prefHeight="38.0" prefWidth="138.0" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="ACTUALIZAR">
++                           <font>
++                              <Font name="Arial Bold" size="18.0" />
++                           </font>
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                        </Button>
++                        <Button fx:id="BtnEliminar" layoutX="419.0" layoutY="298.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="42.0" prefWidth="113.0" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="ELIMINAR">
++                           <font>
++                              <Font name="Arial Bold" size="18.0" />
++                           </font>
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                        </Button>
++                        <TextField fx:id="tipoCampo" layoutX="34.0" layoutY="263.0" prefHeight="43.0" prefWidth="244.0" promptText="TIPO DE ALMACENAMIENTO" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;">
++                           <font>
++                              <Font name="Arial" size="18.0" />
++                           </font>
++                        </TextField>
++                        <Label ellipsisString="" layoutX="44.0" layoutY="289.0" prefHeight="18.0" prefWidth="234.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
++                        <Button layoutX="55.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#eventBack" prefHeight="42.0" prefWidth="113.0" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="Pedidos">
++                           <font>
++                              <Font name="Arial Bold" size="18.0" />
++                           </font>
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                        </Button>
++                     </children>
++                     <opaqueInsets>
++                        <Insets />
++                     </opaqueInsets>
++                  </Pane>
++                  <Pane layoutX="50.0" layoutY="785.0" prefHeight="529.0" prefWidth="564.0" style="-fx-background-color: #F1F6F9; -fx-background-radius: 10px;">
++                     <children>
++                        <Label layoutX="35.0" layoutY="14.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="NOMBRE MATERIA PRIMA">
++                           <font>
++                              <Font name="Arial" size="24.0" />
++                           </font>
++                        </Label>
++                        <Label layoutX="38.0" layoutY="123.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="CANTIDAD EN ALMACÉN">
++                           <font>
++                              <Font name="Arial" size="24.0" />
++                           </font>
++                        </Label>
++                        <Label layoutX="33.0" layoutY="349.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="FECHA DE VENCIMIENTO">
++                           <font>
++                              <Font name="Arial" size="24.0" />
++                           </font>
++                        </Label>
++                        <Label layoutX="34.0" layoutY="236.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="CARACT. MATERIA PRIMA">
++                           <font>
++                              <Font name="Arial" size="24.0" />
++                           </font>
++                        </Label>
++                        <TextField fx:id="NombreFieldMateriaPrima" layoutX="35.0" layoutY="44.0" prefHeight="53.0" prefWidth="290.0" promptText="NOMBRE" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;">
++                           <font>
++                              <Font name="Arial" size="18.0" />
++                           </font>
++                        </TextField>
++                        <Label ellipsisString="" layoutX="35.0" layoutY="79.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
++                        <TextField fx:id="CantidadFieldMateriaPrima" layoutX="38.0" layoutY="153.0" prefHeight="53.0" prefWidth="290.0" promptText="CANTIDAD" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;">
++                           <font>
++                              <Font name="Arial" size="18.0" />
++                           </font>
++                        </TextField>
++                        <Label ellipsisString="" layoutX="38.0" layoutY="188.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
++                        <DatePicker fx:id="VencimientoDatePickerMateriaPrima" blendMode="MULTIPLY" cache="true" editable="false" layoutX="33.0" layoutY="380.0" prefHeight="50.0" prefWidth="290.0" promptText="DD/MM/YYYY" style="-fx-background-radius: 12; -fx-background-color: transparent; -fx-border-radius: 12; -fx-font-size: 16px; -fx-font-family: Arial; -fx-border-color: #F1F6F9;">
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                           <opaqueInsets>
++                              <Insets />
++                           </opaqueInsets>
++                        </DatePicker>
++                        <Label layoutX="356.0" layoutY="14.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="AGREGAR FOTO">
++                           <font>
++                              <Font name="Arial" size="24.0" />
++                           </font>
++                        </Label>
++                        <Pane layoutX="379.0" layoutY="65.0" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: #000000; -fx-border-radius: 10;">
++                           <children>
++                              <Label layoutX="54.0" layoutY="71.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="1X1">
++                                 <font>
++                                    <Font name="Arial" size="24.0" />
++                                 </font>
++                              </Label>
++                              <Label layoutX="31.0" layoutY="50.0" style="-fx-font-family: Arial; -fx-font-size: 24px;" text="IMAGEN">
++                                 <font>
++                                    <Font name="Arial" size="24.0" />
++                                 </font>
++                              </Label>
++                              <ImageView fx:id="imagenPuestaMateriaPrima" fitHeight="152.0" fitWidth="152.0" layoutX="2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
++                           </children>
++                        </Pane>
++                        <Button fx:id="BtnExaminarMateriaPrima" layoutX="400.0" layoutY="232.0" mnemonicParsing="false" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="EXAMINAR" textFill="WHITE">
++                           <font>
++                              <Font name="Arial" size="14.0" />
++                           </font>
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                        </Button>
++                        <Button fx:id="BtnAnadirMateriaPrima" layoutX="61.0" layoutY="465.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="AÑADIR">
++                           <font>
++                              <Font name="Arial Bold" size="18.0" />
++                           </font>
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                        </Button>
++                        <Button fx:id="BtnActualizarMateriaPrima" layoutX="212.0" layoutY="465.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="ACTUALIZAR">
++                           <font>
++                              <Font name="Arial Bold" size="18.0" />
++                           </font>
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                        </Button>
++                        <Label ellipsisString="" layoutX="33.0" layoutY="415.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
++                        <TextField fx:id="CaracteristicasFieldMateriaPrima" layoutX="35.0" layoutY="266.0" prefHeight="53.0" prefWidth="289.0" promptText="CARACTERÍSTICAS" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-font-family: Arial; -fx-font-size: 16px;">
++                           <font>
++                              <Font name="Arial" size="18.0" />
++                           </font>
++                        </TextField>
++                        <Label ellipsisString="" layoutX="34.0" layoutY="301.0" prefHeight="18.0" prefWidth="290.0" text="                                                                                                                " textAlignment="CENTER" underline="true" />
++                        <Button fx:id="BtnEliminarMateriaPrima" layoutX="374.0" layoutY="465.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" style="-fx-font-family: Arial; -fx-font-size: 18px; -fx-background-color: #1a273c; -fx-background-radius: 10px; -fx-text-fill: #fff;" text="ELIMINAR">
++                           <font>
++                              <Font name="Arial Bold" size="18.0" />
++                           </font>
++                           <cursor>
++                              <Cursor fx:constant="HAND" />
++                           </cursor>
++                        </Button>
++                     </children>
++                     <opaqueInsets>
++                        <Insets />
++                     </opaqueInsets>
++                  </Pane>
++                  <Label layoutX="335.0" layoutY="56.0" style="-fx-text-fill: #1a273c;" text="GESTIÒN DE RECURSOS " textAlignment="CENTER" textFill="#191043">
++                     <font>
++                        <Font name="Arial" size="36.0" />
++                     </font>
++                     <padding>
++                        <Insets left="110.0" top="4.0" />
++                     </padding>
++                  </Label>
++               </children>
++            </AnchorPane>
++        </content>
++      </ScrollPane>
++   </children>
++</Pane>
+Index: src/main/java/com/adriananiel/roneracentral/Harold/LeerObjetos.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/Harold/LeerObjetos.java b/src/main/java/com/adriananiel/roneracentral/Harold/LeerObjetos.java
+new file mode 100644
+--- /dev/null	(date 1726060794181)
++++ b/src/main/java/com/adriananiel/roneracentral/Harold/LeerObjetos.java	(date 1726060794181)
+@@ -0,0 +1,37 @@
++package com.adriananiel.roneracentral.Harold;
++
++import java.io.FileInputStream;
++import java.io.IOException;
++import java.io.ObjectInputStream;
++import java.util.ArrayList;
++
++public class LeerObjetos {
++    // atributo de la clase para especificar la direccion en el disco del archivo base de datos
++    private String filePath;
++    // constructor de la clase
++    public LeerObjetos(String path){
++        this.filePath = path;
++    }
++
++    // metodo principal de la clase para leer el archivo que se paso como parametro al constructor de la clase,
++    // el metodo devuelve un arrayList de usuarios, tiene manejo de excepciones
++    public ArrayList<?> Read() throws IOException, ClassNotFoundException{
++
++        // crea un stream de datos de entrada del archivo
++        FileInputStream fis = new FileInputStream(filePath);
++
++        // en el try intenta de crear un stream de datos de entrada convirtiendo los datos del stream del archivo a objetos
++        try (ObjectInputStream ois = new ObjectInputStream(fis)) {
++
++            // crea una nueva lista de usuarios vacia
++            ArrayList<SuministroTable> suministroList;
++
++            // de los objetos cargados del archivo, los añade a la lista vacia que se creo anteriormente,
++            suministroList = (ArrayList<SuministroTable>) ois.readObject();
++
++            // retorna esta lista, que representa todos los objetos guardados en el archivo
++            return suministroList;
++        }
++    }
++
++}
+Index: src/main/java/com/adriananiel/roneracentral/Harold/DateBase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/Harold/DateBase.java b/src/main/java/com/adriananiel/roneracentral/Harold/DateBase.java
+new file mode 100644
+--- /dev/null	(date 1726060794177)
++++ b/src/main/java/com/adriananiel/roneracentral/Harold/DateBase.java	(date 1726060794177)
+@@ -0,0 +1,26 @@
++package com.adriananiel.roneracentral.Harold;
++
++import java.io.File;
++import java.io.IOException;
++import java.util.ArrayList;
++
++public class DateBase {
++    private String dateBasePath;
++    private ArrayList<SuministroTable> suministroList;
++    public DateBase(String dateBasePath){this.dateBasePath = dateBasePath;}
++
++    public ArrayList<SuministroTable> startDateBase() throws ClassNotFoundException, IOException {
++        File dateBase_File = new File(dateBasePath);
++
++        if (dateBase_File.exists()){
++            LeerObjetos ro = new LeerObjetos(dateBasePath);
++            suministroList = (ArrayList<SuministroTable>) ro.Read();
++        }else{
++            suministroList = new ArrayList<>();
++        }
++
++        EscribirObjeto dateBase = new EscribirObjeto(dateBasePath);
++        dateBase.Write(suministroList);
++        return suministroList;
++    }
++}
+Index: src/main/java/module-info.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>module com.adriananiel.roneracentral {\r\n    requires javafx.controls;\r\n    requires javafx.fxml;\r\n    requires javafx.web;\r\n\r\n    requires org.controlsfx.controls;\r\n    requires com.dlsc.formsfx;\r\n    requires net.synedra.validatorfx;\r\n    requires org.kordamp.ikonli.javafx;\r\n    requires org.kordamp.bootstrapfx.core;\r\n    requires eu.hansolo.tilesfx;\r\n    requires com.almasb.fxgl.all;\r\n    requires java.desktop;\r\n    requires javafx.swing;\r\n\r\n    opens com.adriananiel.roneracentral to javafx.fxml;\r\n    opens com.adriananiel.roneracentral.GestionDeProcesos to javafx.fxml;\r\n\r\n    exports com.adriananiel.roneracentral;\r\n    exports com.adriananiel.roneracentral.Corzo;\r\n    opens com.adriananiel.roneracentral.Corzo to javafx.fxml;\r\n    opens com.adriananiel.roneracentral.Alejandro;\r\n    exports com.adriananiel.roneracentral.Alejandro to javafx.fxml;\r\n\r\n    exports com.adriananiel.roneracentral.GestionDeProcesos to javafx.fxml;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/module-info.java b/src/main/java/module-info.java
+--- a/src/main/java/module-info.java	(revision 7d58b3c44ccb616d905253252afe09a8b7bce45a)
++++ b/src/main/java/module-info.java	(date 1726060794181)
+@@ -12,6 +12,16 @@
+     requires com.almasb.fxgl.all;
+     requires java.desktop;
+     requires javafx.swing;
++    requires java.base;
++
++    // Abrir el paquete al módulo javafx.fxml para permitir la inyección de campos privados
++    opens com.adriananiel.roneracentral.Harold to javafx.fxml;
++
++    // Exportar el paquete si es necesario para que otros módulos lo usen
++    exports com.adriananiel.roneracentral.Harold;
++
++
++
+ 
+     opens com.adriananiel.roneracentral to javafx.fxml;
+     opens com.adriananiel.roneracentral.GestionDeProcesos to javafx.fxml;
+@@ -21,6 +31,5 @@
+     opens com.adriananiel.roneracentral.Corzo to javafx.fxml;
+     opens com.adriananiel.roneracentral.Alejandro;
+     exports com.adriananiel.roneracentral.Alejandro to javafx.fxml;
+-
+     exports com.adriananiel.roneracentral.GestionDeProcesos to javafx.fxml;
+ }
+\ No newline at end of file
+Index: src/main/java/com/adriananiel/roneracentral/Harold/SuministroTable.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/adriananiel/roneracentral/Harold/SuministroTable.java b/src/main/java/com/adriananiel/roneracentral/Harold/SuministroTable.java
+new file mode 100644
+--- /dev/null	(date 1726060794181)
++++ b/src/main/java/com/adriananiel/roneracentral/Harold/SuministroTable.java	(date 1726060794181)
+@@ -0,0 +1,39 @@
++package com.adriananiel.roneracentral.Harold;
++
++import java.io.Serializable;
++
++public class SuministroTable implements Serializable {
++    String NombreCampo;
++    String CantidadCampo;
++    String TipoCampo;
++
++    public SuministroTable (String NombreCampo, String CantidadCampo, String TipoCampo){
++        this.NombreCampo = NombreCampo;
++        this.CantidadCampo = CantidadCampo;
++        this.TipoCampo = TipoCampo;
++    }
++
++    public String getNombreCampo() {
++        return NombreCampo;
++    }
++
++    public void setNombreCampo(String nombreCampo) {
++        NombreCampo = nombreCampo;
++    }
++
++    public String getCantidadCampo() {
++        return CantidadCampo;
++    }
++
++    public void setCantidadCampo(String cantidadCampo) {
++        CantidadCampo = cantidadCampo;
++    }
++
++    public String getTipoCampo() {
++        return TipoCampo;
++    }
++
++    public void setTipoCampo(String tipoCampo) {
++        TipoCampo = tipoCampo;
++    }
++}

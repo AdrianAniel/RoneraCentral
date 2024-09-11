@@ -1,6 +1,5 @@
 package com.adriananiel.roneracentral.GestionDeProcesos;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -21,7 +20,7 @@ public class ProcesosController implements Initializable {
     private Button btnReportes;
 
     @FXML
-    private Button btnSuministros;
+    private Button btnSumunistros;
 
     @FXML
     private BorderPane panel;
@@ -35,13 +34,7 @@ public class ProcesosController implements Initializable {
         PedidosController pedidosController = loader.getController();
         pedidosController.setController(this);
     }
-    @FXML
-    void eventbtnSumunistros(ActionEvent event) throws IOException {
-        System.out.println("Se acciono");
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("GestionSuministro.fxml"));
-        Pane ventanaGestionarCuentaFXML = loader.load();
-        panel.setCenter(ventanaGestionarCuentaFXML);
-    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

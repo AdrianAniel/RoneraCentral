@@ -1,7 +1,5 @@
 package com.adriananiel.roneracentral.Harold;
 
-import com.adriananiel.roneracentral.Corzo.QualityRonTable;
-
 import java.util.ArrayList;
 import java.util.Optional;
 
