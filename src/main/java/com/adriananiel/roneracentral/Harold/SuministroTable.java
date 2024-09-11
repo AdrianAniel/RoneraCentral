@@ -1,7 +1,6 @@
 package com.adriananiel.roneracentral.Harold;
 
 import java.io.Serializable;
-//Tabla serializadora
 
 public class SuministroTable implements Serializable {
     String NombreCampo;

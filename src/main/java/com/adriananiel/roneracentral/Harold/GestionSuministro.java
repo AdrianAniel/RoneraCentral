@@ -1,7 +1,5 @@
 package com.adriananiel.roneracentral.Harold;
 
-import com.adriananiel.roneracentral.GestionDeProcesos.PedidosController;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,7 +10,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.net.URL;
@@ -25,7 +22,7 @@ public class GestionSuministro implements Initializable {
     private ArrayList<SuministroTable> SuministroList;
     public SuministroTable suministro;
     private ObservableList<SuministroTable> observableSuministroList;
-    EscribirObjeto wo = new EscribirObjeto("BaseDatos/Suministro_DB.ser");
+    EscribirObjetoSuministro wo = new EscribirObjetoSuministro("BaseDatos/Suministro_DB.ser");
 
     @FXML
     private TableColumn<SuministroTable, String> AlmacenamientoView;
@@ -158,7 +155,7 @@ public class GestionSuministro implements Initializable {
     }
 
     private void loadTable() throws IOException, ClassNotFoundException, IOException {
-        DateBase suministroDB = new DateBase("BaseDatos/Suministro_DB.ser");
+        DateBaseSuministro suministroDB = new DateBaseSuministro("BaseDatos/Suministro_DB.ser");
         SuministroList = suministroDB.startDateBase();
         observableSuministroList = FXCollections.observableArrayList(SuministroList);
         TablaView.setItems(observableSuministroList);

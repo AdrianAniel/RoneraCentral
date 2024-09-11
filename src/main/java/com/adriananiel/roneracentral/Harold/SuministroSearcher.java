@@ -1,6 +1,4 @@
 package com.adriananiel.roneracentral.Harold;
-//Suministro rearcher
-import com.adriananiel.roneracentral.Corzo.QualityRonTable;
 
 import java.util.ArrayList;
 import java.util.Optional;

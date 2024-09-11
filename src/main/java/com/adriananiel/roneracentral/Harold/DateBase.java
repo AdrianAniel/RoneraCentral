@@ -9,6 +9,7 @@ public class DateBase {
     private ArrayList<SuministroTable> suministroList;
 
     public DateBase(String dateBasePath) {
+
         this.dateBasePath = dateBasePath;
     }
     // Database
@@ -17,13 +18,13 @@ public class DateBase {
         File dateBase_File = new File(dateBasePath);
 
         if (dateBase_File.exists()) {
-            LeerObjetos ro = new LeerObjetos(dateBasePath);
+            LeerObjetosSuministro ro = new LeerObjetosSuministro(dateBasePath);
             suministroList = (ArrayList<SuministroTable>) ro.Read();
         } else {
             suministroList = new ArrayList<>();
         }
 
-        EscribirObjeto dateBase = new EscribirObjeto(dateBasePath);
+        EscribirObjetoSuministro dateBase = new EscribirObjetoSuministro(dateBasePath);
         dateBase.Write(suministroList);
         return suministroList;
     }

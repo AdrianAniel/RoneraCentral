@@ -6,14 +6,14 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public class EscribirObjeto {
+public class EscribirObjetoSuministro {
 
 
         // atributo de la clase para especificar la direccion en el disco del archivo base de datos
         private String filePath;
 
         // constructor de la clase
-        public EscribirObjeto(String filePath){
+        public EscribirObjetoSuministro(String filePath){
             this.filePath = filePath;
         }
 
